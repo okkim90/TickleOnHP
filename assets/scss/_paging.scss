@@ -1,0 +1,81 @@
+.paging {
+    &_wrap {
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0 4px;
+        // &.mt24 {
+        //     margin-top: 24px;
+        // }
+    }
+    &_btn {
+        
+        min-width: 32px;
+        height: 32px;
+        //padding: 0 4px;
+        box-sizing: border-box;
+        border-radius: 16px;
+        line-height: 30px;
+        font-size: 13px;
+        color: $c_font;
+        border: 1px solid $c_line2;
+        flex-shrink: 0;
+        font-weight: 500;
+        padding: 0 4px;
+        
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #fff;
+        @include mobile { 
+            min-width: 26px;
+            height: 26px;
+            line-height: 24px;
+            font-size: 12px;
+            border-radius: 13px;
+        }
+
+        &:hover {
+            //background-color: ;
+            //color: #fff;
+        }
+        &.paging_nav {
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            @include mobile { 
+                width: 26px;
+                height: 26px;
+                min-width: 26px;
+            }
+        }
+        
+        &.ty_first {
+            background-image: url(../images/paging_first.svg);
+        }
+        &.ty_prev {
+            background-image: url(../images/paging_prev.svg);
+            //margin-right: 4px;
+        }
+        &.ty_next {
+            background-image: url(../images/paging_next.svg);
+            //margin-left: 4px;
+        }
+        &.ty_last {
+            background-image: url(../images/paging_last.svg);
+        }
+    }
+    &_list {
+        display: flex;
+        gap: 0 5px;
+        .paging_btn {
+            
+            
+            &.current {
+                background-color: $c_key;
+                color: #fff;
+            }
+        }
+    }
+}

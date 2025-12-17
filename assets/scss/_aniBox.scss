@@ -1,0 +1,84 @@
+/* aniBox (2025 ver) */
+.aniBox {
+    position: relative;
+    will-change: transform, opacity;
+  
+    /* 기본 트랜지션(공통) */
+    transition: opacity .4s ease-out, transform .4s ease-out;
+    transition-delay: .08s;
+    /* type */
+    &.ani_fade {
+      opacity: 0;
+      &.gogo { opacity: 1; }
+    }
+  
+    &.ani_right {
+      opacity: 0;
+      transform: translateX(80px);
+      &.gogo { opacity: 1; transform: translateX(0); }
+    }
+  
+    &.ani_left {
+      opacity: 0;
+      transform: translateX(-80px);
+      &.gogo { opacity: 1; transform: translateX(0); }
+    }
+  
+    &.ani_top {
+      opacity: 0;
+      transform: translateY(-80px);
+      &.gogo { opacity: 1; transform: translateY(0); }
+    }
+  
+    &.ani_bot {
+      opacity: 0;
+      transform: translateY(80px);
+      &.gogo { opacity: 1; transform: translateY(0); }
+    }
+  
+    /* 이미지 스케일(필요하면만) */
+    &.ani_img_scale {
+      overflow: hidden;
+  
+      img {
+        display: block;
+        opacity: 0;
+        transform: scale(1.06);
+        transition: opacity .28s ease-out, transform .28s ease-out;
+      }
+  
+      &.reverse img { transform: scale(0.94); }
+  
+      &.gogo img {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  
+    /* delay (0.1s ~ 1.0s) */
+    @for $i from 1 through 10 {
+      &.delay_#{$i} {
+        transition-delay: #{($i / 10)}s;
+      }
+      &.ani_img_scale.delay_#{$i} img {
+        transition-delay: #{($i / 10)}s;
+      }
+    }
+  }
+  
+  /* 모션 싫어하는 사람(접근성) : 애니메이션 OFF */
+  @media (prefers-reduced-motion: reduce) {
+    .aniBox,
+    .aniBox * {
+      transition: none !important;
+      animation: none !important;
+    }
+    .aniBox {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    .aniBox.ani_img_scale img {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }

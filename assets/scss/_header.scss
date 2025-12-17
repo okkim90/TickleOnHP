@@ -1,0 +1,339 @@
+.header {
+    /* =========================
+       기본 = 서브
+    ========================= */
+    --hd-bg: #fff;
+    --hd-fg: #000;
+    --hd-border: #000;
+    --hd-logo: url(../images/logo_bg.svg);
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    background-color: var(--hd-bg);
+    color: var(--hd-fg);
+    z-index: 9998;
+  
+    @include tablet {
+      height: 90px;
+    }
+  
+    &_inner {
+      width: 100%;
+      max-width: 1920px;
+      margin: 0 auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 50px;
+  
+      @include tablet2 {
+        padding: 0 30px;
+      }
+    }
+  
+    &_logo {
+      margin-right: clamp(30px, 4vw, 100px);
+  
+      .ico_logo {
+        width: 243px;
+        height: 53px;
+        background-image: var(--hd-logo);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+  
+        @include tablet2 {
+          width: 180px;
+          height: 38px;
+        }
+      }
+    }
+  
+    .nav {
+      margin-right: clamp(30px, 4vw, 100px);
+      color: inherit;
+  
+      @include tablet {
+        right: -400px;
+        position: fixed;
+        top: 0;
+        width: 400px;
+        height: 100%;
+        background-color: #fff;
+        margin-right: 0;
+        transition: right .2s ease-in-out;
+        color: #000;
+        padding-top: 90px;
+  
+        &.is-open {
+          right: 0;
+        }
+      }
+  
+      &_list {
+        display: flex;
+  
+        @include tablet {
+          display: block;
+        }
+      }
+  
+      &_item {
+        @include tablet {
+          border-top: 1px solid $c_line;
+        }
+  
+        .nav_link {
+          display: flex;
+          line-height: 1;
+          align-items: center;
+          height: 110px;
+          padding: 0 24px;
+  
+          @include tablet2 {
+            padding: 0 20px;
+          }
+          @include tablet {
+            height: 60px;
+            padding: 0 30px;
+          }
+        }
+  
+        .nav_tit {
+          font-weight: bold;
+          font-size: 20px;
+        }
+  
+        .nav_desc {
+          font-size: 11px;
+          opacity: 0.4;
+          white-space: nowrap;
+        }
+  
+        &.has_dep {
+          &:hover {
+            .service_panel {
+              opacity: 1;
+              visibility: visible;
+              pointer-events: auto;
+            }
+          }
+        }
+      }
+  
+      /* =========================
+         ✅ 서비스 패널 (누락 복구)
+      ========================= */
+      .service_panel {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .2s ease, visibility .2s ease;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(794px, calc(100vw - 48px));
+        padding: 24px 0;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(#000, 0.2);
+        border: 1px solid $c_line;
+        @include tablet {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+          position: relative;
+          top: 0;
+          left: 0;
+          transform: none;
+          width: 100%;
+          border-radius: 0;
+          padding: 0 30px 20px;
+        }
+  
+        &_list {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+  
+          @include tablet {
+            display: block;
+          }
+        }
+  
+        &_item {
+          flex: 0 0 auto;
+          text-align: center;
+          position: relative;
+  
+          @include tablet {
+            border: 1px solid $c_line;
+            box-shadow: 0 2px 6px rgba(#000, 0.1);
+            border-radius: 10px;
+            padding: 10px;
+  
+            & + .service_panel_item {
+              margin-top: 10px;
+            }
+          }
+  
+          &::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background-color: $c_line;
+            right: 0;
+            top: 0;
+  
+            @include tablet {
+              display: none;
+            }
+          }
+  
+          &:last-of-type::after {
+            display: none;
+          }
+  
+          a {
+            display: block;
+            padding: 0 30px;
+          }
+  
+          img {
+            display: block;
+            height: 30px;
+            width: auto;
+  
+            @include tablet {
+              margin: 0 auto;
+            }
+          }
+  
+          strong {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+          }
+        }
+      }
+    }
+  
+    /* =========================
+       햄버거 버튼
+    ========================= */
+    .btn_nav_toggle {
+      width: 40px;
+      height: 40px;
+      display: none;
+      align-items: center;
+      justify-content: flex-end;
+      flex-shrink: 0;
+      margin-left: 30px;
+  
+      @include tablet {
+        display: flex;
+      }
+  
+      .bars {
+        width: 30px;
+        height: 24px;
+        position: relative;
+  
+        .bar {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          height: 2px;
+          background-color: var(--hd-fg);
+          transition: all .2s ease-in-out;
+  
+          &1 { top: 0; }
+          &2 { top: 11px; }
+          &3 { top: 22px; }
+        }
+      }
+  
+      &.is-open {
+        .bars .bar {
+          background-color: #000;
+  
+          &1 {
+            transform: rotate(45deg);
+            top: 11px;
+          }
+          &2 { width: 0; }
+          &3 {
+            transform: rotate(-45deg);
+            top: 11px;
+          }
+        }
+      }
+    }
+  
+    &_btns {
+      margin-left: auto;
+      display: flex;
+      column-gap: 10px;
+      position: relative;
+  
+      .header_btn {
+        width: 130px;
+        height: 40px;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        /* ✅ 서브 기본 버튼 */
+        background-color: #fff;
+        border: 1px solid var(--hd-border);
+        color: var(--hd-fg);
+  
+        @include tablet2 {
+          width: 120px;
+        }
+  
+        /* 메인에서만 컬러버튼 쓰는 조건이므로,
+           서브에서도 이 클래스가 붙어있으면 그대로 컬러 유지 */
+        &._partners {
+          background-color: #3AA9B7;
+          border: none;
+          color: #fff;
+        }
+        &._inquiry {
+          background-color: #0C59D8;
+          border: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+  
+  /* =========================
+     메인 전용: 투명 시작 + 스크롤 후 서브로
+  ========================= */
+  body.page-home {
+    .header {
+      --hd-bg: transparent;
+      --hd-fg: #fff;
+      --hd-border: #fff;
+      --hd-logo: url(../images/logo.svg);
+    }
+  
+    /* 메인에서 스크롤 후: 서브 헤더로 전환 */
+    .header.on {
+      --hd-bg: #fff;
+      --hd-fg: #000;
+      --hd-border: #000;
+      --hd-logo: url(../images/logo_bg.svg);
+    }
+  }
+  

@@ -1,0 +1,22 @@
+@use "sass:color";
+
+
+/* 공통 */
+@import "./variable";
+@import "./mixin";
+
+@import "./reset";
+
+/* layout */
+@import "./layout";
+@import "./header";
+@import "./footer";
+
+/* templates */
+@import "./paging";
+
+/* pages */
+@import "./main";
+
+/* anibox */
+@import "./aniBox"
