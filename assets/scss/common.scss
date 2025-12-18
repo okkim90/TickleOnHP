@@ -4,7 +4,7 @@
 /* 공통 */
 @import "./variable";
 @import "./mixin";
-
+@import "./visibility";
 @import "./reset";
 
 /* layout */
@@ -14,6 +14,8 @@
 
 /* templates */
 @import "./paging";
+@import "./btns";
+
 
 /* pages */
 @import "./main";

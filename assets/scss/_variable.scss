@@ -14,7 +14,8 @@ $breakpoint-pc_bm: 1800px;
 /* colors */
 $colors: (
     _key: #1F64DA, 
-    _key2: #000328, 
+    _key2: #60C3CA, 
+    _key3: #000328, 
     _line: #E6E6E6,
     _line2: #e4e4e4,
     _bg: #F2F2F2,
@@ -27,6 +28,7 @@ $colors: (
 
 $c_key : map-get($colors, _key);
 $c_key2 : map-get($colors, _key2);
+$c_key3 : map-get($colors, _key3);
 $c_line : map-get($colors, _line);
 $c_line2 : map-get($colors, _line2);
 $c_bg : map-get($colors, _bg);

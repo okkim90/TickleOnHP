@@ -19,6 +19,9 @@
     @include tablet {
       height: 90px;
     }
+    @include mobile {
+      height: 60px;
+    }
   
     &_inner {
       width: 100%;
@@ -31,6 +34,9 @@
   
       @include tablet2 {
         padding: 0 30px;
+      }
+      @include mobile {
+        padding: 0 20px;
       }
     }
   
@@ -47,7 +53,10 @@
   
         @include tablet2 {
           width: 180px;
-          height: 38px;
+          //height: 38px;
+        }
+        @include mobile {
+          width: 120px;
         }
       }
     }
@@ -55,19 +64,32 @@
     .nav {
       margin-right: clamp(30px, 4vw, 100px);
       color: inherit;
-  
+      .header_btns {
+        display: none;
+        @include tablet {
+          display: flex;
+          height: 90px;
+          align-items: center;
+          padding: 0 30px;
+        }
+        @include mobile {
+          height: 60px;
+          padding: 0 20px;
+        }
+      }
       @include tablet {
         right: -400px;
         position: fixed;
         top: 0;
         width: 400px;
+        max-width: 100%;
         height: 100%;
         background-color: #fff;
         margin-right: 0;
         transition: right .2s ease-in-out;
         color: #000;
-        padding-top: 90px;
-  
+        //padding-top: 90px;
+       
         &.is-open {
           right: 0;
         }
@@ -75,13 +97,14 @@
   
       &_list {
         display: flex;
-  
+        position: relative;
         @include tablet {
           display: block;
         }
       }
   
       &_item {
+        //position: relative;
         @include tablet {
           border-top: 1px solid $c_line;
         }
@@ -99,6 +122,9 @@
           @include tablet {
             height: 60px;
             padding: 0 30px;
+          }
+          @include mobile {
+            padding: 0 20px;
           }
         }
   
@@ -124,9 +150,7 @@
         }
       }
   
-      /* =========================
-         ✅ 서비스 패널 (누락 복구)
-      ========================= */
+
       .service_panel {
         opacity: 0;
         visibility: hidden;
@@ -134,14 +158,16 @@
         transition: opacity .2s ease, visibility .2s ease;
         position: absolute;
         top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
         width: min(794px, calc(100vw - 48px));
         padding: 24px 0;
         background: #fff;
         border-radius: 20px;
         box-shadow: 0 4px 10px rgba(#000, 0.2);
         border: 1px solid $c_line;
+        @include tablet2 {
+          left: -100px;
+        }
         @include tablet {
           opacity: 1;
           visibility: visible;
@@ -153,6 +179,11 @@
           width: 100%;
           border-radius: 0;
           padding: 0 30px 20px;
+          box-shadow: none;
+          border: none;
+        }
+        @include mobile {
+          padding: 0 20px 20px;
         }
   
         &_list {
@@ -239,6 +270,9 @@
       @include tablet {
         display: flex;
       }
+      @include mobile {
+        margin-left: auto;
+      }
   
       .bars {
         width: 30px;
@@ -280,8 +314,10 @@
       margin-left: auto;
       display: flex;
       column-gap: 10px;
-      position: relative;
-  
+      //position: relative;
+      @include mobile {
+        display: none;
+      }
       .header_btn {
         width: 130px;
         height: 40px;
@@ -300,19 +336,24 @@
         @include tablet2 {
           width: 120px;
         }
+        @include mobile {
+          width: 100px;
+          height: 34px;
+          border-radius: 17px;
+          font-size: 13px;
+        }
   
-        /* 메인에서만 컬러버튼 쓰는 조건이므로,
-           서브에서도 이 클래스가 붙어있으면 그대로 컬러 유지 */
-        &._partners {
-          background-color: #3AA9B7;
-          border: none;
-          color: #fff;
-        }
-        &._inquiry {
-          background-color: #0C59D8;
-          border: none;
-          color: #fff;
-        }
+      
+          &._partners {
+            background-color: #fff;
+            border: 1px solid #000;
+            color: #000;
+          }
+          &._inquiry {
+            background-color: #fff;
+            border: 1px solid #000;
+            color: #000;
+          }
       }
     }
   }
@@ -326,6 +367,20 @@
       --hd-fg: #fff;
       --hd-border: #fff;
       --hd-logo: url(../images/logo.svg);
+      .header_btns {
+        .header_btn {
+          &._partners {
+            background-color: #3AA9B7;
+            border: none;
+            color: #fff;
+          }
+          &._inquiry {
+            background-color: #0C59D8;
+            border: none;
+            color: #fff;
+          }
+        } 
+      }
     }
   
     /* 메인에서 스크롤 후: 서브 헤더로 전환 */
@@ -334,6 +389,20 @@
       --hd-fg: #000;
       --hd-border: #000;
       --hd-logo: url(../images/logo_bg.svg);
+      .header_btns {
+        .header_btn {
+          &._partners {
+            background-color: #fff;
+            border: 1px solid #000;
+            color: #000;
+          }
+          &._inquiry {
+            background-color: #fff;
+            border: 1px solid #000;
+            color: #000;
+          }
+        } 
+      }
     }
   }
   

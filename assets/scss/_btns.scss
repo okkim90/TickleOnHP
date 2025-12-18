@@ -1,0 +1,123 @@
+.btn_arrow {
+    
+    
+    
+    
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    
+    
+    
+    &::after {
+        content: '';
+        width: 15px;
+        height: 15px;
+        
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        margin-left: auto;
+    }
+
+
+    &._mid {
+        font-size: 16px;
+        height: 50px;
+        padding: 0 30px;
+        border-radius: 25px;
+        gap: 15px;
+        min-width: 188px;
+        @include mobile {
+            height: 40px;
+            border-radius: 20px;
+            padding: 0 20px;
+            min-width: 160px;
+            font-size: 14px;
+        }
+    }
+    &._big {
+        font-size: 18px;
+        height: 70px;
+        padding: 0 30px;
+        border-radius: 35px;
+        gap: 15px;
+        min-width: 250px;
+        @include mobile {
+            height: 50px;
+            border-radius: 25px;
+            padding: 0 24px;
+            min-width: 200px;
+            font-size: 16px;
+        }
+    }
+
+
+    &._line {
+        border: 1px solid #000;
+        color: #000;
+        background-color: #fff;
+        &::after {
+            background-image: url(../images/arrow_right.svg);
+        }
+    }
+    &._black {
+        border: 1px solid #000;
+        color: #fff;
+        background-color: #000;
+        &::after {
+            background-image: url(../images/arrow_right_w.svg);
+        }
+    }
+    &._key2 {
+        border: 1px solid $c_key2;
+        color: #fff;
+        background-color: $c_key2;
+        &::after {
+            background-image: url(../images/arrow_right_w.svg);
+        }
+    }
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    &._ty2 {
+        border-radius: 10px;
+        padding: 0 30px;
+
+
+        &._big {
+            height: 70px;
+            font-size: 18px;
+            font-weight: bold;
+            @include mobile {
+                height: 50px;
+                font-size: 16px;
+                padding: 0 24px;
+            }
+        }
+        &._arrow {
+            content: '';
+            width: 15px;
+            height: 15px;
+            
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            margin-left: auto;
+            background-image: url(../images/arrow_right_w.svg);
+        }
+
+        &._blue {
+            color: #fff;
+            background: rgba(6, 181, 238, 1);
+            background: linear-gradient(180deg,rgba(53, 226, 252, 1) 0%, rgba(6, 181, 238, 1) 100%);
+        }
+        &._orange {
+            color: #fff;
+            background: #FC9A21;
+            background: linear-gradient(180deg,rgba(252, 154, 33, 1) 0%, rgba(238, 70, 6, 1) 100%);
+        }
+    }
+}

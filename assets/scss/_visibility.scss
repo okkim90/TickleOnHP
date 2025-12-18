@@ -1,0 +1,74 @@
+/* =========================
+   DISPLAY BASED
+   ========================= */
+
+/* inline */
+.m_only {
+  display: none;
+}
+.pc_only {
+  display: inline;
+}
+
+/* block */
+.m_only_block {
+  display: none;
+}
+.pc_only_block {
+  display: block;
+}
+
+/* line break */
+br.m_only {
+  display: none;
+}
+br.pc_only {
+  display: inline;
+}
+
+/* Mobile */
+@include mobile {
+  .m_only {
+    display: inline;
+  }
+  .pc_only {
+    display: none;
+  }
+
+  .m_only_block {
+    display: block;
+  }
+  .pc_only_block {
+    display: none;
+  }
+
+  br.m_only {
+    display: inline;
+  }
+  br.pc_only {
+    display: none;
+  }
+}
+
+/* =========================
+VISIBILITY BASED
+(공간 유지, 인터랙션 제어)
+========================= */
+
+.m_only_v {
+  visibility: hidden;
+}
+
+.pc_only_v {
+  visibility: visible;
+}
+
+@include mobile {
+  .m_only_v {
+    visibility: visible;
+  }
+
+  .pc_only_v {
+    visibility: hidden;
+  }
+}

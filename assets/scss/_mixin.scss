@@ -5,6 +5,7 @@ $breakpoint-ms: 568px;
 $breakpoint-m: 767px;
 $breakpoint-t: 1024px;
 $breakpoint-t2: 1400px;
+$breakpoint-t3: 1200px;
 
 @mixin hover_true {
     @media (hover: hover) and (pointer: fine) {
@@ -27,6 +28,12 @@ $breakpoint-t2: 1400px;
 
 @mixin tablet2 {
     @media (max-width: #{$breakpoint-t2}) {
+        @content;
+    }
+}
+
+@mixin tablet3 {
+    @media (max-width: #{$breakpoint-t3}) {
         @content;
     }
 }

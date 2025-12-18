@@ -1,8 +1,346 @@
 .main_visual {
-    height: 945px;
+    height: 100dvh;
     background-image: url(../images/main_visual.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    position: relative;
+    &_txt {
+        color: #fff;
+        position: absolute;
+        left: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+        .txt1 {
+            font-size: 70px;
+            font-weight: bold;
+            line-height: 1;
+        }
+        .txt2 {
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 1;
+            margin-top: 20px;
+        }
+
+        @include tablet {
+            left: 30px;
+
+        }
+        @include mobile {
+            left: 20px;
+            top: 45%;
+            .txt1 {
+                font-size: 48px;
+            }
+            .txt2 {
+                font-size: 18px;
+            }
+        }
+    }
+    &_scroll {
+        position: absolute;
+        bottom: 130px;
+        left: 50px;
+        color: #fff;
+        .txt {
+            display: block;
+            transform: rotate(90deg);
+            transform-origin: 7px;
+            font-size: 14px;
+            line-height: 1;
+            letter-spacing: 0.15em;
+            margin-top: 18px;
+        }
+        @include tablet {
+            bottom: 110px;
+            left: 30px;
+        }
+        @include mobile {
+            bottom: 100px;
+            left: 20px;
+            .txt {
+                font-size: 12px;
+                margin-top: 12px;
+                transform-origin: 6px;
+            }
+        }
+    }
+}
+.main_sec {
+    padding-top: 120px;
     
+    &_tit {
+        text-align: center;
+        margin-bottom: 80px;
+        
+        .tit {
+            font-size: 45px;
+            font-weight: bold;
+            line-height: 1.2;
+           
+           
+        }
+        .tit_sub {
+            font-size: 20px;
+            color: #999;
+            letter-spacing: 0.2em;
+            margin-bottom: 10px;
+            
+        }
+    }
+    @include tablet {
+        &_tit {
+            .tit {
+                font-size: 38px;
+            }
+            .tit_sub {
+                font-size: 17px;
+            }
+        }
+    }
+    @include mobile {
+        padding-top: 80px;
+        &_tit {
+            margin-bottom: 40px;
+            .tit {
+                font-size: 30px;
+            }
+            .tit_sub {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+.main_about {
+    &_item {
+        display: flex;
+        gap: clamp(16px, 7.142857%, 100px);
+        align-items: center;
+        @include mobile {
+            display: block;
+        }
+        & + & {
+            margin-top: 100px;
+            @include mobile {
+                margin-top: 50px;
+            }
+        }
+
+        &._reverse {
+            .img_box {
+                order: 1;
+            }
+            .txt_box {
+                order: 0;
+            }
+        }
+        .img_box , .txt_box {
+            flex: 1;
+        }
+        .txt_box {
+            @include mobile {
+                margin-top: 20px;
+            }
+            .tit {
+                font-size: 45px;
+                font-weight: bold;
+                line-height: 1.2;
+                @include tablet {
+                    font-size: 38px;
+                }
+                @include mobile {
+                    font-size: 24px;
+                }
+            }
+            .desc {
+                font-size: 18px;
+                margin-top: 30px;
+                line-height: 1.6;
+                @include tablet {
+                    font-size: 16px;
+                }
+                @include mobile {
+                    font-size: 14px;
+                    margin-top: 16px;
+                }
+            }
+            .btn_arrow {
+                margin-top: 45px;
+                @include mobile {  
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+.main_solution {
+    &_cont {
+        height: 300px;
+        background-image: url(../images/main_banner.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: 30px;
+
+        display: flex;
+        align-items: center;
+        color: #fff;
+        padding: 50px 78px;
+        gap: 20px;
+        @include tablet {
+            padding: 50px 50px;
+        }
+        @include mobile {
+            flex-direction: column;
+            gap: 40px;
+            align-items: flex-start;
+            height: auto;
+            padding: 40px 30px;
+            position: relative;
+            overflow: hidden;
+            
+            &::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: rgba(#000, .4);
+                left: 0;
+                top: 0;
+                position: absolute;
+                z-index: 0;
+            }
+        }
+
+        .txt_box {
+            position: relative;
+            z-index: 1;
+            .txt1 {
+                font-size: 40px;
+                font-weight: bold;
+            }
+            .txt2 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+            .txt3 {
+                font-size: 18px;
+                color: #A6C5FF;
+                font-weight: 500;
+                margin-top: 28px;
+            }
+            @include mobile {
+                .txt1 { 
+                    font-size: 32px;
+                }
+                .txt2 { 
+                    font-size: 24px;
+                }
+            }
+        }
+        .btn {
+            position: relative;
+            z-index: 1;
+            margin-left: auto;
+            flex-shrink: 0;
+        }
+    }
+}
+
+
+.main_service {
+    .service_slide {
+        overflow: hidden;
+        &_wrap {
+            position: relative;
+            --imgH: 0px;
+        }
+        // @include mobile {
+        //     padding-right: 15%;
+        // }
+    }
+    .slide_item {
+        .txt_box {
+            margin-top: 20px;
+            text-align: center;
+            .tit {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .desc {
+                font-size: 16px;
+                color: #aaa;
+                margin-top: 10px;
+            }
+            @include mobile {
+                margin-top: 16px;
+                .tit {
+                    font-size: 18px;
+                }
+                .desc {
+                    font-size: 15px;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+    .service_slide_btn {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: $c_key;
+       
+        position: absolute;
+        top: calc(var(--imgH) / 2);
+        transform: translateY(-50%);
+        z-index: 10;
+        i {
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url(../images/arrow.svg);
+        }
+        &.swiper-button-disabled {
+            visibility: hidden;
+        }
+        &.service_slide_prev {
+            i {
+                transform: rotate(-180deg);
+            }
+            left: -30px;
+        }
+        &.service_slide_next {
+            right: -30px;
+        }
+
+        @include mobile {
+            width: 40px;
+            height: 40px;
+            opacity: 0.9;
+            i {
+                width: 18px;
+                height: 18px;
+                background-size: contain;
+            }
+            &.service_slide_prev {
+                left: -16px;
+            }
+            &.service_slide_next {
+                right: -16px;
+            }
+        }
+    }
+
+    .btn_area {
+        margin-top: 80px;
+        @include mobile {
+            margin-top: 40px;
+        }
+    }
 }
