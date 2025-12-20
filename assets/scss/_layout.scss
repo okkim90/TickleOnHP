@@ -1,3 +1,6 @@
+#wrap {
+    overflow: hidden;
+}
 .inner {
     width: 100%;
     max-width: 1500px;
@@ -9,5 +12,14 @@
     }
     @include mobile {
         padding: 0 20px;
+    }
+}
+
+.contents {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    @include mobile {
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 }

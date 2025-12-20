@@ -98,15 +98,18 @@
             }
         }
         &._arrow {
-            content: '';
-            width: 15px;
-            height: 15px;
+            &::after {
+                content: '';
+                width: 15px;
+                height: 15px;
+                
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                margin-left: auto;
+                background-image: url(../images/arrow_right_w.svg);
+            }
             
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain;
-            margin-left: auto;
-            background-image: url(../images/arrow_right_w.svg);
         }
 
         &._blue {

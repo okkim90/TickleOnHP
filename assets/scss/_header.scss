@@ -86,13 +86,17 @@
         height: 100%;
         background-color: #fff;
         margin-right: 0;
-        transition: right .2s ease-in-out;
+        transition: right .25s ease-in-out;
         color: #000;
         //padding-top: 90px;
        
         &.is-open {
           right: 0;
         }
+      }
+      @include mobile {
+        right: -100%;
+        width: 100%;
       }
   
       &_list {

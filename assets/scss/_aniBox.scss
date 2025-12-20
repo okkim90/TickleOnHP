@@ -5,7 +5,7 @@
   
     /* 기본 트랜지션(공통) */
     transition: opacity .4s ease-out, transform .4s ease-out;
-    transition-delay: .08s;
+    transition-delay: .2s;
     /* type */
     &.ani_fade {
       opacity: 0;
