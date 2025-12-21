@@ -18,6 +18,11 @@
 .contents {
     padding-top: 120px;
     padding-bottom: 120px;
+
+    &._partners {
+        padding-top: 180px;
+    }
+
     @include mobile {
         padding-top: 80px;
         padding-bottom: 80px;

@@ -1,0 +1,27 @@
+.partners_sec {
+    .flex_wrap {
+        display: flex;
+        align-items: center;
+        &._reverse {
+            flex-direction: row-reverse;
+        }
+        .img_box, .txt_box {
+            flex: 1
+        }
+        
+    }
+}
+
+.partners_sec_1 {
+    .txt_box {
+        padding-right: 50px;
+        .desc {
+            margin-top: 40px;
+        }
+    }
+    .btn_area {
+        display: flex;
+        gap: 20px;
+        margin-top: 40px;
+    }
+}
