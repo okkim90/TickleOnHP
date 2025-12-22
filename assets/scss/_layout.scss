@@ -20,11 +20,32 @@
     padding-bottom: 120px;
 
     &._partners {
-        padding-top: 180px;
+        padding-top: 60px;
+        padding-bottom: 0;
+        @include mobile {
+            padding-top: 10px;
+        }
     }
 
     @include mobile {
         padding-top: 80px;
         padding-bottom: 80px;
+    }
+}
+
+.list_star {
+    li {
+        padding-left: 1em;
+        position: relative;
+        & + li {
+            margin-top: 0.3em;
+        }
+        &::before {
+            content: '*';
+            position: absolute; 
+            left: 0;
+            top: 0;
+            line-height: 1.8em;
+        }
     }
 }

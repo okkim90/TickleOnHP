@@ -1,0 +1,35 @@
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .tab_btn {
+        background-color: $c_bg;
+        color: #000;
+
+        &.on {
+            color: #fff;
+            background-color: #3aa9b7;
+        }
+        &._mid {
+            font-size: 16px;
+            height: 50px;
+            padding: 0 30px;  
+            border-radius: 10px;
+            font-weight: bold;
+            @include mobile {
+                height: 40px;
+                padding: 0 20px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.tab_cont_wrap {
+    .tab_cont {
+        display: none;
+        &.on {
+            display: block;
+        }
+    }
+}

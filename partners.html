@@ -7,8 +7,8 @@
     <title>Tickle On</title>
    
     <!--[D] fonts-->
-    <link rel="preload" href="/assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="" href="/assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="" href="/assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
 
     <!--[D] 공통적용 js&css-->
     <link rel="stylesheet" href="/assets/css/common.min.css">
@@ -21,7 +21,7 @@
         <header id="header" class="header">
             <div class="header_inner">
                 <h1 class="header_logo">
-                    <a href="">
+                    <a href="/">
                         <div class="ico_logo"></div>
                         <span class="blind">Tickle On</span>
                     </a>
@@ -112,18 +112,196 @@
                 <section class="partners_sec partners_sec_1">
                     <div class="inner">
                         <div class="flex_wrap _reverse">
-                            <div class="img_box"><img src="/assets/images/sub/partners_img1.png" alt=""></div>
-                            <div class="txt_box">
-                                <h2 class="tit1">간단한 소개로 <br> 수익을 창출하세요</h2>
+                            <div class="img_box aniBox ani_bot"><img src="/assets/images/sub/partners_img1.png" alt=""></div>
+                            <div class="txt_box aniBox ani_bot">
+                                <h2 class="tit1">간단한 소개로 <br class="pc_only"> 수익을 창출하세요</h2>
                                 <p class="desc">개인, 직장인, 인사담당자, 법인대표 누구나 티클의 파트너가 되어보세요.</p>
                                 <div class="btn_area">
-                                    <button type="button" class="btn_arrow _mid _black">영업파트너 등록신청</button>
-                                    <button type="button" class="btn_arrow _mid _line">기업 추천하기</button>
+                                    <button type="button" class="btn_arrow btn_popup _mid _black"
+                                    type="button"
+                                    data-popup="#popupPartner"
+                                    data-tab="0"
+                                    >영업파트너 등록신청</button>
+                                    <button type="button" class="btn_arrow btn_popup _mid _line"
+                                    type="button"
+                                    data-popup="#popupPartner"
+                                    data-tab="1"
+                                    >기업 추천하기</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+                </section>
+                <section class="partners_sec partners_sec_2">
+                    <div class="inner">
+                        <div class="flex_wrap">
+                            <div class="img_box aniBox ani_bot"><img src="/assets/images/sub/partners_img2.png" alt=""></div>
+                            <div class="txt_box aniBox ani_bot">
+                                <h2 class="tit1">서비스 추천  <br class="pc_only"> 파트너 모집 공고</h2>
+                                <p class="desc2">아는 서비스를 추천만 해주세요! <br> 영업과 제안은 티클이 직접 진행합니다.</p>
+                                <p class="desc">건물관리 전문기업 티클은 새로운 파트너들과 함께 <br> 
+                                    더 많은 서비스의 성공을 만들어가고자합니다. <br> 
+                                    전문적인 영업 지식이나 서비스 이해도가 없어도 괜찮습니다. <br>
+                                    티클 서비스에 관심있는 지인을 소개해주시면, <br> 나머지는 저희가 알아서 진행합니다.    </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="partners_sec partners_sec_3">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">영업 파트너 혜택</h2>
+                            <p class="desc">티클의 서비스를 추천하고 매월 보상받으세요! </p>
+                        </div>
+                        <div class="flex_wrap _reverse">
+                            <div class="img_box aniBox ani_bot"><img src="/assets/images/sub/partners_img3.png" alt=""></div>
+                            <div class="txt_box aniBox ani_bot">
+                                <p class="desc2">추천해준 기업이 티클 서비스를 계약한다면,</p>
+                                <h2 class="tit1">12개월간 실매출의 최대 5%를 매달 드립니다.</h2>
+                                <ul class="list_star">
+                                    <li>정기서비스 혹은 1회성 서비스 모두가능(단, 1회성서비스는 단건으로 수수료 지급)</li>
+                                    <li>서비스 종류에 따라 수수료율이 달라질 수 있음 </li>
+                                    <li>12개월간 실매출의 ~5% 지급(계약 조건에 따라 상이할 수 있음)</li>
+                                    <li>실매출 발생일로부터 익월 말일 지급(정상입금 기준)</li>
+                                    <li>만약 12개월이 되기 이전에 계약을 해지한다면 보상도 중단됨</li>
+                                    <li>유가 증권 및 vat는 실매출 제외</li>
+                                    <li>고객사 할인율에 따른대행 수수료 변동가능</li>
+                                    <li>고객사 미납 발생시 지급 지연</li>
+                                </ul>
+                            </div>      
+                        </div>
+                    </div>
+                </section>
+                <section class="partners_sec partners_sec_4">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">어떻게 진행되나요?</h2>
+                        </div>
+                        <ol class="partner_process">
+                            <li class="partner_process_item _item1 aniBox ani_bot">
+                                <div class="inner_box">
+                                    <span class="num">01</span>
+                                    <div class="txt_box">
+                                        <div class="tit">영업파트너 등록</div>
+                                        <div class="desc">1~3일 소요</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="partner_process_item _item2 aniBox ani_bot">
+                                <div class="inner_box">
+                                    <span class="num">02</span>
+                                    <div class="txt_box">
+                                        <div class="tit">기업 추천</div>
+                                        <div class="desc">약 1분 소요</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="partner_process_item _item3 aniBox ani_bot">
+                                <div class="inner_box">
+                                    <span class="num">03</span>
+                                    <div class="txt_box">
+                                        <div class="tit">본사 <br> 영업진행</div>
+                                        <div class="desc">약 1주 ~ 최대 12주 <br> (3개월까지 계약미진행시 <br> 영업종료)</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="partner_process_item _item4 aniBox ani_bot">
+                                <div class="inner_box">
+                                    <span class="num">04</span>
+                                    <div class="txt_box">
+                                        <div class="tit">계약완료시 <br> 보상지급</div>
+                                        <div class="desc">12개월간 매월 최대 5% 지급</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="partners_sec partners_sec_5">
+                    <div class="inner">
+                        <div class="cont_box cont_box1 aniBox ani_bot">
+                            <div class="tit1">모집대상</div>
+                            <div class="desc_box">
+                                <ul class="list_star">
+                                    <li>개인 혹은 법인 기업</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cont_box cont_box2 aniBox ani_bot">
+                            <div class="tit1">이런 분들을 환영합니다</div>
+                            <div class="desc_box">
+                                <ul class="list_star">
+                                    <li>현재 티클 서비스를 이용중이라서 추천이 가능한 인사/총무 담당자</li>
+                                    <li>그외 티클 서비스에 관심이 있는 기업에 제안이 가능한 누구나</li>
+                                    <li>지인이나 네트워크 티클을 알고 있는 분</li>
+                                    <li>영업 경험이 없어도, 티클 서비스에 대해 몰라도 OK</li>
+                                    <li>부업/추가 수익을 원하는 누구나</li>
+                                    <li>개인 혹은 법인 기업</li>
+                                    <li>개인, 직장인, 프리랜서, 대표님, 기업 모두 가능</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cont_box cont_box3 aniBox ani_bot">
+                            <div class="tit1">영업파트너 보상 혜택</div>
+                            <div class="desc_box">
+                                <ul class="list_star">
+                                    <li>소개한 기업이 계약 체결 시 성과금 지급</li>
+                                    <li>세부 금액 및 조건은 추천 후 개별 안내</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cont_box cont_box4">
+                            <div class="tit1 aniBox ani_bot">지원방법</div>
+                            <div class="desc_box">
+                                <ul class="list_star aniBox ani_bot">
+                                    <li>영업파트너로 등록이완료되면, <br class="pc_only_t"> 추천하는 기업 정보를 간단히 기재 후 제출</li>
+                                    <li>이후 절차는 티클이 직접 진행</li>
+                                </ul>
+                                <div class="apply_wrap">
+                                    <div class="apply_sec aniBox ani_bot">
+                                        <div class="tit2">1. 영업파트너 등록</div>
+                                        <div class="desc">
+                                            고객사 추천을 위해서는 영업파트너
+                                            등록이 필요합니다. <br> 
+                                            개인 혹은 기업으로 
+                                            최초 1회 신청해주시면 되고,
+                                            절차를 통해 영업일 1~3일 이내로
+                                            등록 여부에 대해 연락 드립니다.  
+                                        </div>
+                                        <button type="button" class="btn_arrow btn_popup _mid _key2"
+                                        type="button"
+                                        data-popup="#popupPartner"
+                                        data-tab="0"
+                                        >영업파트너 등록신청</button>
+                                    </div>
+                                    <div class="apply_sec aniBox ani_bot">
+                                        <div class="tit2">2. 기업 추천</div>
+                                        <div class="desc">
+                                            영업파트너로 등록이 완료되셨다면,
+                                            티클 서비스에관심있는 고객사를 추천해주세요. <br>
+                                            실제 서비스 상담은 티클에서 전문담당자가 진행하니
+                                            서비스를 잘 모르셔도 추천이 가능하니다.    
+                                        </div>
+                                        <button type="button" class="btn_arrow btn_popup _mid _line"
+                                        type="button"
+                                        data-popup="#popupPartner"
+                                        data-tab="1"
+                                        >기업 추천하러 가기</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="partners_sec partners_sec_6">
+                    <div class="inner">
+                        <div class="cont_box aniBox ani_bot">
+                            <h2 class="tit1">문의</h2>
+                            <p class="desc">이메일 문의 :  info@tickle.co.kr</p>
+                            <div class="txt">당신의 파트너십이 서비스의 가치를 높입니다. <br> 티클과 함께 새로운 성과를 만들어보세요!    </div>
+                        </div>
+                    </div>
                 </section>
             </section>
         </main>
@@ -173,6 +351,188 @@
             </div>
             <div class="footer_copy">ⓒTICKLE. All Rights Reserved.</div>
         </footer>
+        <div class="popup" id="popupPartner">
+            <div class="popup_wrap">
+                <div class="popup_inner">
+                    <button type="button" class="popup_close" aria-label="팝업 닫기"></button>
+                    <div class="popup_container">
+                        <h2 class="popup_tit tit1">티클 파트너스 등록</h2>
+                        <div class="tab_wrap">
+                            <div class="popup_tabs tabs">
+                                <button type="button" class="tab_btn _mid on">영업 파트너 등록하기</button>
+                                <button type="button" class="tab_btn _mid">기업 추천하기</button>
+                            </div>
+                        
+                            <div class="tab_cont_wrap">
+                                <div class="tab_cont on">
+                                    <div class="popup_desc desc">
+                                        고객사 추천을 위해서는 영업파트너 등록이 필요합니다. <br>
+                                        개인 혹은 기업으로 최조 1회 신청 후 절차를 통해 영업일 1~3일 이내로
+                                        등록 여부에 대해 연락 드립니다.  
+                                    </div>
+                                    <div class="popup_form">
+                                        <div class="popup_form_field">
+                                            <div class="field_tit">고객유형</div>
+                                            <div class="f_radio_set">
+                                                <label class="f_radio">
+                                                    <input type="radio" name="userType" checked>
+                                                    <span class="f_radio_ico"></span>
+                                                    <span class="f_radio_txt">기업</span>
+                                                </label>
+                                                <label class="f_radio">
+                                                    <input type="radio" name="userType">
+                                                    <span class="f_radio_ico"></span>
+                                                    <span class="f_radio_txt">개인</span>
+                                                </label>
+                                            </div>   
+                                        </div>
+                                        <div class="popup_form_field">
+                                            <label class="field_tit" for="company">회사명</label>
+                                            <input type="text" id="company" class="f_input _ty1" placeholder="회사명을 입력해주세요.">
+                                        </div>
+                                        <div class="popup_form_field">
+                                            <label class="field_tit" for="name">이름</label>
+                                            <input type="text" id="name" class="f_input _ty1" placeholder="이름을 입력해주세요.">
+                                        </div>
+                                        <div class="popup_form_field">
+                                            <label class="field_tit" for="email">이메일</label>
+                                            <input type="email" id="email" class="f_input _ty1" placeholder="이메일을 입력해주세요.">
+                                        </div>
+                                        <div class="popup_form_field">
+                                            <label class="field_tit" for="tel">연락처</label>
+                                            <input type="tel" id="tel" class="f_input _ty1" placeholder="숫자만 입력해주세요.">
+                                        </div>
+                                    </div>
+                                    <div class="popup_agreement">
+                                        <div class="tit fwB">[필수] 개인정보 수집 및 이용 동의 안내</div>
+                                        <ul class="list_star">
+                                            <li>수집항목 : 회사명, 이름,이메일, 연락처</li>
+                                            <li>목적 : 파트너 신청 및 상담 안내</li>
+                                            <li>보유기간 : 3년</li>
+                                        </ul>  
+                                        <label class="f_chk">
+                                            <input type="checkbox">
+                                            <span class="f_chk_ico"></span>
+                                            <span class="f_chk_txt">동의합니다.</span>
+                                        </label>
+                                    </div>
+                                    <div class="popup_btns">
+                                        <button type="submit" class="btn _ty1 _mid _black">견적 문의하기</button>
+                                    </div>
+                                </div>
+                                <div class="tab_cont">
+                                    <div class="popup_desc desc">
+                                        영업파트너로 등록이 완료되셨다면, 티클 서비스에 관심있는 고객사를 추천해주세요. <br> 
+                                        실제 서비스 상담은 티클에서 진행하니 서비스를 잘 모르셔도 추천이 가능합니다. 
+                                    </div>
+                                    <div class="popup_form">
+                                        <div class="popup_form_field">
+                                            <label class="field_tit" for="company">주식회사 / 건물명</label>
+                                            <input type="text" id="company" class="f_input _ty1" placeholder="주식회사 / 건물명을 입력해주세요.">
+                                        </div>
+                                        <div class="popup_form_field">
+                                            <label class="field_tit" for="name">담당자 이름</label>
+                                            <input type="text" id="name" class="f_input _ty1" placeholder="담당자 이름을 입력해주세요.">
+                                        </div>
+                                        <div class="popup_form_field">
+                                            <label class="field_tit" for="email">담당자 이메일</label>
+                                            <input type="email" id="email" class="f_input _ty1" placeholder="담당자 이메일을 입력해주세요.">
+                                        </div>
+                                        <div class="popup_form_field">
+                                            <label class="field_tit" for="partnerName">추천 파트너 이름</label>
+                                            <input type="text" id="partnerName" class="f_input _ty1" placeholder="추천 파트너 이름을 입력해주세요.">
+                                        </div>
+                                        <div class="popup_form_field">
+                                            <div class="field_tit">필요 서비스</div>
+                                            <div class="f_radio_set">
+                                                <label class="f_radio">
+                                                    <input type="radio" name="serviceType" checked>
+                                                    <span class="f_radio_ico"></span>
+                                                    <span class="f_radio_txt">건물관리(티클온빌딩)</span>
+                                                </label>
+                                                <label class="f_radio">
+                                                    <input type="radio" name="serviceType">
+                                                    <span class="f_radio_ico"></span>
+                                                    <span class="f_radio_txt">호텔관리(티클온스테이)</span>
+                                                </label>
+                                                <label class="f_radio">
+                                                    <input type="radio" name="serviceType">
+                                                    <span class="f_radio_ico"></span>
+                                                    <span class="f_radio_txt">통합회계 아웃소싱(티클온어카운트)</span>
+                                                </label>
+                                                <label class="f_radio">
+                                                    <input type="radio" name="serviceType">
+                                                    <span class="f_radio_ico"></span>
+                                                    <span class="f_radio_txt">티클온 전문서비스</span>
+                                                </label>
+                                            </div>   
+                                        </div>
+                                        <div class="popup_form_field">
+                                            <label class="field_tit" for="request">요청사항</label>
+                                            <input type="text" id="request" class="f_input _ty1" placeholder="요청사항을 입력해주세요.">
+                                        </div>
+                                    </div>
+                                    <div class="popup_btns">
+                                        <button type="submit" class="btn _ty1 _mid _black">견적 문의하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <script>
+        // 팝업 열기
+        document.addEventListener('click', (e) => {
+            const btn = e.target.closest('.btn_popup');
+            if (!btn) return;
+        
+            const popup = document.querySelector(btn.dataset.popup);
+            if (!popup) return;
+        
+            popup.classList.add('on');
+        
+            // 탭 선택 (있을 때만)
+            const tabIndex = Number(btn.dataset.tab);
+            if (!isNaN(tabIndex)) {
+            const tabWrap = popup.querySelector('.tab_wrap');
+            if (!tabWrap) return;
+        
+            const tabs = tabWrap.querySelectorAll('.tab_btn');
+            const conts = tabWrap.querySelectorAll('.tab_cont');
+        
+            tabs.forEach((t, i) => t.classList.toggle('on', i === tabIndex));
+            conts.forEach((c, i) => c.classList.toggle('on', i === tabIndex));
+            }
+        });
+        
+        // 팝업 닫기
+        document.addEventListener('click', (e) => {
+            const closeBtn = e.target.closest('.popup_close');
+            if (!closeBtn) return;
+        
+            const popup = closeBtn.closest('.popup');
+            popup?.classList.remove('on');
+        });
+        
+        // 팝업 내부 탭 클릭
+        document.addEventListener('click', (e) => {
+            const tabBtn = e.target.closest('.tab_btn');
+            if (!tabBtn) return;
+        
+            const tabWrap = tabBtn.closest('.tab_wrap');
+            if (!tabWrap) return;
+        
+            const tabs = tabWrap.querySelectorAll('.tab_btn');
+            const conts = tabWrap.querySelectorAll('.tab_cont');
+            const idx = [...tabs].indexOf(tabBtn);
+        
+            tabs.forEach((t, i) => t.classList.toggle('on', i === idx));
+            conts.forEach((c, i) => c.classList.toggle('on', i === idx));
+        });
+  
+    </script>
 </body>
 </html>

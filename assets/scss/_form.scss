@@ -1,0 +1,123 @@
+
+.field_tit {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    @include mobile {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+}
+
+.f_input {
+    width: 100%;
+   
+    &._ty1 {
+        border: 1px solid $c_line;
+        font-size: 16px;
+        height: 50px;
+        border-radius: 10px;
+        padding: 0 20px;
+        &:focus {
+            //border-color: $c_key;
+            outline: 2px solid  $c_key;
+        }
+
+        @include mobile {
+            font-size: 14px;
+            height: 40px;
+            padding: 0 10px;
+            border-radius: 6px;
+        }
+    }
+}
+
+.f_radio {
+    &_set {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    gap: 7px;
+    user-select: none;
+    cursor: pointer;
+    input[type="radio"] {
+        @include hidden;
+        &:checked {
+            & ~ .f_radio_ico {
+                border-color: $c_key;
+                &::after {
+                    background-color: $c_key;
+                }
+            }
+        }
+    }
+    &_ico {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #ddd;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ddd;
+        }
+    }
+
+    @include mobile {
+        font-size: 14px;
+    }
+}
+
+.f_chk {
+
+    &_set {
+        display: flex;
+        gap: 20px;
+    }
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    gap: 7px;
+    user-select: none;
+    cursor: pointer;
+
+   
+
+    input[type="checkbox"] {
+        @include hidden;
+        &:checked {
+            & ~ .f_chk_ico {
+                border-color: $c_key;
+                background-color: $c_key;
+                background-image: url(/assets/images/f_chk.svg);
+            }
+        }
+    }
+    &_ico {
+        width: 20px;
+        height: 20px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    @include mobile {
+        font-size: 14px;
+    }
+}

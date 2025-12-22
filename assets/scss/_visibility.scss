@@ -26,6 +26,23 @@ br.pc_only {
   display: inline;
 }
 
+/* line break */
+br.m_only_t {
+  display: none;
+}
+br.pc_only_t {
+  display: inline;
+}
+
+@include tablet {
+    br.m_only_t {
+      display: inline;
+    }
+    br.pc_only_t {
+      display: none;
+    }
+}
+
 /* Mobile */
 @include mobile {
   .m_only {

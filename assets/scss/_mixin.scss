@@ -141,3 +141,22 @@ $breakpoint-t3: 1200px;
     position: absolute; 
     white-space: nowrap; 
 }
+
+
+@mixin btn-hover {
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            box-shadow: 0 4px 8px rgba(#000,.16);
+            transform: translateY(-1px);
+        }
+    }
+    &:active {
+        box-shadow: none;
+        transform: translateY(0);
+    }
+    
+    &:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(#000,.4);
+    }
+}

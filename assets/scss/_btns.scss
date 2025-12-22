@@ -1,13 +1,10 @@
 .btn_arrow {
-    
-    
-    
-    
+
     box-sizing: border-box;
     display: inline-flex;
     align-items: center;
     
-    
+    @include btn-hover;
     
     &::after {
         content: '';
@@ -82,10 +79,58 @@
 .btn {
     display: inline-flex;
     align-items: center;
+    @include btn-hover;
+    &._ty1 {
+        justify-content: center;
+
+        &._mid {
+            font-size: 18px;
+            height: 50px;
+            padding: 0 30px;
+            border-radius: 25px;
+            min-width: 188px;
+            font-weight: bold;
+            @include mobile {
+                height: 40px;
+                border-radius: 20px;
+                padding: 0 20px;
+                min-width: 160px;
+                font-size: 14px;
+            }
+        }
+        &._line {
+            border: 1px solid #000;
+            color: #000;
+            background-color: #fff;
+        }
+        &._black {
+            border: 1px solid #000;
+            color: #fff;
+            background-color: #000;
+        }
+        &._key2 {
+            border: 1px solid $c_key2;
+            color: #fff;
+            background-color: $c_key2;
+        }
+    }
     &._ty2 {
         border-radius: 10px;
         padding: 0 30px;
 
+        &._mid {
+            font-size: 18px;
+            height: 50px;
+            padding: 0 30px;
+            min-width: 188px;
+            font-weight: bold;
+            @include mobile {
+                height: 40px;
+                padding: 0 20px;
+                min-width: 160px;
+                font-size: 14px;
+            }
+        }
 
         &._big {
             height: 70px;
@@ -110,6 +155,21 @@
                 background-image: url(../images/arrow_right_w.svg);
             }
             
+        }
+        &._line {
+            border: 1px solid #000;
+            color: #000;
+            background-color: #fff;
+        }
+        &._black {
+            border: 1px solid #000;
+            color: #fff;
+            background-color: #000;
+        }
+        &._key2 {
+            border: 1px solid $c_key2;
+            color: #fff;
+            background-color: $c_key2;
         }
 
         &._blue {
