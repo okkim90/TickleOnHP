@@ -5989,6 +5989,14 @@ body.scroll-locked {
   }
 }
 
+.swiper {
+  position: relative;
+  pointer-events: auto;
+}
+.swiper * {
+  pointer-events: auto;
+}
+
 .header {
   /* =========================
      기본 = 서브
@@ -8366,8 +8374,12 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
 
 .partners_sec_5 .cont_box {
   display: flex;
-  -moz-column-gap: 80px;
-       column-gap: 80px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.partners_sec_5 .cont_box .tit1 {
+  width: clamp(100px, 30vw, 450px);
+  flex-shrink: 0;
 }
 .partners_sec_5 .cont_box + .cont_box {
   margin-top: 120px;
@@ -8389,19 +8401,15 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
     padding-top: 0;
   }
 }
-.partners_sec_5 .cont_box4 {
-  flex-wrap: wrap;
-  row-gap: 40px;
-}
 .partners_sec_5 .cont_box4 .desc_box {
   flex: 100%;
   display: flex;
-  gap: 80px;
   flex-wrap: wrap;
   padding-top: 0;
 }
 .partners_sec_5 .cont_box4 .list_star {
-  flex: 1;
+  width: 100%;
+  margin-bottom: 40px;
 }
 .partners_sec_5 .cont_box4 .apply_wrap {
   flex: 1.6;
@@ -8439,11 +8447,19 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
   }
   .partners_sec_5 .cont_box4 .apply_wrap {
     margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 40px 60px;
+  }
+  .partners_sec_5 .cont_box4 .apply_sec .desc {
+    padding: 20px 0 36px;
   }
 }
 @media (max-width: 767px) {
   .partners_sec_5 .cont_box4 {
     row-gap: 26px;
+  }
+  .partners_sec_5 .cont_box4 .list_star {
+    margin-bottom: 0;
   }
   .partners_sec_5 .cont_box4 .apply_wrap {
     flex-wrap: wrap;

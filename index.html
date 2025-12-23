@@ -9,9 +9,10 @@
     <!--[D] fonts-->
     <link rel="preload" href="./assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
-
+    
     <!--[D] 공통적용 js&css-->
     <link rel="stylesheet" href="./assets/css/common.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <script type="text/javascript" src="./assets/js/common.js" defer></script>
     <script type="text/javascript" src="./assets/js/scrollAni.js" defer></script>
@@ -196,7 +197,7 @@
                             <h2 class="tit1">티클온 전문 서비스</h2>
                         </div>
                         <div class="service_slide_wrap  aniBox ani_bot">
-                            <div class="service_slide">
+                            <div class="service_slide swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide slide_item">
                                         <div class="img_box">
@@ -405,7 +406,7 @@
                             <h2 class="tit1">티클온과 함께한 고객사</h2>
                         </div> 
                         <div class="client_slide_wrap aniBox ani_bot">
-                            <div class="client_slide">
+                            <div class="client_slide swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide slide_item">
                                         <div class="img_box">
@@ -603,138 +604,120 @@
             <div class="footer_copy">ⓒTICKLE. All Rights Reserved.</div>
         </footer>
     </div>
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
-    <script src="./assets/js/swiper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const service_slide_wrap = document.querySelector('.service_slide_wrap');
-        const service_slide_swiperEl = wrap?.querySelector('.service_slide');
-
-        if (service_slide_wrap && service_slide_swiperEl) {
-            const service_swiper = new Swiper(service_slide_swiperEl, {
-                loop: true,
-                spaceBetween: 20,
-                slidesPerView: 5,
-                loopAdditionalSlides: 10,
-                slidesPerGroup: 1,
-                navigation: {
-                    nextEl: wrap.querySelector('.service_slide_next'),
-                    prevEl: wrap.querySelector('.service_slide_prev'),
-                },
-                breakpoints: {          
-                    480: {
-                        slidesPerView: 1.5,
-                        spaceBetween: 12
-                    }, 
-                    768: {
-                        slidesPerView: 2,
-                    },   
-                    1024: {
-                        slidesPerView: 3,
-                    },        
-                    1200: {
-                        slidesPerView: 4,
-                    },     
-                },
-            });
-            const updateImgHeight = () => {
-                const active = service_slide_swiperEl.querySelector('.service_slide .swiper-slide-active .img_box')
-                || service_slide_swiperEl.querySelector('.service_slide .swiper-slide .img_box');
-
-                if (!active) return;
-
-                const h = active.getBoundingClientRect().height;
-                service_slide_wrap.style.setProperty('--imgH', `${Math.ceil(h)}px`);
-            };
-            updateImgHeight();
-
-            service_swiper.on('slideChange', updateImgHeight);
-            service_swiper.on('resize', updateImgHeight);
-
-            const ro = new ResizeObserver(updateImgHeight);
-            ro.observe(service_slide_wrap);
-
-            window.addEventListener('load', updateImgHeight);
+        function createSwiper(el, options) {
+            if (!el) return null;
+            return new Swiper(el, options);
         }
-
-
+    </script>
+    <script>
+        (() => {
+          const wrap = document.querySelector('.service_slide_wrap');
+          if (!wrap) return;
+        
+          const slider = wrap.querySelector('.service_slide');
+          if (!slider) return;
+        
+          const swiper = createSwiper(slider, {
+            loop: true,
+            slidesPerView: 1.5,
+            slidesPerGroup: 1,
+            spaceBetween: 12,
+            autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            },
+            navigation: {
+              nextEl: wrap.querySelector('.service_slide_next'),
+              prevEl: wrap.querySelector('.service_slide_prev'),
+            },
+            breakpoints: {
+              480: { slidesPerView: 2, spaceBetween: 12 },
+              768: { slidesPerView: 3,  spaceBetween: 20 },
+              1024:{ slidesPerView: 4 },
+            },
+          });
+        
+          const updateImgHeight = () => {
+            const active =
+              slider.querySelector('.swiper-slide-active .img_box') ||
+              slider.querySelector('.swiper-slide .img_box');
+        
+            if (!active) return;
+        
+            wrap.style.setProperty(
+              '--imgH',
+              `${Math.ceil(active.getBoundingClientRect().height)}px`
+            );
+          };
+        
+          updateImgHeight();
+          swiper.on('slideChange', updateImgHeight);
+          swiper.on('resize', updateImgHeight);
+        
+          new ResizeObserver(updateImgHeight).observe(wrap);
+          window.addEventListener('load', updateImgHeight);
+        })();
+    </script>
+        
+    <script>
         (() => {
             const wrap = document.querySelector('.client_slide_wrap');
             if (!wrap) return;
           
             const slider = wrap.querySelector('.client_slide');
-            const wrapper = slider.querySelector('.swiper-wrapper');
+            const wrapper = slider?.querySelector('.swiper-wrapper');
             const prevBtn = wrap.querySelector('.client_slide_prev');
             const nextBtn = wrap.querySelector('.client_slide_next');
+            if (!slider || !wrapper) return;
           
             let swiper = null;
           
-            const slideCount = () =>
-              wrapper.querySelectorAll('.swiper-slide').length;
+            const slideCount = () => wrapper.querySelectorAll('.swiper-slide').length;
           
-            const getConfig = () => {
-              const w = window.innerWidth;
-          
-              if (w >= 1024) return { view: 5, gap: 20, min: 6 };
-              if (w >= 768)  return { view: 4, gap: 16, min: 5 };
-              return { view: 2, gap: 12, min: 3 };
-            };
-          
-            const enableSwiper = ({ view, gap }) => {
+            const enable = () => {
               wrap.classList.remove('is-static');
           
               swiper = new Swiper(slider, {
-                slidesPerView: view,
-                slidesPerGroup: 1,
-                spaceBetween: gap,
-                loop: true,                 // ✅ loop 추가
-                loopAdditionalSlides: view, // ✅ 끊김 방지
+                loop: true,
                 watchOverflow: true,
-                navigation: {
-                  prevEl: prevBtn,
-                  nextEl: nextBtn,
+                autoplay: { delay: 2500, disableOnInteraction: false, pauseOnMouseEnter: true },
+                navigation: { prevEl: prevBtn, nextEl: nextBtn },
+          
+                slidesPerView: 2,
+                spaceBetween: 12,
+                breakpoints: {
+                  768:  { slidesPerView: 4, spaceBetween: 16 },
+                  1024: { slidesPerView: 5, spaceBetween: 20 },
                 },
               });
             };
           
-            const disableSwiper = () => {
-              if (swiper) {
-                swiper.destroy(true, true);
-                swiper = null;
-              }
+            const disable = () => {
+              if (!swiper) return;
+              swiper.destroy(true, true);
+              swiper = null;
               wrap.classList.add('is-static');
             };
           
             const sync = () => {
-              const cfg = getConfig();
-              const count = slideCount();
+              const w = window.innerWidth;
+              const min = (w >= 1024) ? 6 : (w >= 768) ? 5 : 3;
           
-              if (count >= cfg.min) {
-                if (!swiper) {
-                  enableSwiper(cfg);
-                } else {
-                  swiper.params.slidesPerView = cfg.view;
-                  swiper.params.spaceBetween = cfg.gap;
-                  swiper.update();
-                }
-              } else {
-                disableSwiper();
-              }
+              slideCount() >= min ? (swiper ? swiper.update() : enable()) : disable();
             };
           
-            // 최초 실행
             sync();
-          
-            // resize 대응
-            let timer;
             window.addEventListener('resize', () => {
-              clearTimeout(timer);
-              timer = setTimeout(sync, 150);
+              clearTimeout(sync._t);
+              sync._t = setTimeout(sync, 150);
             });
           })();
           
-          
-       
     </script>
+            
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             if (!document.body.classList.contains('page-home')) return;
@@ -763,17 +746,12 @@
               ticking = true;
               requestAnimationFrame(update);
             };
-          
-            // load 초기 상태
             update();
-          
-            // scroll
+
             window.addEventListener('scroll', onScroll, { passive: true });
-          
-            // resize (헤더 높이/레이아웃 변경 대응)
+            
             window.addEventListener('resize', update);
           
-            // 폰트 로딩으로 높이 변할 수 있으면 보강(확실하지 않음이지만 흔함)
             if (document.fonts?.ready) document.fonts.ready.then(update);
           });
     </script>

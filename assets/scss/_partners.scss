@@ -207,7 +207,11 @@
 .partners_sec_5 {
     .cont_box {
         display: flex;
-        column-gap: 80px;
+        .tit1 {
+            width: clamp(100px, 30vw, 450px);
+            flex-shrink: 0;
+        }
+        column-gap: 50px;
         & + .cont_box {
             margin-top: 120px;
         }
@@ -230,22 +234,23 @@
         
     }
     .cont_box4 {
-        flex-wrap: wrap;
-        row-gap: 40px;
+        
         .desc_box {
             flex: 100%;
             display: flex;
-            gap: 80px;
+            
             flex-wrap: wrap;
             padding-top: 0;
         }
         .list_star {
-            flex: 1;
+            width: 100%;
+            margin-bottom: 40px;
         }
         .apply_wrap {
             flex: 1.6;
             display: flex;
             gap: 80px;
+           
         }
         .apply_sec {
             flex: 1;
@@ -280,10 +285,20 @@
             }
             .apply_wrap {
                 margin-top: 40px;
+                flex-wrap: wrap;
+                gap: 40px 60px;
+            }
+            .apply_sec {
+                .desc {
+                    padding: 20px 0 36px;
+                }
             }
         }
         @include mobile {
             row-gap: 26px;
+            .list_star {
+                margin-bottom: 0;
+            }
             .apply_wrap {
                 flex-wrap: wrap;
                 row-gap: 30px;
