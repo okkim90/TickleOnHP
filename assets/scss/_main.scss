@@ -5,6 +5,12 @@
     background-position: center center;
     background-size: cover;
     position: relative;
+    &_cont {
+        height: 100%;
+        position: relative;
+        width: 1920px;
+        margin: 0 auto;
+    }
     &_txt {
         color: #fff;
         position: absolute;
