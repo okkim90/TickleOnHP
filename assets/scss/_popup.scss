@@ -65,6 +65,16 @@
                 margin-top: 27px;
             }
         }
+        .field_tit {
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            @include mobile {
+                font-size: 16px;
+                margin-bottom: 8px;
+            }
+        }
     }
 
     &_agreement {

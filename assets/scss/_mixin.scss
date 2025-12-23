@@ -6,6 +6,7 @@ $breakpoint-m: 767px;
 $breakpoint-t: 1024px;
 $breakpoint-t2: 1400px;
 $breakpoint-t3: 1200px;
+$breakpoint-t4: 1100px;
 
 @mixin hover_true {
     @media (hover: hover) and (pointer: fine) {
@@ -34,6 +35,11 @@ $breakpoint-t3: 1200px;
 
 @mixin tablet3 {
     @media (max-width: #{$breakpoint-t3}) {
+        @content;
+    }
+}
+@mixin tablet4 {
+    @media (max-width: #{$breakpoint-t4}) {
         @content;
     }
 }
@@ -159,4 +165,28 @@ $breakpoint-t3: 1200px;
         outline: none;
         box-shadow: 0 0 0 2px rgba(#000,.4);
     }
+}
+
+@function tint($color, $percent) {
+    @return mix(white, $color, $percent);
+}
+
+@function shade($color, $percent) {
+    @return mix(black, $color, $percent);
+}
+
+@function saturate-by($color, $percent) {
+    @return color.scale($color, $saturation: $percent);
+}
+
+@function desaturate-by($color, $percent) {
+    @return color.scale($color, $saturation: -$percent);
+}
+
+@function emphasis($color, $lightness: 0%, $saturation: 0%) {
+    @return color.scale(
+      $color,
+      $lightness: $lightness,
+      $saturation: $saturation
+    );
 }

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tickle On</title>
+   
+    <!--[D] fonts-->
+    <link rel="" href="/assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="" href="/assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!--[D] 공통적용 js&css-->
+    <link rel="stylesheet" href="/assets/css/common.min.css">
+
+    <script type="text/javascript" src="/assets/js/common.js" defer></script>
+    <script type="text/javascript" src="/assets/js/scrollAni.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <div class="header_inner">
+                <h1 class="header_logo">
+                    <a href="/">
+                        <div class="ico_logo"></div>
+                        <span class="blind">Tickle On</span>
+                    </a>
+                </h1>
+                <nav id="nav" class="nav">
+                    <div class="header_btns">
+                        <a href="" class="header_btn _partners">티클 파트너스</a>
+                        <a href="" class="header_btn _inquiry">견적문의</a>
+                    </div>
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">회사소개</span>
+                                    <span class="nav_desc">ABOUT US</span>
+                                </div> 
+                            </a>
+                        </li>
+                        <li class="nav_item has_dep">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">서비스</span>
+                                    <span class="nav_desc">SERVICE</span>
+                                </div>
+                            </a>
+                            <div class="service_panel">
+                                <ul class="service_panel_list">
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="../assets/images/service1.svg" alt="">
+                                            <strong>건물관리서비스</strong>
+                                        </a>               
+                                    </li>
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="../assets/images/service2.svg" alt="">
+                                            <strong>호텔관리서비스</strong>
+                                        </a>  
+                                    </li>
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="../assets/images/service3.svg" alt="">
+                                            <strong>통합 경리회계 아웃소싱</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">성과 &middot; 사례</span>
+                                    <span class="nav_desc">ACHIEVEMENT</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">뉴스</span>
+                                    <span class="nav_desc">NEWS</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_btns">
+                    <a href="" class="header_btn _partners">티클 파트너스</a>
+                    <a href="" class="header_btn _inquiry">견적문의</a>
+                </div>
+                <button type="button" 
+                class="btn_nav_toggle"
+                aria-label="메뉴 열기"
+                aria-expanded="false"
+                aria-controls="nav">
+                    <div class="bars">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+        <main id="container">
+            <section class="sub_visual _contact">
+                <h2 class="tit">전문가 상담을 통한 맞춤형 관리 플랜 제안</h2>
+            </section>
+            <section class="contents _contact">
+                <section class="contact_sec">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">견적 문의 </h2>
+                            <p class="desc">건물관리에 필요한 모든 서비스를 한 곳에서! <br> 투명한 견적과 스마트한 작업운영으로 믿을수있는 서비스 품질을 보장합니다.  </p>
+                        </div>
+                        <form action="" class="contact_form  aniBox ani_bot">
+                            <div class="contact_field ty_input">
+                                <label for="company" class="field_tit">고객/기업명 <span class="ico_required fc_key">*</span></label>
+                                <input type="text" id="company" class="f_input" placeholder="예) 티클">
+                            </div>
+                            <div class="contact_field ty_input">
+                                <label for="name" class="field_tit">이름 <span class="ico_required fc_key">*</span></label>
+                                <input type="text" id="name" class="f_input" placeholder="담당자명을 입력해주세요 ">
+                            </div>
+                            <div class="contact_field ty_input">
+                                <label for="email" class="field_tit">이메일 <span class="ico_required fc_key">*</span></label>
+                                <input type="email" id="email" class="f_input" placeholder="@포함 이메일을 정확히 입력해 주세요 ">
+                            </div>
+                            <div class="contact_field">
+                                <div class="field_tit">요청분야 <span class="ico_required fc_key">*</span></div>
+                                <div class="f_radio_set">
+                                    <label class="f_radio">
+                                        <input type="radio" name="serviceType" checked>
+                                        <span class="f_radio_ico"></span>
+                                        <span class="f_radio_txt">티클온 빌딩(건물관리 용역 전반 및 솔루션 이용 문의)</span>
+                                    </label>
+                                    <label class="f_radio">
+                                        <input type="radio" name="serviceType">
+                                        <span class="f_radio_ico"></span>
+                                        <span class="f_radio_txt">티클온 스테이(호텔관리 용역 전반 및 솔루션 이용 문의)</span>
+                                    </label>
+                                    <label class="f_radio">
+                                        <input type="radio" name="serviceType">
+                                        <span class="f_radio_ico"></span>
+                                        <span class="f_radio_txt">티클온 어카운트(통합 경리회계 아웃소싱 문의)</span>
+                                    </label>
+                                    <label class="f_radio">
+                                        <input type="radio" name="serviceType">
+                                        <span class="f_radio_ico"></span>
+                                        <span class="f_radio_txt">티클온 파트너스(영업파트너 등록 및 기업추천 문의)</span>
+                                    </label>
+                                    <label class="f_radio">
+                                        <input type="radio" name="serviceType">
+                                        <span class="f_radio_ico"></span>
+                                        <span class="f_radio_txt">기타 전문서비스(방역, 안전점검, 실내공기 관리, 사전 하자점검, 안전보건 선임대행 등)</span>
+                                    </label>
+                                </div>   
+                            </div>
+                            <div class="contact_field">
+                                <div class="field_tit">상세 문의사항 <span class="ico_required fc_key">*</span></div>
+                                <textarea name="" id="" class="f_ta" placeholder="문의하실 내용을 입력해주세요.&#10;신속하게검토하여 연락드리겠습니다. "></textarea>
+                            </div>
+                            <div class="contact_agreement">
+                                <label class="f_chk">
+                                    <input type="checkbox">
+                                    <span class="f_chk_ico"></span>
+                                    <span class="f_chk_txt">개인정보 수집 및 이용 동의 <span class="fc_key">(필수)</span></span>
+                                </label>
+                                <p class="num fc_key">빠른문의 : 1533-3910</p>
+                            </div>
+                            <button type="submit" class="btn_sumit btn _ty1 _big _key w100">견적 문의하기</button>
+                        </form>
+
+                        <ul class="contact_email_list">
+                            <li class="contact_email_item  aniBox ani_bot">
+                                <div class="ico_box"></div>
+                                <div class="txt_box">
+                                    <strong class="tit">시설 운영 상담</strong>
+                                    <p class="email">info@tickle.co.kr</p>
+                                </div>
+                            </li>
+                            <li class="contact_email_item  aniBox ani_bot">
+                                <div class="ico_box"></div>
+                                <div class="txt_box">
+                                    <strong class="tit">제휴 마케팅 상담</strong>
+                                    <p class="email">marketing@tickle.co.kr</p>
+                                </div>
+                            </li>
+                            <li class="contact_email_item  aniBox ani_bot">
+                                <div class="ico_box"></div>
+                                <div class="txt_box">
+                                    <strong class="tit">기술문의</strong>
+                                    <p class="email">app@tickle.co.kr</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer_inner">
+                <div class="footer_logo">
+                    <img src="../assets/images/logo.svg" alt="">
+                </div>
+                <div class="footer_sec sec1">
+                    <ul class="footer_nav">
+                        <li><a href="">서비스 이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                    </ul>
+                    <div class="footer_info">
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>대표이사</b> 이상부</span>
+                            <span class="footer_info_item"><b>주소</b> 경기도 용인시 수지구 법조로 215, 3층</span>
+                        </div>
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>사업자</b> 등록번호 463-81-00234</span>
+                            <span class="footer_info_item"><b>통신판매업</b> 신고번호 2023-용인수지-0417호</span>
+                        </div>
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>대표전화</b> 1533-3910</span>
+                            <span class="footer_info_item"><b>이메일</b> info@tickle.co.kr </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_sec sec2">
+                    <div class="footer_branch">
+                        <div class="btn_trigger">Family site</div>
+                        <ul class="footer_branch_list">
+                            <li><a href="" target="_blank">Family site111</a></li>
+                            <li><a href="" target="_blank">Family site222</a></li>
+                            <li><a href="" target="_blank">Family site333</a></li>
+                            <li><a href="" target="_blank">Family site444</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_sns">
+                        <span>Follow Us</span>
+                        <a href="" class="footer_sns_btn ty_blog"><span class="blind">blog</span></a>
+                        <a href="" class="footer_sns_btn ty_fb"><span class="blind">facebook</span></a>
+                        <a href="" class="footer_sns_btn ty_insta"><span class="blind">instagram</span></a>
+                        <a href="" class="footer_sns_btn ty_ytb"><span class="blind">youtube</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">ⓒTICKLE. All Rights Reserved.</div>
+        </footer>
+    </div>
+</body>
+</html>

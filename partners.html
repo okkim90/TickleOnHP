@@ -493,18 +493,19 @@
             if (!popup) return;
         
             popup.classList.add('on');
+            document.body.classList.add('scroll-locked');
         
             // 탭 선택 (있을 때만)
             const tabIndex = Number(btn.dataset.tab);
             if (!isNaN(tabIndex)) {
-            const tabWrap = popup.querySelector('.tab_wrap');
-            if (!tabWrap) return;
-        
-            const tabs = tabWrap.querySelectorAll('.tab_btn');
-            const conts = tabWrap.querySelectorAll('.tab_cont');
-        
-            tabs.forEach((t, i) => t.classList.toggle('on', i === tabIndex));
-            conts.forEach((c, i) => c.classList.toggle('on', i === tabIndex));
+                const tabWrap = popup.querySelector('.tab_wrap');
+                if (!tabWrap) return;
+            
+                const tabs = tabWrap.querySelectorAll('.tab_btn');
+                const conts = tabWrap.querySelectorAll('.tab_cont');
+            
+                tabs.forEach((t, i) => t.classList.toggle('on', i === tabIndex));
+                conts.forEach((c, i) => c.classList.toggle('on', i === tabIndex));
             }
         });
         
@@ -515,6 +516,10 @@
         
             const popup = closeBtn.closest('.popup');
             popup?.classList.remove('on');
+
+            if (!document.querySelector('.popup.on')) {
+                document.body.classList.remove('scroll-locked');
+            }
         });
         
         // 팝업 내부 탭 클릭

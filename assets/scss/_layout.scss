@@ -1,3 +1,7 @@
+body.scroll-locked {
+    overflow: hidden;
+}
+
 #wrap {
     overflow: hidden;
 }
@@ -46,6 +50,42 @@
             left: 0;
             top: 0;
             line-height: 1.8em;
+        }
+    }
+}
+
+.sub_visual {
+    height: 500px;
+    padding-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    &._contact {
+        background-image: url(/assets/images/sub/sub_visual_contact.png);
+        
+    }
+    .tit {
+        font-size: 40px;
+        font-weight: bold;
+        color: #fff;
+        padding: 0 30px;
+        line-height: 1.4;
+    }
+
+    @include tablet {
+        padding-top: 90px;
+       
+    }
+    @include mobile {
+        padding-top: 60px;
+        height: 320px;
+        .tit {
+            font-size: 28px;
+            
         }
     }
 }

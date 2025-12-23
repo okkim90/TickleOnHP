@@ -98,6 +98,21 @@
                 font-size: 14px;
             }
         }
+        &._big {
+            font-size: 24px;
+            height: 70px;
+            padding: 0 30px;
+            border-radius: 35px;
+            min-width: 188px;
+            font-weight: bold;
+            @include mobile {
+                height: 50px;
+                border-radius: 25px;
+                padding: 0 20px;
+                min-width: 160px;
+                font-size: 18px;
+            }
+        }
         &._line {
             border: 1px solid #000;
             color: #000;
@@ -107,6 +122,11 @@
             border: 1px solid #000;
             color: #fff;
             background-color: #000;
+        }
+        &._key {
+            border: 1px solid $c_key;
+            color: #fff;
+            background-color: $c_key;
         }
         &._key2 {
             border: 1px solid $c_key2;
