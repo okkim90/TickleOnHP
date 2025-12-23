@@ -5965,7 +5965,7 @@ body.scroll-locked {
   background-size: cover;
 }
 .sub_visual._contact {
-  background-image: url(/assets/images/sub/sub_visual_contact.png);
+  background-image: url(../images/sub/sub_visual_contact.png);
 }
 .sub_visual .tit {
   font-size: 40px;
@@ -7058,7 +7058,7 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
 .popup_close {
   width: 50px;
   height: 50px;
-  background-image: url(/assets/images/sub/popup_close.png);
+  background-image: url(../images/sub/popup_close.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -7307,7 +7307,7 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
 .f_chk input[type=checkbox]:checked ~ .f_chk_ico {
   border-color: #1F64DA;
   background-color: #1F64DA;
-  background-image: url(/assets/images/f_chk.svg);
+  background-image: url(../images/f_chk.svg);
 }
 .f_chk_ico {
   width: 20px;
@@ -7926,11 +7926,11 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
   background-size: contain;
 }
 .client_slide_btn.client_slide_prev {
-  background-image: url(/assets/images/slide_prev.svg);
+  background-image: url(../images/slide_prev.svg);
   left: 0;
 }
 .client_slide_btn.client_slide_next {
-  background-image: url(/assets/images/slide_next.svg);
+  background-image: url(../images/slide_next.svg);
   right: 0;
 }
 @media (max-width: 1024px) {
@@ -7997,7 +7997,7 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
   position: absolute;
   width: 45px;
   height: 28px;
-  background-image: url(/assets/images/dq_open.png);
+  background-image: url(../images/dq_open.png);
   background-repeat: no-repeat;
   background-position: center center;
   left: 50%;
@@ -8010,7 +8010,7 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
   position: absolute;
   width: 45px;
   height: 28px;
-  background-image: url(/assets/images/dq_close.png);
+  background-image: url(../images/dq_close.png);
   background-repeat: no-repeat;
   background-position: center center;
   left: 50%;
@@ -8076,7 +8076,7 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
 }
 
 .main_estimate {
-  background-image: url(/assets/images/main_estimate_bg.png);
+  background-image: url(../images/main_estimate_bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   padding: 75px 0 85px;
@@ -8272,7 +8272,7 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
 }
 
 .partners_sec_4 {
-  background-image: url(/assets/images/sub/partner_process_bg.png);
+  background-image: url(../images/sub/partner_process_bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -8308,16 +8308,16 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
   }
 }
 .partners_sec_4 .partner_process_item._item1 .inner_box {
-  background-image: url(/assets/images/sub/partner_process01.png);
+  background-image: url(../images/sub/partner_process01.png);
 }
 .partners_sec_4 .partner_process_item._item2 .inner_box {
-  background-image: url(/assets/images/sub/partner_process02.png);
+  background-image: url(../images/sub/partner_process02.png);
 }
 .partners_sec_4 .partner_process_item._item3 .inner_box {
-  background-image: url(/assets/images/sub/partner_process03.png);
+  background-image: url(../images/sub/partner_process03.png);
 }
 .partners_sec_4 .partner_process_item._item4 .inner_box {
-  background-image: url(/assets/images/sub/partner_process04.png);
+  background-image: url(../images/sub/partner_process04.png);
 }
 .partners_sec_4 .partner_process .inner_box {
   position: relative;
@@ -8679,7 +8679,7 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
   height: 90px;
   border-radius: 50%;
   background-color: #F2F2F2;
-  background-image: url(/assets/images/sub/ico_contact.svg);
+  background-image: url(../images/sub/ico_contact.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }

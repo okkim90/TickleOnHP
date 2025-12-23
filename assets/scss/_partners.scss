@@ -122,7 +122,7 @@
 }
 
 .partners_sec_4 {
-    background-image: url(/assets/images/sub/partner_process_bg.png);
+    background-image: url(../images/sub/partner_process_bg.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -149,7 +149,7 @@
             @for $i from 1 through 4 {
                 &._item#{$i} {
                     .inner_box {
-                        background-image: url(/assets/images/sub/partner_process0#{$i}.png);
+                        background-image: url(../images/sub/partner_process0#{$i}.png);
                     }
                 }
             }
