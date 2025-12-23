@@ -160,7 +160,7 @@
 /* Inter Variable */
 @font-face {
   font-family: "Inter";
-  src: url("/assets/fonts/InterVariable.woff2") format("woff2-variations");
+  src: url("../fonts/InterVariable.woff2") format("woff2-variations");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -168,7 +168,7 @@
 /* Pretendard Variable */
 @font-face {
   font-family: "Pretendard";
-  src: url("/assets/fonts/PretendardVariable.woff2") format("woff2-variations");
+  src: url("../fonts/PretendardVariable.woff2") format("woff2-variations");
   font-weight: 45 920;
   font-style: normal;
   font-display: swap;
