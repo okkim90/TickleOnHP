@@ -157,6 +157,7 @@
     padding: 80px 0;
     display: flex;
     margin: 0 -40px;
+    justify-content: center;
     @include tablet4 { 
         flex-direction: column;
         margin: 0;

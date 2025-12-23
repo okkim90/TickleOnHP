@@ -8642,6 +8642,7 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
   padding: 80px 0;
   display: flex;
   margin: 0 -40px;
+  justify-content: center;
 }
 @media (max-width: 1100px) {
   .contact_email_list {
