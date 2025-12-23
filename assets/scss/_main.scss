@@ -623,7 +623,20 @@
             background-size: auto 20px;
         }
     }
-    
+    .slide_item {
+        height: auto;
+        .img_box {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ddd ;
+            border-radius: 10px;
+            text-align: center;
+            padding: 10px;
+            
+        }
+    }
 }
 
 .main_review {

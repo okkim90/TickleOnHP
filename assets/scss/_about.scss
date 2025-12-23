@@ -1,0 +1,159 @@
+.about_sec1 {
+    .value_list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 60px;
+        align-items: center;
+        justify-content: center;
+
+        @include tablet {
+            gap: 0 40px;
+        }
+        @include mobile {
+            gap: 20px 30px;
+        }
+    }
+    .value_item {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        
+        @for $i from 1 through 3 {
+            &#{$i} {
+                background-image: url(../images/sub/about_img#{$i}.png);
+            }
+        }
+        .txt_box {
+            padding: 30px;
+        }
+        .tit {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .desc {
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        @include tablet {
+            width: 320px;
+            height: 320px;
+        }
+        @include mobile {
+            width: 280px;
+            height: 280px;
+            .tit {
+                font-size: 24px;
+            }
+            .desc {
+                font-size: 14px;
+                margin-top: 20px;
+            }
+        }
+    }
+    .btn_area {
+        margin-top: 60px;
+        .btn_arrow {
+            width: 300px;
+            max-width: 100%;
+        }
+    }
+}
+
+.about_sec2 {
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+    .cert_wrap {
+        display: flex;
+        gap: 30px;
+        position: relative;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            height: 100%;
+            right: 100%;
+            top: 0;
+            width: 100vw;
+            z-index: 10;
+        }
+    }
+    .cert_tit {
+        width: 400px;
+        //height: 400px;
+        border-radius: 10px;
+        background-color: $c_bg;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 10;
+    }
+    .cert_util {
+        display: flex;
+        .txt {
+            font-size: 18px;
+        }
+        .cert_ctrls {
+            display: flex;
+            gap: 20px;
+        }
+        .cert_slide_btn {
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 8px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 1px solid #e6e6e6;
+            &.cert_slide_prev {
+                background-image: url(../images/sub/slide_prev.png);
+            }
+            &.cert_slide_next {
+                background-image: url(../images/sub/slide_next.png);
+            }
+            
+        }
+    }
+    /* ===============================
+     Swiper 영역
+    =============================== */
+    .cert_slide {
+        overflow: visible; // ✅ bleed 핵심
+        min-width: 0;
+        position: relative;
+        
+       
+        .swiper-wrapper { flex-wrap: nowrap; }
+
+        .swiper-slide {
+            width: 280px;   // ✅ 고정 카드
+            height: auto;   // Swiper inline height 방해 방지
+            flex: 0 0 auto;
+        }
+
+        .img_box {
+            width: 280px;
+            height: 400px;
+            padding: 10px;
+            border: 1px solid $c_line;
+            border-radius: 10px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

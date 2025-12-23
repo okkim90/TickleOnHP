@@ -5933,8 +5933,19 @@ body.scroll-locked {
 }
 @media (max-width: 767px) {
   .contents {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+.contents .sub_sec {
+  padding-bottom: 120px;
+}
+.contents .sub_sec:last-of-type {
+  padding-bottom: 0;
+}
+@media (max-width: 767px) {
+  .contents .sub_sec {
+    padding-bottom: 70px;
   }
 }
 
@@ -5966,6 +5977,9 @@ body.scroll-locked {
 }
 .sub_visual._contact {
   background-image: url(../images/sub/sub_visual_contact.png);
+}
+.sub_visual._about {
+  background-image: url(../images/sub/sub_visual_about.png);
 }
 .sub_visual .tit {
   font-size: 40px;
@@ -7960,6 +7974,19 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
     background-size: auto 20px;
   }
 }
+.client_slide .slide_item {
+  height: auto;
+}
+.client_slide .slide_item .img_box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
 
 .main_review {
   background-color: #F2FAFF;
@@ -8729,6 +8756,168 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
   .contact_email_list .txt_box .num {
     font-size: 16px;
   }
+}
+
+.about_sec1 .value_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 60px;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .about_sec1 .value_list {
+    gap: 0 40px;
+  }
+}
+@media (max-width: 767px) {
+  .about_sec1 .value_list {
+    gap: 20px 30px;
+  }
+}
+.about_sec1 .value_item {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.about_sec1 .value_item1 {
+  background-image: url(../images/sub/about_img1.png);
+}
+.about_sec1 .value_item2 {
+  background-image: url(../images/sub/about_img2.png);
+}
+.about_sec1 .value_item3 {
+  background-image: url(../images/sub/about_img3.png);
+}
+.about_sec1 .value_item .txt_box {
+  padding: 30px;
+}
+.about_sec1 .value_item .tit {
+  font-size: 30px;
+  font-weight: bold;
+}
+.about_sec1 .value_item .desc {
+  font-size: 16px;
+  margin-top: 30px;
+}
+@media (max-width: 1024px) {
+  .about_sec1 .value_item {
+    width: 320px;
+    height: 320px;
+  }
+}
+@media (max-width: 767px) {
+  .about_sec1 .value_item {
+    width: 280px;
+    height: 280px;
+  }
+  .about_sec1 .value_item .tit {
+    font-size: 24px;
+  }
+  .about_sec1 .value_item .desc {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}
+.about_sec1 .btn_area {
+  margin-top: 60px;
+}
+.about_sec1 .btn_area .btn_arrow {
+  width: 300px;
+  max-width: 100%;
+}
+
+.about_sec2 {
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+  /* ===============================
+   Swiper 영역
+  =============================== */
+}
+.about_sec2 .cert_wrap {
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+.about_sec2 .cert_wrap::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  right: 100%;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
+.about_sec2 .cert_tit {
+  width: 400px;
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+}
+.about_sec2 .cert_util {
+  display: flex;
+}
+.about_sec2 .cert_util .txt {
+  font-size: 18px;
+}
+.about_sec2 .cert_util .cert_ctrls {
+  display: flex;
+  gap: 20px;
+}
+.about_sec2 .cert_util .cert_slide_btn {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+}
+.about_sec2 .cert_util .cert_slide_btn.cert_slide_prev {
+  background-image: url(../images/sub/slide_prev.png);
+}
+.about_sec2 .cert_util .cert_slide_btn.cert_slide_next {
+  background-image: url(../images/sub/slide_next.png);
+}
+.about_sec2 .cert_slide {
+  overflow: visible;
+  min-width: 0;
+  position: relative;
+}
+.about_sec2 .cert_slide .swiper-wrapper {
+  flex-wrap: nowrap;
+}
+.about_sec2 .cert_slide .swiper-slide {
+  width: 280px;
+  height: auto;
+  flex: 0 0 auto;
+}
+.about_sec2 .cert_slide .img_box {
+  width: 280px;
+  height: 400px;
+  padding: 10px;
+  border: 1px solid #E6E6E6;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about_sec2 .cert_slide .img_box img {
+  max-width: 100%;
 }
 
 /* anibox */

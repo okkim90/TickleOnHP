@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tickle On</title>
+   
+    <!--[D] fonts-->
+    <link rel="" href="./assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="" href="./assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!--[D] 공통적용 js&css-->
+    <link rel="stylesheet" href="./assets/css/common.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script type="text/javascript" src="./assets/js/common.js" defer></script>
+    <script type="text/javascript" src="./assets/js/scrollAni.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <div class="header_inner">
+                <h1 class="header_logo">
+                    <a href="./">
+                        <div class="ico_logo"></div>
+                        <span class="blind">Tickle On</span>
+                    </a>
+                </h1>
+                <nav id="nav" class="nav">
+                    <div class="header_btns">
+                        <a href="" class="header_btn _partners">티클 파트너스</a>
+                        <a href="" class="header_btn _inquiry">견적문의</a>
+                    </div>
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">회사소개</span>
+                                    <span class="nav_desc">ABOUT US</span>
+                                </div> 
+                            </a>
+                        </li>
+                        <li class="nav_item has_dep">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">서비스</span>
+                                    <span class="nav_desc">SERVICE</span>
+                                </div>
+                            </a>
+                            <div class="service_panel">
+                                <ul class="service_panel_list">
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service1.svg" alt="">
+                                            <strong>건물관리서비스</strong>
+                                        </a>               
+                                    </li>
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service2.svg" alt="">
+                                            <strong>호텔관리서비스</strong>
+                                        </a>  
+                                    </li>
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service3.svg" alt="">
+                                            <strong>통합 경리회계 아웃소싱</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">성과 &middot; 사례</span>
+                                    <span class="nav_desc">ACHIEVEMENT</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">뉴스</span>
+                                    <span class="nav_desc">NEWS</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_btns">
+                    <a href="" class="header_btn _partners">티클 파트너스</a>
+                    <a href="" class="header_btn _inquiry">견적문의</a>
+                </div>
+                <button type="button" 
+                class="btn_nav_toggle"
+                aria-label="메뉴 열기"
+                aria-expanded="false"
+                aria-controls="nav">
+                    <div class="bars">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+        <main id="container">
+            <section class="sub_visual _about">
+                <h2 class="tit">사람의 노하우에 기술을 더하는  건물 종합관리 기업</h2>
+            </section>
+            <section class="contents _about">
+                <section class="sub_sec about_sec about_sec1">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">티클의 가치</h2>
+                            <p class="desc">스마트한 시스템, 체계적인 프로세스, 그리고 전문적인 교육 운영을 진행하여 서비스 품질을 효율적으로 관리합니다. <br> 이것이 곧 티클의 기준이며 가치입니다.    </p>
+                        </div>
+                        <ul class="value_list">
+                            <li class="value_item value_item1">
+                                <div class="txt_box">
+                                    <strong class="tit">스마트</strong>
+                                    <p class="desc">
+                                        스마트한 건물관리 솔루션(FMS)를 통해
+                                        효율적인 운영과 체계적인 서비스를 실현합니다.
+                                        디지털 기반의 관리로 업무의 정확성과 편의성을
+                                        모두 높이고 있습니다. 
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="value_item value_item2">
+                                <div class="txt_box">
+                                    <strong class="tit">체계성</strong>
+                                    <p class="desc">
+                                        20년 이상의 실무 경험을 가진 전문인력이
+                                        표준 절차에 따라 현장을 체계적으로 관리합니다.
+                                        축적된 노하우와 데이터 기반 운영으로 
+                                        일관된 품질의 건물관리 서비스를 제공합니다.                       
+                                    </p>
+                                </div>                               
+                            </li>
+                            <li class="value_item value_item3">
+                                <div class="txt_box">
+                                    <strong class="tit">전문성</strong>
+                                    <p class="desc">
+                                        티클 아카데미 교육을 이수한 전문가들이
+                                        지속적으로 역량을 강화합니다.
+                                        전문성을 기반으로 서비스의 품질을 꾸준히 향상시키며,
+                                        건물관리 분야의 기준을 새롭게 세웁니다.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn_area taC">
+                            <button type="button" class="btn_arrow _big _black">회사소개서 다운로드</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="sub_sec about_sec about_sec2">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">인증서</h2>
+                            <p class="desc">티클 서비스 신뢰도의 증명인 인증마크를 확인해보세요.</p>
+                        </div>
+                        <div class="cert_wrap">
+                            <div class="cert_tit">
+                                <h3 class="tit1">TICKLE Certification</h3>
+                                <div class="cert_util">
+                                    <p class="txt">인증서 및 특허</p>
+                                    <div class="cert_ctrls">
+                                        <button type="button" class="cert_slide_btn cert_slide_prev"></button>
+                                        <button type="button" class="cert_slide_btn cert_slide_next"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cert_slide swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-license01.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-license02.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-license03.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-license04.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-license05.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-license06.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-patent01.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-patent02.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-patent03.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-patent04.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-patent05.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-certificate01.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-certificate02.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-certificate03.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-innovativesme01.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-innovativesme02.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-innovativesme03.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-isocertification01.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-isocertification02.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-isocertification03.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-registration01.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-registration02.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-registration03.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-registration04.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-registration05.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="img_box">
+                                            <img src="./assets/images/certification/img-certification-registration06.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="sub_sec about_sec about_sec3">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">연혁</h2> 
+                        </div>
+                    </div>
+                </section>
+                <section class="sub_sec about_sec about_sec4">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">찾아오시는 길 </h2>
+                            <p class="desc">티클의 오피스를 방문하셔서 공관관리의 새로운 방향을 직접 만나보세요.</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer_inner">
+                <div class="footer_logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </div>
+                <div class="footer_sec sec1">
+                    <ul class="footer_nav">
+                        <li><a href="">서비스 이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                    </ul>
+                    <div class="footer_info">
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>대표이사</b> 이상부</span>
+                            <span class="footer_info_item"><b>주소</b> 경기도 용인시 수지구 법조로 215, 3층</span>
+                        </div>
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>사업자</b> 등록번호 463-81-00234</span>
+                            <span class="footer_info_item"><b>통신판매업</b> 신고번호 2023-용인수지-0417호</span>
+                        </div>
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>대표전화</b> 1533-3910</span>
+                            <span class="footer_info_item"><b>이메일</b> info@tickle.co.kr </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_sec sec2">
+                    <div class="footer_branch">
+                        <div class="btn_trigger">Family site</div>
+                        <ul class="footer_branch_list">
+                            <li><a href="" target="_blank">Family site111</a></li>
+                            <li><a href="" target="_blank">Family site222</a></li>
+                            <li><a href="" target="_blank">Family site333</a></li>
+                            <li><a href="" target="_blank">Family site444</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_sns">
+                        <span>Follow Us</span>
+                        <a href="" class="footer_sns_btn ty_blog"><span class="blind">blog</span></a>
+                        <a href="" class="footer_sns_btn ty_fb"><span class="blind">facebook</span></a>
+                        <a href="" class="footer_sns_btn ty_insta"><span class="blind">instagram</span></a>
+                        <a href="" class="footer_sns_btn ty_ytb"><span class="blind">youtube</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">ⓒTICKLE. All Rights Reserved.</div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        function createSwiper(el, options) {
+            if (!el) return null;
+            return new Swiper(el, options);
+        }
+    </script>
+    <script>
+        let cert_swiper = null;
+
+        (() => {
+        const wrap = document.querySelector('.cert_wrap');
+        if (!wrap) return;
+
+        const slider = wrap.querySelector('.cert_slide');
+        if (!slider) return;
+
+        cert_swiper = createSwiper(slider, {
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 'auto',
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+            },
+            navigation: {
+            nextEl: wrap.querySelector('.cert_slide_next'),
+            prevEl: wrap.querySelector('.cert_slide_prev'),
+            },
+        });
+        })();
+        function debounce(fn, delay = 150) {
+            let t = null;
+            return (...args) => {
+              clearTimeout(t);
+              t = setTimeout(() => fn(...args), delay);
+            };
+          }
+          
+          function refreshSwiper(swiper) {
+            if (!swiper || swiper.destroyed) return;
+            
+            swiper.updateSize();
+            swiper.updateSlides();
+            swiper.update();
+          }
+          
+          const onResize = debounce(() => {
+            refreshSwiper(cert_swiper);
+          }, 200);
+          
+          window.addEventListener('resize', onResize);
+    </script>
+</body>
+</html>
