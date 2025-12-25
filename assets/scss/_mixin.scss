@@ -166,6 +166,11 @@ $breakpoint-t4: 1100px;
         box-shadow: 0 0 0 2px rgba(#000,.4);
     }
 }
+@mixin hover_device {
+    @media (hover: hover) and (pointer: fine) {
+        @content;
+    }
+}
 
 @function tint($color, $percent) {
     @return mix(white, $color, $percent);

@@ -30,6 +30,10 @@ body.scroll-locked {
             padding-top: 10px;
         }
     }
+    @include tablet {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
 
     @include mobile {
         padding-top: 70px;
@@ -39,6 +43,9 @@ body.scroll-locked {
         padding-bottom: 120px;
         &:last-of-type {
             padding-bottom: 0;
+        }
+        @include tablet {
+            padding-bottom: 90px;
         }
         @include mobile {
             padding-bottom: 70px;

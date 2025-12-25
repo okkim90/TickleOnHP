@@ -154,17 +154,24 @@
 }
 
 .contact_email_list {
-    padding: 80px 0;
+    @at-root .contact_sec & {
+        padding: 80px 0;
+        @include tablet4 { 
+            flex-direction: column;
+            margin: 0;
+            padding: 60px 0;
+        }
+        @include mobile {
+            padding: 40px 0;
+        }
+    }
+    
     display: flex;
     margin: 0 -40px;
     justify-content: center;
     @include tablet4 { 
         flex-direction: column;
         margin: 0;
-        padding: 60px 0;
-    }
-    @include mobile {
-        padding: 40px 0;
     }
     .contact_email_item {
         display: flex;
