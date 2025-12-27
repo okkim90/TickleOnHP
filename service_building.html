@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tickle On</title>
+   
+    <!--[D] fonts-->
+    <link rel="" href="./assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="" href="./assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!--[D] 공통적용 js&css-->
+    <link rel="stylesheet" href="./assets/css/common.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script type="text/javascript" src="./assets/js/common.js" defer></script>
+    <script type="text/javascript" src="./assets/js/scrollAni.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <div class="header_inner">
+                <h1 class="header_logo">
+                    <a href="./">
+                        <div class="ico_logo"></div>
+                        <span class="blind">Tickle On</span>
+                    </a>
+                </h1>
+                <nav id="nav" class="nav">
+                    <div class="header_btns">
+                        <a href="" class="header_btn _partners">티클 파트너스</a>
+                        <a href="" class="header_btn _inquiry">견적문의</a>
+                    </div>
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">회사소개</span>
+                                    <span class="nav_desc">ABOUT US</span>
+                                </div> 
+                            </a>
+                        </li>
+                        <li class="nav_item has_dep">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">서비스</span>
+                                    <span class="nav_desc">SERVICE</span>
+                                </div>
+                            </a>
+                            <div class="service_panel">
+                                <ul class="service_panel_list">
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service1.svg" alt="">
+                                            <strong>건물관리서비스</strong>
+                                        </a>               
+                                    </li>
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service2.svg" alt="">
+                                            <strong>호텔관리서비스</strong>
+                                        </a>  
+                                    </li>
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service3.svg" alt="">
+                                            <strong>통합 경리회계 아웃소싱</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">성과 &middot; 사례</span>
+                                    <span class="nav_desc">ACHIEVEMENT</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">뉴스</span>
+                                    <span class="nav_desc">NEWS</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_btns">
+                    <a href="" class="header_btn _partners">티클 파트너스</a>
+                    <a href="" class="header_btn _inquiry">견적문의</a>
+                </div>
+                <button type="button" 
+                class="btn_nav_toggle"
+                aria-label="메뉴 열기"
+                aria-expanded="false"
+                aria-controls="nav">
+                    <div class="bars">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+        <main id="container">
+            <section class="sub_visual _ss _building">
+                <div class="ss_visual_cont">
+                    <div class="logo"><img src="./assets/images/sub/ss_building_logo.png" alt=""></div>
+                    <div class="txt">스마트한 건물관리, <br> 이제 티클온빌딩과 함께하세요! </div>
+                    <a href="" class="btn_arrow _mid _wLine w_220"><span>Try Demo Ver</span></a>
+                </div>
+            </section>
+            <section class="contents _service">
+                <section class="ss_sec">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot mb0">
+                            <span class="tit_eng ty_bldg">TICKLEON BLDG</span>
+                            <h2 class="tit1">건물관리 전문가 서비스</h2>
+                            <div class="tit_img">
+                                <img src="./assets/images/sub/ss_bldg_tit_img.png" alt="TICKLEON BLDG">
+                            </div>
+                        </div>   
+                        <ul class="ss_bldg_service ">
+                            <li class="service_item service_item1 ty_center aniBox ani_bot">
+                                <div class="txt_box">
+                                    <div class="tit2">시설관리</div>
+                                    <p class="desc_s">전기/소방/공조/난방 설비 등 <br> 시설물 점검 및관리 </p>
+                                </div>
+                            </li>
+                            <li class="service_item service_item2 aniBox ani_bot">
+                                <div class="txt_box">
+                                    <div class="tit2">미화관리</div>
+                                    <p class="desc_s">건물의 쓰레기, 폐기물처리,방역/방충 작업 진행  </p>
+                                </div>
+                            </li>
+                            <li class="service_item service_item3 aniBox ani_bot">
+                                <div class="txt_box">
+                                    <div class="tit2">경비보안</div>
+                                    <p class="desc_s">건물의 중요지역 순찰감시 및 출입인원/차량통제 수행  </p>
+                                </div>
+                            </li>
+                            <li class="service_item service_item4 aniBox ani_bot">
+                                <div class="txt_box">
+                                    <div class="tit2">주차관리</div>
+                                    <p class="desc_s">건물 입주자/방문객 안내 및 차량 유도 주차장 운영</p>
+                                </div>
+                            </li>
+                            <li class="service_item service_item5 aniBox ani_bot">
+                                <div class="txt_box">
+                                    <div class="tit2">업무대행</div>
+                                    <p class="desc_s">회계 처리부터 정산 · 관리비대납 등 재무 업무 지원 </p>
+                                </div>
+                            </li>
+                            <li class="service_item service_item6 ty_center aniBox ani_bot">
+                                <div class="txt_box">
+                                    <div class="tit2">견적문의</div>
+                                    <a href="" class="btn_arrow _mid _white"><span>바로가기</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="ss_sec _solution">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">건물관리 FMS 솔루션</h2>
+                        </div>   
+                        <div class="ss_solution">
+                            <div class="img_box aniBox ani_bot">
+                                <img src="./assets/images/sub/ss_bldg_solution1.png" alt="">
+                            </div>
+                            <div class="txt_box aniBox ani_bot">
+                                <p class="tit2">청소, 시설, 보안, 주차가 <br class="pc_only_t"> 따로 관리돼 비효율적이에요</p>
+                                <p class="desc">
+                                    여러 협력업체가 각각 관리해 데이터가분리되어 관리하기가 어려웠다면? <br>
+                                    모든 영역의 데이터를 한화면에서 관리할수있는 티클온 솔루션을 활용하세요.     
+                                </p>
+                                <p class="msg fc_key">
+                                    통합 관리 대시보드로 <br> SIMPLE 하게!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ss_solution">
+                            <div class="img_box aniBox ani_bot">
+                                <img src="./assets/images/sub/ss_bldg_solution2.png" alt="">
+                            </div>
+                            <div class="txt_box aniBox ani_bot">
+                                <p class="tit2">현장 상황을 <br class="pc_only_t"> 실시간으로 확인하기 어려워요. </p>
+                                <p class="desc">
+                                    관리자가 여러 건물을 돌보는경우,현장 상태를 즉시 알기 어렵습니다. <br> 이제 티클온의 QR기반 점검보고 기능을활용해 빠르게 현장을 확인하세요       
+                                </p>
+                                <p class="msg fc_key">
+                                    실시간 QR 리포트로 <br> SPEEDY 하게!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ss_solution">
+                            <div class="img_box aniBox ani_bot">
+                                <img src="./assets/images/sub/ss_bldg_solution3.png" alt="">
+                            </div>
+                            <div class="txt_box aniBox ani_bot">
+                                <p class="tit2">관리 업무가 사람마다 <br class="pc_only_t"> 제각각이에요.</p>
+                                <p class="desc">
+                                    담당자별, 근무자별기준이 달라 일관된 품질유지가 어렵다면? <br> 작업별 체크리스트와 일정이 자동 배포되어, 누구나 동일 기준으로 관리되는 티클온 서비스가 퀄리티를 보장합니다.  
+                                </p>
+                                <p class="msg fc_key">
+                                    표준화 작업 점검표로 <br > QUALITY 있게!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ss_solution">
+                            <div class="img_box aniBox ani_bot">
+                                <img src="./assets/images/sub/ss_bldg_solution4.png" alt="">
+                            </div>
+                            <div class="txt_box aniBox ani_bot">
+                                <p class="tit2">중요한 법정 점검주기, <br class="pc_only_t"> 의무사항을  매번 챙기기 어려워요.</p>
+                                <p class="desc">
+                                    소방 · 엘리베이터 · 위생 등 법정 점검기한을 놓쳐 벌금이나 행정리스크가 발생하는 것이 걱정되시나요?  <br>  이제 티클온에서 법정점검일을 챙겨드리겠습니다.        
+                                </p>
+                                <p class="msg fc_key">
+                                    법정준수사항 주기 체크로 <br> SAFETY 하게!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ss_solution">
+                            <div class="img_box aniBox ani_bot">
+                                <img src="./assets/images/sub/ss_bldg_solution5.png" alt="">
+                            </div>
+                            <div class="txt_box aniBox ani_bot">
+                                <p class="tit2">문서, 수기로 관리되는 자료 정리가 번거로워요</p>
+                                <p class="desc">
+                                    매일 작성되는점검표, 보고서가지류로 쌓여 관리 효율이 떨어진다고 느낀다면? <br> 온라인화된 현장점검표, 일일 보고서로 깔끔하게 관리하세요.    
+                                </p>
+                                <p class="msg fc_key">
+                                    종이 대신 데이터로 현장관리를 <br> SMART 하게!
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>
+                </section>
+                <section class="ss_sec _ss_bldg_price">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot fc_white">
+                            <h2 class="tit1">요금안내</h2>
+                            <p class="desc">수행작업과 관계 없이 적용 시설 수 만큼만 비용이 부과됩니다</p>
+                        </div>
+                        <div class="ss_bldg_price_wrap">
+                            <div class="ss_bldg_price_item aniBox ani_bot">
+                                <div class="tit">월간이용</div>
+                                <div class="cont_box">
+                                    <div class="desc_box">
+                                        <p class="txt1 desc fc_grey">시설별 최저 1,600원/월 <span class="sub">(QR 1개당)</span> </p>
+                                        <p class="txt2 tit2">시설 수에 따라 할인율 적용 </p>
+                                    </div>
+                                    <ul class="detail_box ">
+                                        <li class="detail_item desc">
+                                            <strong>10개 ~ 49개</strong>
+                                            <span class="fc_key">2,000원</span>
+                                        </li>
+                                        <li class="detail_item desc" >
+                                            <strong>50개 ~ 99개</strong>
+                                            <span class="fc_key">1,600원</span>
+                                        </li>
+                                        <li class="detail_item desc">
+                                            <strong>100개 이상</strong>
+                                            <span class="fc_key">별도협의</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="chk_list no_bd">
+                                        <li class="ty_black_chk">
+                                            QR코드 제작(인쇄) 및 배송비 무료
+                                            <div class="sub">(NFC 제작은 별도 협의)</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ss_bldg_price_item aniBox ani_bot">
+                                <div class="tit">연간계약</div>
+                                <div class="cont_box">
+                                    <div class="desc_box">
+                                        <p class="txt1 desc">월 정액제를 1년 약정시 </p>
+                                        <p class="txt2 tit2 fc_key">3개월 무료 제공!!</p>
+                                    </div>
+                                    <ul class="chk_list ">
+                                        <li>월간 이용 모든 기능 제공</li>
+                                        <li>솔루션 이용 무료 방문 교육</li>
+                                        <li>
+                                            9개월치 비용 선 결제 후 12개월 사용
+                                            <div class="sub">중도 셋팅 변경(시설 증가)시, 추가 비용 청구</div>
+                                        </li>
+                                        <li>
+                                            QR코드 제작(인쇄) 및 배송비 무료
+                                            <div class="sub">(NFC 제작은 별도 협의)</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ss_bldg_price_item aniBox ani_bot">
+                                <div class="tit">건물관리(FM) 위탁시</div>
+                                <div class="cont_box">
+                                    <div class="desc_box">
+                                        <p class="txt1 desc fc_grey">시설수에 관계 없이</p>
+                                        <p class="txt2 tit2">솔루션 무상 제공!!</p>
+                                    </div>
+                                    <ul class="chk_list ">
+                                        <li>
+                                            건물관리 위탁시 무제한 솔루션 이용
+                                        </li>
+                                        <li>
+                                            솔루션 이용 무료 방문 교육
+                                        </li>
+                                        <li>
+                                            9개월치 비용 선 결제 후 12개월 사용
+                                            <div class="sub">중도 셋팅 변경(시설 증가)시, 추가 비용 청구</div>
+                                        </li>
+                                        <li>
+                                            도면 이용 관련 비용 별도 협의
+                                        </li>
+                                    </ul>
+                                </div>                         
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <section class="ss_sec _faq">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">자주 묻는 질문</h2>
+                        </div>   
+                        <div class="faq_slide_wrap  aniBox ani_bot">
+                            <div class="faq_slide swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide_item">
+                                        <div class="tit">티클온빌딩 서비스의 차별점은 무엇인가요?</div>
+                                        <div class="desc">
+                                            티클온빌딩은 20년 이상의 건물관리 경험과 전문 인력을 바탕으로, 자체 개발한 스마트 솔루션과 투명한 운영으로 고객 맞춤형 시설 점검과 관리를 제공합니다. 빠르고 효율적인 서비스가 강점입니다.
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="tit">어떤 건물을 관리하나요?</div>
+                                        <div class="desc">
+                                            사무실, 상업시설, 공공기관, 병원, 학교 등 다양한 건물은 물론, 중소형 호텔도 포함해 고객 맞춤형 서비스를 지원합니다.
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="tit">시설 점검과 유지보수는 어떻게 진행되나요?</div>
+                                        <div class="desc">
+                                            실시간 시설 상태를 모니터링하며, 정기 점검과 긴급 수리를 체계적으로 수행합니다. 점검 내역과 진행 상황은 투명하게 공유해 신뢰를 높입니다.
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="tit">자주 발생하는 민원은 어떤 것이 있나요?</div>
+                                        <div class="desc">
+                                            시설 안전, 청결, 냉난방, 소음 문제와 법적 안전 점검 관련 문의가 흔하며, 티클온빌딩은 24시간 긴급대응 체제로 신속히 해결합니다.
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="tit">도입 비용과 교육은 어떻게 되나요?</div>
+                                        <div class="desc">
+                                            비용은 건물 규모와 서비스 범위에 따라 다르며, 현장 직원 대상 교육과 지속 지원이 포함됩니다. 이후 업데이트도 정기적으로 이루어집니다.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="faq_slide_btn faq_slide_prev" aria-label="이전 슬라이드"></button>
+                            <button type="button" class="faq_slide_btn faq_slide_next" aria-label="다음 슬라이드"></button>
+                        </div>
+                    </div>  
+                </section>
+                <section class="ss_sec _ss_client">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">티클온빌딩과 함께한 고객사</h2>
+                        </div>   
+                        <div class="client_slide_wrap aniBox ani_bot">
+                            <div class="client_slide swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo1.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo2.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo3.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo4.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo5.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo6.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo7.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo8.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo9.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo10.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo11.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo12.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo13.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo14.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo15.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo16.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_bldg_client/logo17.png" alt=""></div></div>                            
+                                </div>
+                            </div>
+                            <button type="button" class="client_slide_btn client_slide_prev" aria-label="이전 슬라이드"></button>
+                            <button type="button" class="client_slide_btn client_slide_next" aria-label="다음 슬라이드"></button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer_inner">
+                <div class="footer_logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </div>
+                <div class="footer_sec sec1">
+                    <ul class="footer_nav">
+                        <li><a href="">서비스 이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                    </ul>
+                    <div class="footer_info">
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>대표이사</b> 이상부</span>
+                            <span class="footer_info_item"><b>주소</b> 경기도 용인시 수지구 법조로 215, 3층</span>
+                        </div>
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>사업자</b> 등록번호 463-81-00234</span>
+                            <span class="footer_info_item"><b>통신판매업</b> 신고번호 2023-용인수지-0417호</span>
+                        </div>
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>대표전화</b> 1533-3910</span>
+                            <span class="footer_info_item"><b>이메일</b> info@tickle.co.kr </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_sec sec2">
+                    <div class="footer_branch">
+                        <div class="btn_trigger">Family site</div>
+                        <ul class="footer_branch_list">
+                            <li><a href="" target="_blank">Family site111</a></li>
+                            <li><a href="" target="_blank">Family site222</a></li>
+                            <li><a href="" target="_blank">Family site333</a></li>
+                            <li><a href="" target="_blank">Family site444</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_sns">
+                        <span>Follow Us</span>
+                        <a href="" class="footer_sns_btn ty_blog"><span class="blind">blog</span></a>
+                        <a href="" class="footer_sns_btn ty_fb"><span class="blind">facebook</span></a>
+                        <a href="" class="footer_sns_btn ty_insta"><span class="blind">instagram</span></a>
+                        <a href="" class="footer_sns_btn ty_ytb"><span class="blind">youtube</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">ⓒTICKLE. All Rights Reserved.</div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        (() => {
+            const wrap = document.querySelector('.client_slide_wrap');
+            if (!wrap) return;
+          
+            const slider = wrap.querySelector('.client_slide');
+            const wrapper = slider?.querySelector('.swiper-wrapper');
+            const prevBtn = wrap.querySelector('.client_slide_prev');
+            const nextBtn = wrap.querySelector('.client_slide_next');
+            if (!slider || !wrapper) return;
+          
+            let swiper = null;
+          
+            const slideCount = () => wrapper.querySelectorAll('.swiper-slide').length;
+          
+            const enable = () => {
+              wrap.classList.remove('is-static');
+          
+              swiper = new Swiper(slider, {
+                loop: true,
+                watchOverflow: true,
+                autoplay: { delay: 2500, disableOnInteraction: false, pauseOnMouseEnter: true },
+                navigation: { prevEl: prevBtn, nextEl: nextBtn },
+          
+                slidesPerView: 2,
+                spaceBetween: 12,
+                breakpoints: {
+                  768:  { slidesPerView: 4, spaceBetween: 16 },
+                  1024: { slidesPerView: 5, spaceBetween: 20 },
+                },
+              });
+            };
+          
+            const disable = () => {
+              if (!swiper) return;
+              swiper.destroy(true, true);
+              swiper = null;
+              wrap.classList.add('is-static');
+            };
+          
+            const sync = () => {
+              const w = window.innerWidth;
+              const min = (w >= 1024) ? 6 : (w >= 768) ? 5 : 3;
+          
+              slideCount() >= min ? (swiper ? swiper.update() : enable()) : disable();
+            };
+          
+            sync();
+            window.addEventListener('resize', () => {
+              clearTimeout(sync._t);
+              sync._t = setTimeout(sync, 150);
+            });
+          })();
+          
+    </script>
+
+    <script>
+        (() => {
+            const wrap = document.querySelector('.faq_slide_wrap');
+            if (!wrap) return;
+          
+            const slider = wrap.querySelector('.faq_slide');
+            const wrapper = slider?.querySelector('.swiper-wrapper');
+            const prevBtn = wrap.querySelector('.faq_slide_prev');
+            const nextBtn = wrap.querySelector('.faq_slide_next');
+            if (!slider || !wrapper) return;
+          
+            let swiper = null;
+          
+            const slideCount = () => wrapper.querySelectorAll('.swiper-slide').length;
+          
+            const enable = () => {
+              wrap.classList.remove('is-static');
+          
+              swiper = new Swiper(slider, {
+                loop: true,
+                watchOverflow: true,
+                autoplay: { delay: 2500, disableOnInteraction: false, pauseOnMouseEnter: true },
+                navigation: { prevEl: prevBtn, nextEl: nextBtn },
+          
+                slidesPerView: 1,
+                spaceBetween: 12,
+                breakpoints: {
+                  768:  { slidesPerView: 2, spaceBetween: 16 },
+                  1024: { slidesPerView: 3, spaceBetween: 20 },
+                  1400: { slidesPerView: 4, spaceBetween: 20 },
+                },
+              });
+            };
+          
+            const disable = () => {
+              if (!swiper) return;
+              swiper.destroy(true, true);
+              swiper = null;
+              wrap.classList.add('is-static');
+            };
+          
+            const sync = () => {
+              const w = window.innerWidth;
+              const min = (w >= 1400) ? 5 : (w >= 1024) ? 4 : (w >= 768) ? 3 : 2;
+          
+              slideCount() >= min ? (swiper ? swiper.update() : enable()) : disable();
+            };
+          
+            sync();
+            window.addEventListener('resize', () => {
+              clearTimeout(sync._t);
+              sync._t = setTimeout(sync, 150);
+            });
+          })();
+    </script>
+</body>
+</html>

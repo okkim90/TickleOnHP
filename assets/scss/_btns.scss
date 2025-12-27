@@ -15,6 +15,7 @@
         background-position: center center;
         background-size: contain;
         margin-left: auto;
+        flex-shrink: 0;
     }
 
 
@@ -58,12 +59,28 @@
             background-image: url(../images/arrow_right.svg);
         }
     }
+    &._wLine {
+        border: 1px solid #fff;
+        color: #fff;
+        background-color: transparent;
+        &::after {
+            background-image: url(../images/arrow_right_w.svg);
+        }
+    }
     &._black {
         border: 1px solid #000;
         color: #fff;
         background-color: #000;
         &::after {
             background-image: url(../images/arrow_right_w.svg);
+        }
+    }
+    &._white {
+        border: 1px solid #fff;
+        color: #000;
+        background-color: #fff;
+        &::after {
+            background-image: url(../images/arrow_right.svg);
         }
     }
     &._key2 {

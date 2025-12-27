@@ -5,7 +5,9 @@ $breakpoint-pc_h: 1460px;
 $breakpoint-pc_bm: 1800px;
 
 
-
+$sap-pc : 110px; 
+$sap-t : 90px; 
+$sap-m : 60px; 
 
 
 
@@ -23,6 +25,10 @@ $colors: (
     _font: #000,
     _placeholder: #CBCBCB,
     _white : #fff,
+    _grey : #999,
+    _bldg: #1F64DA,
+    _stay: #FF7200,
+    _account: #CB1927
 );
 
 
@@ -36,6 +42,10 @@ $c_bg2 : map-get($colors, _bg2);
 $c_font : map-get($colors, _font);
 $c_placeholder : map-get($colors, _placeholder);
 $c_white : map-get($colors, _white);
+$c_grey : map-get($colors, _grey);
+$c_bldg : map-get($colors, _bldg);
+$c_stay : map-get($colors, _stay);
+$c_account : map-get($colors, _account);
 
 
 $fz: (

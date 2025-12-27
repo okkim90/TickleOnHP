@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tickle On</title>
+   
+    <!--[D] fonts-->
+    <link rel="" href="./assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="" href="./assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!--[D] 공통적용 js&css-->
+    <link rel="stylesheet" href="./assets/css/common.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script type="text/javascript" src="./assets/js/common.js" defer></script>
+    <script type="text/javascript" src="./assets/js/scrollAni.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <div class="header_inner">
+                <h1 class="header_logo">
+                    <a href="./">
+                        <div class="ico_logo"></div>
+                        <span class="blind">Tickle On</span>
+                    </a>
+                </h1>
+                <nav id="nav" class="nav">
+                    <div class="header_btns">
+                        <a href="" class="header_btn _partners">티클 파트너스</a>
+                        <a href="" class="header_btn _inquiry">견적문의</a>
+                    </div>
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">회사소개</span>
+                                    <span class="nav_desc">ABOUT US</span>
+                                </div> 
+                            </a>
+                        </li>
+                        <li class="nav_item has_dep">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">서비스</span>
+                                    <span class="nav_desc">SERVICE</span>
+                                </div>
+                            </a>
+                            <div class="service_panel">
+                                <ul class="service_panel_list">
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service1.svg" alt="">
+                                            <strong>건물관리서비스</strong>
+                                        </a>               
+                                    </li>
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service2.svg" alt="">
+                                            <strong>호텔관리서비스</strong>
+                                        </a>  
+                                    </li>
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service3.svg" alt="">
+                                            <strong>통합 경리회계 아웃소싱</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">성과 &middot; 사례</span>
+                                    <span class="nav_desc">ACHIEVEMENT</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">뉴스</span>
+                                    <span class="nav_desc">NEWS</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_btns">
+                    <a href="" class="header_btn _partners">티클 파트너스</a>
+                    <a href="" class="header_btn _inquiry">견적문의</a>
+                </div>
+                <button type="button" 
+                class="btn_nav_toggle"
+                aria-label="메뉴 열기"
+                aria-expanded="false"
+                aria-controls="nav">
+                    <div class="bars">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+        <main id="container">
+            <section class="sub_visual _ss _stay">
+                <div class="ss_visual_cont">
+                    <div class="logo"><img src="./assets/images/sub/ss_stay_logo.png" alt=""></div>
+                    <div class="txt">안전하고 편리한 호텔관리, <br> 이제 티클온스테이와 함께하세요!</div>
+                    <a href="" class="btn_arrow _mid _wLine w_220"><span>Try Demo Ver</span></a>
+                </div>
+            </section>
+            <section class="contents _service">
+                <section class="ss_sec">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot mb0">
+                            <span class="tit_eng ty_stay">TICKLEON STAY</span>
+                            <h2 class="tit1">호텔관리 전문가 서비스</h2>
+                            <div class="tit_img">
+                                <img src="./assets/images/sub/ss_stay_tit_img.png" alt="TICKLEON STAY">
+                            </div>
+                        </div>   
+                        <ul class="ss_stay_service ">
+                            <li class="service_item service_item1 ty_center aniBox ani_bot">
+                                <div class="txt_box">
+                                    <div class="tit2">객실관리</div>
+                                    <p class="desc_s">객실 청소,점검, 확인 등 <br> 객실 전반 체계적 유지 관리   </p>
+                                </div>
+                            </li>
+                            <li class="service_item service_item2 aniBox ani_bot">
+                                <div class="txt_box">
+                                    <div class="tit2">린넨 및 비품관리</div>
+                                    <p class="desc_s">린넨 재고 파악, 비품 보충, 손상 · 교체내역 기록 관리 </p>
+                                </div>
+                            </li>     
+                            <li class="service_item service_item3 aniBox ani_bot">
+                                <div class="txt_box">
+                                    <div class="tit2">건물 시설관리</div>
+                                    <p class="desc_s">건물 내 주요 공용 시설의 유지보수 및 운영 </p>
+                                </div>
+                            </li>
+                            <li class="service_item service_item4 ty_center aniBox ani_bot">
+                                <div class="txt_box">
+                                    <div class="tit2">견적문의</div>
+                                    <a href="" class="btn_arrow _mid _white"><span>바로가기</span></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="ss_sec _solution">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">호텔관리 솔루션</h2>
+                        </div>   
+                        <div class="ss_solution">
+                            <div class="img_box aniBox ani_bot">
+                                <img src="./assets/images/sub/ss_stay_solution1.png" alt="">
+                            </div>
+                            <div class="txt_box aniBox ani_bot">
+                                <p class="tit2">메이드 배정이 수동이라 비효율적이에요.</p>
+                                <p class="desc">
+                                    객실 상태 ·  근무시간  · 결근 등으로 매일 배정이 뒤섞이는 상황, <br> 티클온스테이 배정시스템으로 혼선없이 작업을 진행해보세요.    
+                                </p>
+                                <p class="msg fc_stay">
+                                    배정 혼선 없이, 클릭 한번으로 <br> 효율적인 메이드스케쥴 관리! 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ss_solution">
+                            <div class="img_box aniBox ani_bot">
+                                <img src="./assets/images/sub/ss_stay_solution2.png" alt="">
+                            </div>
+                            <div class="txt_box aniBox ani_bot">
+                                <p class="tit2">객실 청소 품질이 직원마다 달라요</p>
+                                <p class="desc">
+                                    객실 컨디션이 메이드마다 달라 고객 불만이 발생하는 이슈, <br> 표준화된 청소프로세스를 제공하는 티클온스테이 솔루션이 답입니다.         
+                                </p>
+                                <p class="msg fc_stay">
+                                    누가 해도 동일한 퀄리티, <br> 객실 청소의 표준화  
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ss_solution">
+                            <div class="img_box aniBox ani_bot">
+                                <img src="./assets/images/sub/ss_stay_solution3.png" alt="">
+                            </div>
+                            <div class="txt_box aniBox ani_bot">
+                                <p class="tit2">침구 · 수건 · 소모품 관리가 늘 누락되거나 낭비돼요.</p>
+                                <p class="desc">
+                                    린넨 재고나객실 제공품 등 사람이 수기로 관리해 재고 관리가 어려우시다면? <br> 시스템화된 재고관리로 누락과 혼선없는 품목관리를 제공합니다.   
+                                </p>
+                                <p class="msg fc_stay">
+                                    체계적인 소모품 체크로 관리되는 <br> 스마트 객실 운영   
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ss_solution">
+                            <div class="img_box aniBox ani_bot">
+                                <img src="./assets/images/sub/ss_stay_solution4.png" alt="">
+                            </div>
+                            <div class="txt_box aniBox ani_bot">
+                                <p class="tit2">청소 완료 후 객실 상태를 실시간으로 확인하기 어려워요. </p>
+                                <p class="desc">
+                                    수기로 점검을 전달해 확인이 지연되고, 실시간 운영 파악이 힘드신가요? <br> 실시간 객실 점검 리포트로 효율적인 객실관리를 경험해보세요.        
+                                </p>
+                                <p class="msg fc_stay">
+                                    현장 확인 없이도, <br> 모든 객실의 청결상태를 한눈에!   
+                                </p>
+                            </div>
+                        </div>              
+                    </div>
+                </section>
+                <section class="ss_sec _faq">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">자주 묻는 질문</h2>
+                        </div>   
+                        <div class="faq_slide_wrap  aniBox ani_bot">
+                            <div class="faq_slide swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide_item">
+                                        <div class="tit">객실 청소 기준은 어떻게 설정되나요?</div>
+                                        <div class="desc">
+                                            객실 등급과 호텔 운영 매뉴얼을 기준으로 기본 체크리스트를 구성할 수 있습니다. 모든 기준은 관리자 페이지에서 실시간 확인·수정이 가능합니다.
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="tit">청소 품질은 어떻게 검수하나요?</div>
+                                        <div class="desc">
+                                            작업자 페이지를 통해 객실별 점검표, 사진, 완료 시간이 기록되며 관리자는 웹에서 즉시 검수할 수 있습니다.
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="tit">린넨 및 비품 재고는 어떻게 관리되나요?</div>
+                                        <div class="desc">
+                                            출고 수량을 작업자 페이지에서 입력하면 관리자 화면에 재고 흐름이 자동 반영됩니다. 과다 사용, 부족 발생 등을 실시간으로 모니터링할 수 있어 비용 누수를 최소화합니다.
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="tit">객실 관리 인력 배치는 어떻게 이루어지나요?</div>
+                                        <div class="desc">
+                                            관리자 페이지를 통해 매일 인력에 맞게 업무 배정을 세팅할 수 있습니다.필요 시 수시배정, 특정 요일·성수기에 맞춰 탄력 조정도 가능합니다.
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="tit">정산 및 비용 관리는 어떻게 진행되나요? </div>
+                                        <div class="desc">
+                                            객실별 작업비중, 업무 유형, 추가 작업 등 모든 기준을 시스템에서 자동 계산하여 월간·주간 단위로 정산 리포트를 제공합니다. 투명한 비용 확인과 문서 출력이 가능합니다.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="faq_slide_btn faq_slide_prev" aria-label="이전 슬라이드"></button>
+                            <button type="button" class="faq_slide_btn faq_slide_next" aria-label="다음 슬라이드"></button>
+                        </div>
+                    </div>  
+                </section>
+                <section class="ss_sec _ss_client">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">티클온빌딩과 함께한 고객사</h2>
+                        </div>   
+                        <div class="client_slide_wrap aniBox ani_bot">
+                            <div class="client_slide swiper ty_fixed">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_stay_client/logo1.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_stay_client/logo2.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_stay_client/logo3.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_stay_client/logo4.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_stay_client/logo5.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_stay_client/logo6.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/ss_stay_client/logo7.png" alt=""></div></div>             
+                                </div>
+                            </div>
+                            <button type="button" class="client_slide_btn client_slide_prev" aria-label="이전 슬라이드"></button>
+                            <button type="button" class="client_slide_btn client_slide_next" aria-label="다음 슬라이드"></button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer_inner">
+                <div class="footer_logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </div>
+                <div class="footer_sec sec1">
+                    <ul class="footer_nav">
+                        <li><a href="">서비스 이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                    </ul>
+                    <div class="footer_info">
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>대표이사</b> 이상부</span>
+                            <span class="footer_info_item"><b>주소</b> 경기도 용인시 수지구 법조로 215, 3층</span>
+                        </div>
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>사업자</b> 등록번호 463-81-00234</span>
+                            <span class="footer_info_item"><b>통신판매업</b> 신고번호 2023-용인수지-0417호</span>
+                        </div>
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>대표전화</b> 1533-3910</span>
+                            <span class="footer_info_item"><b>이메일</b> info@tickle.co.kr </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_sec sec2">
+                    <div class="footer_branch">
+                        <div class="btn_trigger">Family site</div>
+                        <ul class="footer_branch_list">
+                            <li><a href="" target="_blank">Family site111</a></li>
+                            <li><a href="" target="_blank">Family site222</a></li>
+                            <li><a href="" target="_blank">Family site333</a></li>
+                            <li><a href="" target="_blank">Family site444</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_sns">
+                        <span>Follow Us</span>
+                        <a href="" class="footer_sns_btn ty_blog"><span class="blind">blog</span></a>
+                        <a href="" class="footer_sns_btn ty_fb"><span class="blind">facebook</span></a>
+                        <a href="" class="footer_sns_btn ty_insta"><span class="blind">instagram</span></a>
+                        <a href="" class="footer_sns_btn ty_ytb"><span class="blind">youtube</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">ⓒTICKLE. All Rights Reserved.</div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        (() => {
+            const wrap = document.querySelector('.client_slide_wrap');
+            if (!wrap) return;
+          
+            const slider = wrap.querySelector('.client_slide');
+            const wrapper = slider?.querySelector('.swiper-wrapper');
+            const prevBtn = wrap.querySelector('.client_slide_prev');
+            const nextBtn = wrap.querySelector('.client_slide_next');
+            if (!slider || !wrapper) return;
+          
+            let swiper = null;
+          
+            const slideCount = () => wrapper.querySelectorAll('.swiper-slide').length;
+          
+            const enable = () => {
+              wrap.classList.remove('is-static');
+          
+              swiper = new Swiper(slider, {
+                loop: true,
+                watchOverflow: true,
+                autoplay: { delay: 2500, disableOnInteraction: false, pauseOnMouseEnter: true },
+                navigation: { prevEl: prevBtn, nextEl: nextBtn },
+          
+                slidesPerView: 2,
+                spaceBetween: 12,
+                breakpoints: {
+                  768:  { slidesPerView: 4, spaceBetween: 16 },
+                  1024: { slidesPerView: 5, spaceBetween: 20 },
+                },
+              });
+            };
+          
+            const disable = () => {
+              if (!swiper) return;
+              swiper.destroy(true, true);
+              swiper = null;
+              wrap.classList.add('is-static');
+            };
+          
+            const sync = () => {
+              const w = window.innerWidth;
+              const min = (w >= 1024) ? 6 : (w >= 768) ? 5 : 3;
+          
+              slideCount() >= min ? (swiper ? swiper.update() : enable()) : disable();
+            };
+          
+            sync();
+            window.addEventListener('resize', () => {
+              clearTimeout(sync._t);
+              sync._t = setTimeout(sync, 150);
+            });
+          })();
+          
+    </script>
+
+    <script>
+        (() => {
+            const wrap = document.querySelector('.faq_slide_wrap');
+            if (!wrap) return;
+          
+            const slider = wrap.querySelector('.faq_slide');
+            const wrapper = slider?.querySelector('.swiper-wrapper');
+            const prevBtn = wrap.querySelector('.faq_slide_prev');
+            const nextBtn = wrap.querySelector('.faq_slide_next');
+            if (!slider || !wrapper) return;
+          
+            let swiper = null;
+          
+            const slideCount = () => wrapper.querySelectorAll('.swiper-slide').length;
+          
+            const enable = () => {
+              wrap.classList.remove('is-static');
+          
+              swiper = new Swiper(slider, {
+                loop: true,
+                watchOverflow: true,
+                autoplay: { delay: 2500, disableOnInteraction: false, pauseOnMouseEnter: true },
+                navigation: { prevEl: prevBtn, nextEl: nextBtn },
+          
+                slidesPerView: 1,
+                spaceBetween: 12,
+                breakpoints: {
+                  768:  { slidesPerView: 2, spaceBetween: 16 },
+                  1024: { slidesPerView: 3, spaceBetween: 20 },
+                  1400: { slidesPerView: 4, spaceBetween: 20 },
+                },
+              });
+            };
+          
+            const disable = () => {
+              if (!swiper) return;
+              swiper.destroy(true, true);
+              swiper = null;
+              wrap.classList.add('is-static');
+            };
+          
+            const sync = () => {
+              const w = window.innerWidth;
+              const min = (w >= 1400) ? 5 : (w >= 1024) ? 4 : (w >= 768) ? 3 : 2;
+          
+              slideCount() >= min ? (swiper ? swiper.update() : enable()) : disable();
+            };
+          
+            sync();
+            window.addEventListener('resize', () => {
+              clearTimeout(sync._t);
+              sync._t = setTimeout(sync, 150);
+            });
+          })();
+    </script>
+</body>
+</html>

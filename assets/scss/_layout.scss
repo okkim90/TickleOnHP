@@ -20,8 +20,8 @@ body.scroll-locked {
 }
 
 .contents {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 110px;
+    padding-bottom: 110px;
 
     &._partners {
         padding-top: 60px;
@@ -30,17 +30,21 @@ body.scroll-locked {
             padding-top: 10px;
         }
     }
+    &._service {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
     @include tablet {
         padding-top: 90px;
         padding-bottom: 90px;
     }
 
     @include mobile {
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
     .sub_sec {
-        padding-bottom: 120px;
+        padding-bottom: 110px;
         &:last-of-type {
             padding-bottom: 0;
         }
@@ -48,7 +52,7 @@ body.scroll-locked {
             padding-bottom: 90px;
         }
         @include mobile {
-            padding-bottom: 70px;
+            padding-bottom: 60px;
         }
     }
 }
@@ -88,12 +92,59 @@ body.scroll-locked {
         background-image: url(../images/sub/sub_visual_about.png);
         
     }
+    &._service {
+        background-image: url(../images/sub/sub_visual_service.png);
+        
+    }
+
+
+    &._ss {
+        height: 100dvh;
+        &._building {
+            background-image: url(../images/sub/ss_building_bg.png);
+        }
+        &._stay {
+            background-image: url(../images/sub/ss_stay_bg.png);
+        }
+        &._account {
+            background-image: url(../images/sub/ss_account_bg.png);
+        }
+    }
+
+
     .tit {
         font-size: 40px;
         font-weight: bold;
         color: #fff;
         padding: 0 30px;
         line-height: 1.4;
+    }
+
+    .ss_visual_cont {
+        .logo {
+            img {
+                height: 66px;
+            }
+        }
+        .txt {
+            font-size: 50px;
+            margin: 36px 0;
+            font-weight: bold;
+            line-height: 1.4;
+            color: #fff;
+            padding: 0 20px;
+        }
+        @include mobile {
+            .logo {
+                img {
+                    height: 33px;
+                }
+            }
+            .txt {
+                font-size: 30px;
+                margin:  28px 0;
+            }
+        }
     }
 
     @include tablet {

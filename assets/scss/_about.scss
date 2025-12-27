@@ -65,6 +65,9 @@
             width: 300px;
             max-width: 100%;
         }
+        @include mobile {
+            margin-top: 40px;
+        }
     }
 }
 
@@ -257,7 +260,7 @@
 }
 
 .about_sec3 {
-    padding-top: 120px;
+    padding-top: $sap-pc;
     background-image: url(../images/sub/about_sec3_bg.png);
     background-repeat: no-repeat; 
     background-position: center center;
@@ -298,7 +301,7 @@
         }
     }
     @include tablet {
-        padding-top: 90px;
+        padding-top: $sap-t;
         .history_list {
             gap: 30px;
         }
@@ -307,7 +310,7 @@
         }
     }
     @include mobile {
-        padding-top: 60px;
+        padding-top: $sap-m;
         .history_list {
             gap: 20px 30px;
         }
@@ -326,7 +329,7 @@
 }
 
 .about_sec4 {
-    padding-top: 120px;
+    padding-top: $sap-pc;
     .map {
         height: 500px;
         background-color: $c_bg;
@@ -335,7 +338,7 @@
         margin-top: 60px;
     }
     @include tablet {
-        padding-top: 90px;
+        padding-top: $sap-t;
         .map {
             height: 400px;
         }
@@ -345,7 +348,7 @@
     }
 
     @include mobile {
-        padding-top: 70px;
+        padding-top: $sap-m;
         .map {
             height: 300px;
         }
