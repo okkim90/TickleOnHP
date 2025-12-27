@@ -219,5 +219,10 @@
             background: #FC9A21;
             background: linear-gradient(180deg,rgba(252, 154, 33, 1) 0%, rgba(238, 70, 6, 1) 100%);
         }
+        &._red {
+            color: #fff;
+            background: #EF0F12;
+            background: linear-gradient(180deg, rgba(253, 107, 124, 1) 0%, rgba(239, 15, 18, 1) 100%);
+        }
     }
 }

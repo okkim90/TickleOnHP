@@ -134,6 +134,7 @@ body.scroll-locked {
             color: #fff;
             padding: 0 20px;
         }
+
         @include mobile {
             .logo {
                 img {
@@ -141,7 +142,7 @@ body.scroll-locked {
                 }
             }
             .txt {
-                font-size: 30px;
+                font-size: 28px;
                 margin:  28px 0;
             }
         }
@@ -167,4 +168,12 @@ body.scroll-locked {
     * {
         pointer-events: auto;
     }
+}
+
+.ss_account_sec2 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../images/sub/ss_account_bg2.png);
+    
 }

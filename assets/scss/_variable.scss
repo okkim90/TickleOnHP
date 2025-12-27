@@ -26,6 +26,7 @@ $colors: (
     _placeholder: #CBCBCB,
     _white : #fff,
     _grey : #999,
+    _grey2 : #666,
     _bldg: #1F64DA,
     _stay: #FF7200,
     _account: #CB1927
@@ -43,6 +44,7 @@ $c_font : map-get($colors, _font);
 $c_placeholder : map-get($colors, _placeholder);
 $c_white : map-get($colors, _white);
 $c_grey : map-get($colors, _grey);
+$c_grey2 : map-get($colors, _grey2);
 $c_bldg : map-get($colors, _bldg);
 $c_stay : map-get($colors, _stay);
 $c_account : map-get($colors, _account);
