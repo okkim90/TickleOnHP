@@ -34,6 +34,10 @@ body.scroll-locked {
         padding-bottom: 0;
         padding-top: 0;
     }
+    &._reference {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
     @include tablet {
         padding-top: 90px;
         padding-bottom: 90px;
@@ -94,6 +98,10 @@ body.scroll-locked {
     }
     &._service {
         background-image: url(../images/sub/sub_visual_service.png);
+        
+    }
+    &._reference {
+        background-image: url(../images/sub/sub_visual_reference.png);
         
     }
 

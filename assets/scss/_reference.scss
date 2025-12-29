@@ -1,0 +1,279 @@
+.ref_sec {
+    padding: 110px 0;
+    @include tablet {
+        padding: 90px 0;
+    }
+    @include mobile {
+        padding: 60px 0;
+    }
+}
+
+.tab_slide_wrap {
+    
+  
+    position: relative;
+  
+    /* ===== Tabs ===== */
+    .tab_area {
+        border-bottom: 1px solid $c_line;
+        @include mobile {  
+            padding-bottom: 20px;
+        }
+    }
+  
+    .tab_list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; // 8개 고정 노출
+        padding: 0 82px;
+        @include tablet {
+            padding: 0;
+        }
+        @include mobile { 
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: flex-start;
+        }
+    }
+  
+    .tab_list > li {
+      
+        text-align: center;
+        position: relative;
+  
+        button {
+            width: 100%;
+            background: none;
+            border: 0;
+            padding-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #111;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+  
+        &._active {
+            button { color: $c_key }
+    
+            &::after {
+            content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -1px;
+                height: 2px;
+                background: $c_key;
+            }
+        }
+        @include tablet { 
+            button {
+                font-size: 16px;
+            }
+        }
+        @include mobile { 
+            width: calc((100% - 10px * 2) / 3);
+            button {
+                color: #fff;
+                background-color: #ddd;
+                padding-bottom: 0;
+                height: 32px;
+                border-radius: 6px;
+                font-size: 14px;
+                
+            }
+            &._active {
+                button {
+                    background-color: $c_key;
+                    color: #fff;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+  
+    /* ===== Slider ===== */
+    .tab_slide {
+        padding-top: 80px;
+        margin: 0 82px;
+        @include tablet {
+            margin: 0 50px;
+            padding-top: 40px;
+        }
+        @include mobile { 
+            margin: 0;
+            padding-top: 20px;
+        }
+    }
+  
+    .slide_item {
+        .logo_wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .img_box {
+            aspect-ratio: 100 / 56.9;
+            border-radius: 10px;
+            border: 1px solid $c_line;
+            width: calc((100% - 20px * 4) / 5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        }
+        @include tablet {
+            .logo_wrap { 
+                gap: 16px;
+            }
+            
+            .img_box {
+                width: calc((100% - 16px * 3) / 4);
+            }
+        }
+        @include mobile {
+            .logo_wrap { 
+                gap: 10px;
+            }
+            
+            .img_box {
+                width: calc((100% - 10px * 2) / 3);
+            }
+        }
+    }
+  
+    /* ===== Nav (outside tab_slide) ===== */
+    .tab_slide_nav {
+        position: absolute;
+        top: calc(50% + 60px); // 탭 높이만큼 내려줌(필요시 숫자만 조절)
+        transform: translateY(-50%);
+        z-index: 5;
+    
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+  
+        &._prev { 
+            left: 0; 
+        }
+        &._next { 
+            right: 0; 
+        }
+  
+        &::before {
+            content: '';
+            display: block;
+            width: 28px;
+            height: 28px;
+            margin: 0 auto;
+            border-top: 4px solid #111;
+            border-right: 4px solid #111;
+            transform: rotate(45deg);
+        }
+  
+        &._prev::before { 
+            transform: rotate(-135deg); 
+    
+        }
+        @include tablet { 
+            width: 30px;
+            height: 30px;
+            top: calc(50% + 38px);
+            &::before {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        @include mobile { 
+            display: none;
+            width: 30px;
+            height: 30px;
+            &::before {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+}
+  
+
+.ref_sec2 {
+    color: #fff;
+    background-image: url(../images/sub/ref_client_bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.ref_review_wrap {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 44px;
+    padding-bottom: 120px;
+   
+    .ref_review_box {
+        aspect-ratio: 100/113.63;
+        width: 100%;
+        min-width: 0;
+        padding: 30px;
+        display: flex;
+        align-items: flex-end;
+        color: #fff;
+        //width: calc((100% - 44px * 2) / 3);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(6) {
+            position: relative;
+            top: 120px;
+        }
+        @for $i from 1 through 6 {
+            &._review#{$i} {
+                background-image: url(../images/sub/ref_review_bg#{$i}.png);
+            }
+        }
+        .desc2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    @include tablet {
+        gap: 20px;
+        .ref_review_box {
+            min-height: 400px;
+            padding: 30px 20px;
+            aspect-ratio : auto;
+            border-radius: 20px;
+        }
+    }
+    @include mobile {
+        display: block;
+        padding-bottom: 0;
+        .ref_review_box {
+            & + .ref_review_box {
+                margin-top: 24px;
+            }
+            border-radius: 0;
+            min-height: auto;
+            aspect-ratio: 100/113.63;
+            &:nth-child(1),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(6) {
+                top: 0;
+            }
+        }
+    }
+}

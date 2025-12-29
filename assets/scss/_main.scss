@@ -597,30 +597,55 @@
         }
     }
     &_btn {
-        width: 41px;
-        height: 41px;
+        width: 40px;
+        height: 40px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
+        
+        &::before {
+            content: '';
+            display: block;
+            width: 28px;
+            height: 28px;
+            margin: 0 auto;
+            border-top: 4px solid #000;
+            border-right: 4px solid #000;
+            transform: rotate(45deg);
+        }
+        &.ty_white {
+            &::before {
+                border-top-color: #fff;
+                border-right-color: #fff;
+            }
+        }
         &.client_slide_prev {
-            background-image: url(../images/slide_prev.svg);
             left: 0;
+            &::before {
+                transform: rotate(-135deg); 
+            }
         }
         &.client_slide_next {
-            background-image: url(../images/slide_next.svg);
             right: 0;
         }
         @include tablet { 
             width: 30px;
             height: 30px;
+            &::before {
+                width: 24px;
+                height: 24px;
+            }
         }
         @include mobile { 
             width: 30px;
             height: 30px;
-            background-size: auto 20px;
+            &::before {
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 
@@ -628,7 +653,7 @@
     .slide_item {
         height: auto;
         .img_box {
-            height: 130px;
+            aspect-ratio: 100 / 56.9;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -641,14 +666,12 @@
                 height: 100%;
                 object-fit: contain;
             }
-            @include mobile {
-                height: 100px;
-            }
         }
     }
     &.ty_fixed {
         .slide_item {
             .img_box { 
+                aspect-ratio: auto;
                 height: auto !important;
                 border: none;
                 padding: 0;

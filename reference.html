@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tickle On</title>
+   
+    <!--[D] fonts-->
+    <link rel="" href="./assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="" href="./assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!--[D] 공통적용 js&css-->
+    <link rel="stylesheet" href="./assets/css/common.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script type="text/javascript" src="./assets/js/common.js" defer></script>
+    <script type="text/javascript" src="./assets/js/scrollAni.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <div class="header_inner">
+                <h1 class="header_logo">
+                    <a href="./">
+                        <div class="ico_logo"></div>
+                        <span class="blind">Tickle On</span>
+                    </a>
+                </h1>
+                <nav id="nav" class="nav">
+                    <div class="header_btns">
+                        <a href="" class="header_btn _partners">티클 파트너스</a>
+                        <a href="" class="header_btn _inquiry">견적문의</a>
+                    </div>
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">회사소개</span>
+                                    <span class="nav_desc">ABOUT US</span>
+                                </div> 
+                            </a>
+                        </li>
+                        <li class="nav_item has_dep">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">서비스</span>
+                                    <span class="nav_desc">SERVICE</span>
+                                </div>
+                            </a>
+                            <div class="service_panel">
+                                <ul class="service_panel_list">
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service1.svg" alt="">
+                                            <strong>건물관리서비스</strong>
+                                        </a>               
+                                    </li>
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service2.svg" alt="">
+                                            <strong>호텔관리서비스</strong>
+                                        </a>  
+                                    </li>
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service3.svg" alt="">
+                                            <strong>통합 경리회계 아웃소싱</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">성과 &middot; 사례</span>
+                                    <span class="nav_desc">ACHIEVEMENT</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">뉴스</span>
+                                    <span class="nav_desc">NEWS</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_btns">
+                    <a href="" class="header_btn _partners">티클 파트너스</a>
+                    <a href="" class="header_btn _inquiry">견적문의</a>
+                </div>
+                <button type="button" 
+                class="btn_nav_toggle"
+                aria-label="메뉴 열기"
+                aria-expanded="false"
+                aria-controls="nav">
+                    <div class="bars">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+        <main id="container">
+            <section class="sub_visual _reference">
+                <h2 class="tit">신뢰로 쌓아온 관리 품질의 기록</h2>
+            </section>
+            <section class="contents _reference">
+                <section class="ref_sec ref_sec1">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">고객사</h2>
+                            <p class="desc">티클과 공간의 가치를 함께 만들어가는 고객사들을 만나보세요.</p>
+                        </div>
+                        <div class="tab_slide_wrap">
+                            <div class="tab_area aniBox ani_bot">
+                                <ul class="tab_list">
+                                    <li class="_active"><button type="button">학교/공공기관</button></li>
+                                    <li><button type="button">매장/쇼룸</button></li>
+                                    <li><button type="button">호텔/리조트</button></li>
+                                    <li><button type="button">사무실</button></li>
+                                    <li><button type="button">아파트/빌라</button></li>
+                                    <li><button type="button">건물/통신옥</button></li>
+                                    <li><button type="button">병원</button></li>
+                                    <li><button type="button">프랜차이즈</button></li>
+                                </ul>
+                            </div>
+                            <div class="tab_slide swiper aniBox ani_bot">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide_item">
+                                        <div class="logo_wrap">
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-701.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-702.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-703.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-704.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-705.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-706.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-707.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-708.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-709.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-710.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-711.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-712.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-713.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-714.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-715.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-716.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-717.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-718.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-719.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-720.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-721.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-722.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-723.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-724.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-725.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-726.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-727.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-728.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-729.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-730.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-731.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-732.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-733.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-734.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-735.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-736.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/1/logo-737.png" alt=""></div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="logo_wrap">
+                                            <div class="img_box"><img src="./assets/images/clients/2/logo-601.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/2/logo-602.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/2/logo-603.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/2/logo-604.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/2/logo-605.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/2/logo-606.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/2/logo-607.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/2/logo-608.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/2/logo-609.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/2/logo-610.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/2/logo-611.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/2/logo-612.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/2/logo-613.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/2/logo-614.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="logo_wrap">
+                                            <div class="img_box"><img src="./assets/images/clients/3/logo-801.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/3/logo-802.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/3/logo-803.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/3/logo-804.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/3/logo-805.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/3/logo-806.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/3/logo-807.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="logo_wrap">
+                                            <div class="img_box"><img src="./assets/images/clients/4/logo-101.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/4/logo-102.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/4/logo-103.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/4/logo-104.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/4/logo-105.png" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="logo_wrap">
+                                            <div class="img_box"><img src="./assets/images/clients/5/logo-201.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/5/logo-202.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/5/logo-203.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/5/logo-204.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/5/logo-205.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/5/logo-206.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/5/logo-207.png" alt=""></div>       
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="logo_wrap">
+                                            <div class="img_box"><img src="./assets/images/clients/6/logo-301.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/6/logo-302.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/6/logo-303.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/6/logo-304.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/6/logo-305.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/6/logo-306.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/6/logo-307.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/6/logo-308.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/6/logo-309.png" alt=""></div>   
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="logo_wrap">
+                                            <div class="img_box"><img src="./assets/images/clients/7/logo-401.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/7/logo-402.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/7/logo-403.png" alt=""></div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide_item">
+                                        <div class="logo_wrap">
+                                            <div class="img_box"><img src="./assets/images/clients/8/logo-501.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/8/logo-502.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/8/logo-503.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/8/logo-504.png" alt=""></div>
+                                            <div class="img_box"><img src="./assets/images/clients/8/logo-505.png" alt=""></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="tab_slide_nav _prev" aria-label="이전"></button>
+                            <button type="button" class="tab_slide_nav _next" aria-label="다음"></button>
+                        </div>
+                    </div>
+                </section>
+                <section class="ref_sec ref_sec2">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">제휴 협력사</h2>
+                            <p class="desc">티클과 공간의 가치를 함계 높이는 전문 협력 네트워크사를 소개합니다. </p>
+                        </div>
+                        <div class="client_slide_wrap aniBox ani_bot">
+                            <div class="client_slide swiper ty_fixed">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/sub/ref_client1.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/sub/ref_client2.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/sub/ref_client3.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/sub/ref_client4.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/sub/ref_client5.png" alt=""></div></div>
+                                    <div class="swiper-slide slide_item"><div class="img_box"><img src="./assets/images/sub/ref_client6.png" alt=""></div></div>                 
+                                </div>
+                            </div>
+                            <button type="button" class="client_slide_btn client_slide_prev ty_white" aria-label="이전 슬라이드"></button>
+                            <button type="button" class="client_slide_btn client_slide_next ty_white" aria-label="다음 슬라이드"></button>
+                        </div>
+                    </div>
+                </section>
+                <section class="ref_sec ref_sec3 ">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">사례와 후기</h2> 
+                            <p class="desc">티클을 경험한고객들의 생생한 이야기를 만나보세요.  </p>
+                        </div>
+                        <div class="ref_review_wrap">
+                            <div class="ref_review_box _review1 aniBox ani_bot">
+                                <div class="txt_box">
+                                    <p class="desc2 fwB">M 쇼핑몰 시설팀장</p>
+                                    <p class="desc_s">솔루션을 도입하고 부터 점검표 체크나 보고서 작성 누락에 대한
+                                        걱정이 사라졌습니다. 업무 속도가 빨라졌고, 사용하는 직원들 
+                                        만족도가 높아서 그런지 건물관리 품질이 향상된 느낌입니다.   </p>
+                                </div>
+                            </div>
+                            <div class="ref_review_box _review2 aniBox ani_bot">
+                                <div class="txt_box">
+                                    <p class="desc2 fwB">R 건물관리업체 총무팀장</p>
+                                    <p class="desc_s">위탁 관리 중인 여러 건물의 관리현황을 솔루션 하나로 
+                                        통합 모니터링 할 수 있어서 좋습니다. 
+                                        클라이언트쪽에서 먼저 체감할 정도로 이슈 파악이나 대응이
+                                        빨라 앞으로도 이용할 예정입니다. </p>
+                                </div>
+                            </div>
+                            <div class="ref_review_box _review3 aniBox ani_bot">
+                                <div class="txt_box">
+                                    <p class="desc2 fwB">D 무인매장 점주</p>
+                                    <p class="desc_s">매일 정해진 시간에 매니져가 매장 점검부터 관리까지
+                                        업무를 대신 해주니 후기가 좋고 저도 신경 안쓰고 마음 편히
+                                        맡길 수 있어서 만족합니다.    </p>
+                                </div>
+                            </div>
+                            <div class="ref_review_box _review4 aniBox ani_bot">
+                                <div class="txt_box">
+                                    <p class="desc2 fwB">P 지식산업센터 관계자</p>
+                                    <p class="desc_s">솔루션 도입을 통해 반복돼 온 민원을 해결하고,
+                                        불필요하게 지출되던 비용을 30% 절감했어요. </p>
+                                </div>
+                            </div>
+                            <div class="ref_review_box _review5 aniBox ani_bot">
+                                <div class="txt_box">
+                                    <p class="desc2 fwB">N 근린상가 관리인</p>
+                                    <p class="desc_s">기존에는 직원 수에 비해 청소품질이 계속 아쉬웠습니다.
+                                        새로운 방법이 필요하다 생각해 티클과협력한 뒤로는 인건비는
+                                        줄고 청소 상태는 훨씬 더 안정적이네요.
+                                        만족스럽게 유지되고 있어 앞으로도 계속 맡길 것 같습니다.  </p>
+                                </div>
+                            </div>
+                            <div class="ref_review_box _review6 aniBox ani_bot">
+                                <div class="txt_box">
+                                    <p class="desc2 fwB">Y 꼬마빌딩 건물주</p>
+                                    <p class="desc_s">소방, 승강기, 전기, 저수조처럼 번거로운 법정 설비 관리를
+                                        티클에 한곳으로 통합해 맡기니 관리 공백이 사라지네요.
+                                        전체 관리비도 약 20% 절감되는 효과도 있고 여러모로 
+                                        만족스럽습니다.    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer_inner">
+                <div class="footer_logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </div>
+                <div class="footer_sec sec1">
+                    <ul class="footer_nav">
+                        <li><a href="">서비스 이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                    </ul>
+                    <div class="footer_info">
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>대표이사</b> 이상부</span>
+                            <span class="footer_info_item"><b>주소</b> 경기도 용인시 수지구 법조로 215, 3층</span>
+                        </div>
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>사업자</b> 등록번호 463-81-00234</span>
+                            <span class="footer_info_item"><b>통신판매업</b> 신고번호 2023-용인수지-0417호</span>
+                        </div>
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>대표전화</b> 1533-3910</span>
+                            <span class="footer_info_item"><b>이메일</b> info@tickle.co.kr </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_sec sec2">
+                    <div class="footer_branch">
+                        <div class="btn_trigger">Family site</div>
+                        <ul class="footer_branch_list">
+                            <li><a href="" target="_blank">Family site111</a></li>
+                            <li><a href="" target="_blank">Family site222</a></li>
+                            <li><a href="" target="_blank">Family site333</a></li>
+                            <li><a href="" target="_blank">Family site444</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_sns">
+                        <span>Follow Us</span>
+                        <a href="" class="footer_sns_btn ty_blog"><span class="blind">blog</span></a>
+                        <a href="" class="footer_sns_btn ty_fb"><span class="blind">facebook</span></a>
+                        <a href="" class="footer_sns_btn ty_insta"><span class="blind">instagram</span></a>
+                        <a href="" class="footer_sns_btn ty_ytb"><span class="blind">youtube</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">ⓒTICKLE. All Rights Reserved.</div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const wrap = document.querySelector('.tab_slide_wrap');
+        const tabs = wrap?.querySelectorAll('.tab_list > li');
+        const sliderEl = wrap?.querySelector('.tab_slide');
+      
+        if (wrap && tabs?.length && sliderEl && typeof Swiper !== 'undefined') {
+          const swiper = new Swiper(sliderEl, {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 24,
+            autoHeight: true,
+            navigation: {
+              prevEl: wrap.querySelector('.tab_slide_nav._prev'),
+              nextEl: wrap.querySelector('.tab_slide_nav._next'),
+            },
+            on: {
+              init() {
+                setActive(this.realIndex);
+              },
+              slideChange() {
+                setActive(this.realIndex); // ✅ loop일 때는 realIndex
+              },
+            },
+          });
+      
+          function setActive(i) {
+            tabs.forEach(t => t.classList.remove('_active'));
+            if (tabs[i]) tabs[i].classList.add('_active');
+          }
+      
+          tabs.forEach((li, i) => {
+            li.addEventListener('click', () => {
+              swiper.slideToLoop(i); // ✅ loop일 때는 slideToLoop
+              setActive(i);
+            });
+          });
+        }
+    </script>
+      
+      
+      
+      
+      
+      
+    <script>
+        (() => {
+            const wrap = document.querySelector('.client_slide_wrap');
+            if (!wrap) return;
+          
+            const slider = wrap.querySelector('.client_slide');
+            const wrapper = slider?.querySelector('.swiper-wrapper');
+            const prevBtn = wrap.querySelector('.client_slide_prev');
+            const nextBtn = wrap.querySelector('.client_slide_next');
+            if (!slider || !wrapper) return;
+          
+            let swiper = null;
+          
+            const slideCount = () => wrapper.querySelectorAll('.swiper-slide').length;
+          
+            const enable = () => {
+              wrap.classList.remove('is-static');
+          
+              swiper = new Swiper(slider, {
+                loop: true,
+                watchOverflow: true,
+                autoplay: { delay: 2500, disableOnInteraction: false, pauseOnMouseEnter: true },
+                navigation: { prevEl: prevBtn, nextEl: nextBtn },
+          
+                slidesPerView: 2,
+                spaceBetween: 12,
+                breakpoints: {
+                  768:  { slidesPerView: 4, spaceBetween: 16 },
+                  1024: { slidesPerView: 5, spaceBetween: 20 },
+                },
+              });
+            };
+          
+            const disable = () => {
+              if (!swiper) return;
+              swiper.destroy(true, true);
+              swiper = null;
+              wrap.classList.add('is-static');
+            };
+          
+            const sync = () => {
+              const w = window.innerWidth;
+              const min = (w >= 1024) ? 6 : (w >= 768) ? 5 : 3;
+          
+              slideCount() >= min ? (swiper ? swiper.update() : enable()) : disable();
+            };
+          
+            sync();
+            window.addEventListener('resize', () => {
+              clearTimeout(sync._t);
+              sync._t = setTimeout(sync, 150);
+            });
+          })();
+          
+    </script>
+    
+</body>
+</html>
