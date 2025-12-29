@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tickle On</title>
+   
+    <!--[D] fonts-->
+    <link rel="" href="./assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="" href="./assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!--[D] 공통적용 js&css-->
+    <link rel="stylesheet" href="./assets/css/common.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <script type="text/javascript" src="./assets/js/common.js" defer></script>
+    <script type="text/javascript" src="./assets/js/scrollAni.js" defer></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <div class="header_inner">
+                <h1 class="header_logo">
+                    <a href="./">
+                        <div class="ico_logo"></div>
+                        <span class="blind">Tickle On</span>
+                    </a>
+                </h1>
+                <nav id="nav" class="nav">
+                    <div class="header_btns">
+                        <a href="" class="header_btn _partners">티클 파트너스</a>
+                        <a href="" class="header_btn _inquiry">견적문의</a>
+                    </div>
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">회사소개</span>
+                                    <span class="nav_desc">ABOUT US</span>
+                                </div> 
+                            </a>
+                        </li>
+                        <li class="nav_item has_dep">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">서비스</span>
+                                    <span class="nav_desc">SERVICE</span>
+                                </div>
+                            </a>
+                            <div class="service_panel">
+                                <ul class="service_panel_list">
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service1.svg" alt="">
+                                            <strong>건물관리서비스</strong>
+                                        </a>               
+                                    </li>
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service2.svg" alt="">
+                                            <strong>호텔관리서비스</strong>
+                                        </a>  
+                                    </li>
+                                    <li class="service_panel_item">
+                                        <a href="" class="service_panel_link">
+                                            <img src="./assets/images/service3.svg" alt="">
+                                            <strong>통합 경리회계 아웃소싱</strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">성과 &middot; 사례</span>
+                                    <span class="nav_desc">ACHIEVEMENT</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="" class="nav_link">
+                                <div class="nav_link_txt">
+                                    <span class="nav_tit">뉴스</span>
+                                    <span class="nav_desc">NEWS</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header_btns">
+                    <a href="" class="header_btn _partners">티클 파트너스</a>
+                    <a href="" class="header_btn _inquiry">견적문의</a>
+                </div>
+                <button type="button" 
+                class="btn_nav_toggle"
+                aria-label="메뉴 열기"
+                aria-expanded="false"
+                aria-controls="nav">
+                    <div class="bars">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                    </div>
+                </button>
+            </div>
+        </header>
+        <main id="container">
+            <section class="sub_visual _news">
+                <h2 class="tit">우리의 발자취, <br class="m_only"> 그리고 내일의 이야기 </h2>
+            </section>
+            <section class="contents _news">
+                <section class="sub_sec ">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">뉴스</h2>
+                            <p class="desc">새로운 서비스 소식과 기업 소식을 한눈에 확인하세요. </p>
+                        </div>      
+                        <ul class="news_tab aniBox ani_bot">
+                            <li><button type="button" class="news_tab_btn _active">전체</button></li>
+                            <li><button type="button" class="news_tab_btn">공지사항</button></li>
+                            <li><button type="button" class="news_tab_btn">보도자료</button></li>
+                            <li><button type="button" class="news_tab_btn">이벤트</button></li>
+                        </ul>
+                        <ul class="news_list aniBox ani_bot">
+                            <li class="news_item">
+                                <a href="" class="new_link">
+                                    <div class="img_box">
+                                        <img src="./assets/images/sub/news_thumb_dummy.png" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <div class="news_item_top ty_notice"><b>공지사항</b> ㅣ <span>2025.10.26</span></div>
+                                        <p class="news_item_tit tit2 t_hidden_1">티클온, ‘2025 건물유지관리산업특별전’ 참가...’시설관리 솔루션’ 선보여 </p>
+                                        <p class="desc">주식회사 티클(이하 티클)은 오는 7월 30일(수)부터 8월 2일(토)까지 코엑스에서 개최되는 국내 유일 건물유지관리산업 전문 전시회, 
+                                            ‘2025 건물유지관리산업특별전’에 참가한다고 밝혔다. 티클은 원활한 시설물 유지관리를 위해 미화, 설비, 보안, 주차 등 각 분야별
+                                            최적화 운영으로 이름난 종합건물관리 FM업체다.   </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="news_item">
+                                <a href="" class="new_link">
+                                    <div class="img_box">
+                                        <img src="./assets/images/sub/news_thumb_dummy.png" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <div class="news_item_top ty_press"><b>보도자료</b> ㅣ <span>2025.10.26</span></div>
+                                        <p class="news_item_tit tit2 t_hidden_1">티클온, ‘2025 건물유지관리산업특별전’ 참가...’시설관리 솔루션’ 선보여 </p>
+                                        <p class="desc">주식회사 티클(이하 티클)은 오는 7월 30일(수)부터 8월 2일(토)까지 코엑스에서 개최되는 국내 유일 건물유지관리산업 전문 전시회, 
+                                            ‘2025 건물유지관리산업특별전’에 참가한다고 밝혔다. 티클은 원활한 시설물 유지관리를 위해 미화, 설비, 보안, 주차 등 각 분야별
+                                            최적화 운영으로 이름난 종합건물관리 FM업체다.  주식회사 티클(이하 티클)은 오는 7월 30일(수)부터 8월 2일(토)까지 코엑스에서 개최되는 국내 유일 건물유지관리산업 전문 전시회, 
+                                            ‘2025 건물유지관리산업특별전’에 참가한다고 밝혔다. 티클은 원활한 시설물 유지관리를 위해 미화, 설비, 보안, 주차 등 각 분야별
+                                            최적화 운영으로 이름난 종합건물관리 FM업체다.   </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="news_item">
+                                <a href="" class="new_link">
+                                    <div class="img_box">
+                                        <img src="./assets/images/sub/news_thumb_dummy.png" alt="">
+                                    </div>
+                                    <div class="txt_box">
+                                        <div class="news_item_top ty_event"><b>이벤트</b> ㅣ <span>2025.10.26</span></div>
+                                        <p class="news_item_tit tit2 t_hidden_1">티클온, ‘2025 건물유지관리산업특별전’ 참가...’시설관리 솔루션’ 선보여 </p>
+                                        <p class="desc">주식회사 티클(이하 티클)은 오는 7월 30일(수)부터 8월 2일(토)까지 코엑스에서 개최되는 국내 유일 건물유지관리산업 전문 전시회, 
+                                            ‘2025 건물유지관리산업특별전’에 참가한다고 밝혔다. 티클은 원활한 시설물 유지관리를 위해 미화, 설비, 보안, 주차 등 각 분야별
+                                            최적화 운영으로 이름난 종합건물관리 FM업체다.  주식회사 티클(이하 티클)은 오는 7월 30일(수)부터 8월 2일(토)까지 코엑스에서 개최되는 국내 유일 건물유지관리산업 전문 전시회, 
+                                            ‘2025 건물유지관리산업특별전’에 참가한다고 밝혔다. 티클은 원활한 시설물 유지관리를 위해 미화, 설비, 보안, 주차 등 각 분야별
+                                            최적화 운영으로 이름난 종합건물관리 FM업체다.   </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="paging_wrap aniBox ani_bot">
+                            <div class="paging_inner">
+                                <a href="" class="paging_nav _prev">
+                                    <span class="ico_box"></span>
+                                    <span class="txt">Previous</span> 
+                                </a>
+                                <ul class="paging_list">
+                                    <a href="" class="paging_btn _current">1</a>
+                                    <a href="" class="paging_btn">2</a>
+                                    <a href="" class="paging_btn">3</a>
+                                    <a href="" class="paging_btn">4</a>
+                                    <a href="" class="paging_btn">5</a>  
+                                </ul>
+                                <a href="" class="paging_nav _next">
+                                    <span class="txt">Next</span> 
+                                    <span class="ico_box"></span>
+                                </a> 
+                            </div>
+                           
+                            <button type="button" class="paging_all">Show all</button>
+                        </div>
+
+                        
+                        <div class="paging_wrap aniBox ani_bot">
+                            <div class="paging_inner">
+                                <!--[D] paging_nav 비활성화 : "_disabled" -->
+                                <a href="" class="paging_nav _prev _disabled">
+                                    <span class="ico_box"></span>
+                                    <span class="txt">Previous</span> 
+                                </a>
+                                <ul class="paging_list">
+                                    <a href="" class="paging_btn _current">1</a>
+                                    <a href="" class="paging_btn">2</a>
+                                    <a href="" class="paging_btn">3</a>
+                                    <a href="" class="paging_btn">4</a>
+                                    <a href="" class="paging_btn">5</a>  
+                                </ul>
+                                <!--[D] paging_nav 비활성화 : "_disabled" -->
+                                <a href="" class="paging_nav _next _disabled">
+                                    <span class="txt">Next</span> 
+                                    <span class="ico_box"></span>
+                                </a> 
+                            </div>
+                            <button type="button" class="paging_all">Show all</button>
+                        </div>
+                    </div>
+                </section>   
+                <section class="sub_sec news_exhibition_sec">
+                    <div class="inner">
+                        <div class="sub_sec_tit aniBox ani_bot">
+                            <h2 class="tit1">‘스마트빌딩 특별관’ 입점 <br> 2025 건물유지관리산업전 참가 </h2>
+                            <p class="desc">“스마트 건물관리솔루션으로 공정하고합리적인 시장을 만들어 가겠습니다.” </p>
+                        </div>    
+                        
+                    </div>
+                    <div class="exhibition_slide_wrapper aniBox ani_bot">
+                        <div class="exhibition_slide ">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/exhibition/exhibition_img1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/exhibition/exhibition_img2.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/exhibition/exhibition_img3.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/exhibition/exhibition_img4.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/exhibition/exhibition_img5.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/exhibition/exhibition_img6.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer_inner">
+                <div class="footer_logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </div>
+                <div class="footer_sec sec1">
+                    <ul class="footer_nav">
+                        <li><a href="">서비스 이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                    </ul>
+                    <div class="footer_info">
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>대표이사</b> 이상부</span>
+                            <span class="footer_info_item"><b>주소</b> 경기도 용인시 수지구 법조로 215, 3층</span>
+                        </div>
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>사업자</b> 등록번호 463-81-00234</span>
+                            <span class="footer_info_item"><b>통신판매업</b> 신고번호 2023-용인수지-0417호</span>
+                        </div>
+                        <div class="footer_info_sec">
+                            <span class="footer_info_item"><b>대표전화</b> 1533-3910</span>
+                            <span class="footer_info_item"><b>이메일</b> info@tickle.co.kr </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_sec sec2">
+                    <div class="footer_branch">
+                        <div class="btn_trigger">Family site</div>
+                        <ul class="footer_branch_list">
+                            <li><a href="" target="_blank">Family site111</a></li>
+                            <li><a href="" target="_blank">Family site222</a></li>
+                            <li><a href="" target="_blank">Family site333</a></li>
+                            <li><a href="" target="_blank">Family site444</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_sns">
+                        <span>Follow Us</span>
+                        <a href="" class="footer_sns_btn ty_blog"><span class="blind">blog</span></a>
+                        <a href="" class="footer_sns_btn ty_fb"><span class="blind">facebook</span></a>
+                        <a href="" class="footer_sns_btn ty_insta"><span class="blind">instagram</span></a>
+                        <a href="" class="footer_sns_btn ty_ytb"><span class="blind">youtube</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy">ⓒTICKLE. All Rights Reserved.</div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const sliderEl = document.querySelector(".exhibition_slide");
+        if (sliderEl && typeof Swiper !== "undefined") {
+            const swiper = new Swiper(sliderEl, {
+                loop: true,
+                spaceBetween: 12,
+                slidesPerView: 3,
+                //loopAdditionalSlides: 4,
+                speed : 700,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+                breakpoints: {
+                    768:  { slidesPerView: 3, spaceBetween: 20 },
+                    1024: { slidesPerView: 5, spaceBetween: 30 },
+                },
+            });
+        }
+    </script>
+</body>
+</html>

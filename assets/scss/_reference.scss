@@ -118,7 +118,7 @@
             aspect-ratio: 100 / 56.9;
             border-radius: 10px;
             border: 1px solid $c_line;
-            width: calc((100% - 20px * 4) / 5);
+            width: calc((100% - 20px * 5) / 6);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -145,6 +145,7 @@
             
             .img_box {
                 width: calc((100% - 10px * 2) / 3);
+                padding: 4px;
             }
         }
     }

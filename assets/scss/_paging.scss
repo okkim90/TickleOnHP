@@ -1,81 +1,121 @@
 .paging {
     &_wrap {
         display: flex;
-        margin-top: 20px;
         align-items: center;
         justify-content: center;
         text-align: center;
-        gap: 0 4px;
-        // &.mt24 {
-        //     margin-top: 24px;
-        // }
+        margin-top: 80px;
     }
-    &_btn {
-        
-        min-width: 32px;
-        height: 32px;
-        //padding: 0 4px;
-        box-sizing: border-box;
-        border-radius: 16px;
-        line-height: 30px;
-        font-size: 13px;
-        color: $c_font;
-        border: 1px solid $c_line2;
-        flex-shrink: 0;
-        font-weight: 500;
-        padding: 0 4px;
-        
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-color: #fff;
-        @include mobile { 
-            min-width: 26px;
-            height: 26px;
-            line-height: 24px;
-            font-size: 12px;
-            border-radius: 13px;
-        }
-
-        &:hover {
-            //background-color: ;
-            //color: #fff;
-        }
-        &.paging_nav {
-            width: 32px;
-            height: 32px;
-            min-width: 32px;
-            @include mobile { 
-                width: 26px;
-                height: 26px;
-                min-width: 26px;
-            }
-        }
-        
-        &.ty_first {
-            background-image: url(../images/paging_first.svg);
-        }
-        &.ty_prev {
-            background-image: url(../images/paging_prev.svg);
-            //margin-right: 4px;
-        }
-        &.ty_next {
-            background-image: url(../images/paging_next.svg);
-            //margin-left: 4px;
-        }
-        &.ty_last {
-            background-image: url(../images/paging_last.svg);
-        }
+    &_inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
     &_list {
+        margin: 0 20px;
         display: flex;
-        gap: 0 5px;
-        .paging_btn {
-            
-            
-            &.current {
-                background-color: $c_key;
-                color: #fff;
+        gap: 5px;
+    }
+    &_btn {
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        color: $c_key;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
+        &._current {
+            background-color: $c_key;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    &_nav {
+        font-size: 18px;
+        font-weight: bold;
+        color: $c_key;
+        display: flex;
+        align-items: center;
+        user-select: none;
+        .ico_box {
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 15px;
+        }
+        &._prev {
+            .ico_box {
+                background-image: url(../images/sub/paging_arrow_next.png);
+                transform: rotate(180deg);
             }
+        }
+        &._next {
+            .ico_box {
+                background-image: url(../images/sub/paging_arrow_next.png);
+            }
+        }
+        &._disabled {
+            color: $c_grey;
+            cursor: default;
+            pointer-events: none;
+            &._prev {
+                .ico_box {
+                    background-image: url(../images/sub/paging_arrow_prev.png);
+                    transform: rotate(0);
+                }
+            }
+            &._next {
+                .ico_box {
+                    background-image: url(../images/sub/paging_arrow_prev.png);
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    &_all {
+        font-weight: bold;
+        color: $c_key;
+        font-size: 18px;
+        margin-left: 30px;
+    }
+
+    @include tablet {
+        &_wrap { 
+            margin-top: 60px;
+        }
+       
+    }
+    @include mobile {
+        &_wrap { 
+            margin-top: 40px;
+            //display: block;
+        }
+        &_list {
+            margin: 0 6px;
+            gap: 3px;
+        }
+        &_btn { 
+            width: 28px;
+            height: 28px;
+            font-size: 13px;
+        }
+        &_nav {
+            .ico_box {
+                width: 28px;
+                height: 28px;
+            }
+            .txt {
+                display: none;
+            }
+        }
+        &_all {
+            font-size: 12px;
+            margin-left: auto;
         }
     }
 }

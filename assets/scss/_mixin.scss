@@ -90,14 +90,14 @@ $breakpoint-t4: 1100px;
 
 @for $i from 2 through 10 {
     .t_hidden_#{$i} {
-        $lh : 1.6em;
+        $lh : 1.5em;
         @include text-hidden($i, $lh)
     }
 } 
 
 @for $i from 2 through 10 {
     .t_hidden_a_#{$i} {
-        $lh : 1.6em;
+        $lh : 1.5em;
         @include text-hidden($i, $lh, auto)
     }
 } 

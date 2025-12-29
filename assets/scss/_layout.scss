@@ -104,7 +104,10 @@ body.scroll-locked {
         background-image: url(../images/sub/sub_visual_reference.png);
         
     }
-
+    &._news {
+        background-image: url(../images/sub/sub_visual_news.png);
+        
+    }
 
     &._ss {
         height: 100dvh;
