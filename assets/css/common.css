@@ -11099,6 +11099,116 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
   }
 }
 
+.news_view {
+  border-top: 2px solid #000;
+}
+.news_view_top {
+  padding: 20px 0;
+  text-align: center;
+}
+.news_view_top_inner {
+  padding: 0 100px;
+  position: relative;
+}
+.news_view_top .tit {
+  font-size: 24px;
+  font-weight: bold;
+}
+.news_view_top .date {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 16px;
+  color: #666;
+}
+.news_view_cont {
+  padding: 50px;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.news_view_cont_inner {
+  max-width: 740px;
+  margin: 0 auto;
+}
+.news_view_cont img {
+  display: inline-block;
+}
+.news_view .btn_area {
+  margin-top: 60px;
+}
+.news_view .btn_area .btn {
+  width: 250px;
+}
+@media (max-width: 767px) {
+  .news_view_top {
+    padding: 15px 0;
+    text-align: left;
+  }
+  .news_view_top_inner {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .news_view_top .tit {
+    font-size: 18px;
+  }
+  .news_view_top .date {
+    margin-left: auto;
+    position: relative;
+    align-self: flex-end;
+  }
+  .news_view_cont {
+    font-size: 14px;
+    padding: 30px 0;
+  }
+  .news_view .btn_area {
+    margin-top: 40px;
+  }
+  .news_view .btn_area .btn {
+    width: 200px;
+  }
+}
+
+.sub_sec._terms {
+  padding-top: 80px;
+}
+.sub_sec._terms .terms {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.sub_sec._terms .terms strong {
+  display: block;
+  font-size: 20px;
+  padding: 50px 0 10px;
+}
+.sub_sec._terms .terms strong + br {
+  display: none;
+}
+.sub_sec._terms .terms p:first-of-type {
+  margin-top: 0;
+}
+.sub_sec._terms .terms ul li + li {
+  margin-top: 10px;
+}
+.sub_sec._terms .terms ul li {
+  padding-left: 1em;
+}
+@media (max-width: 767px) {
+  .sub_sec._terms .terms {
+    font-size: 14px;
+  }
+  .sub_sec._terms .terms strong {
+    font-size: 18px;
+    padding: 30px 0 6px;
+  }
+  .sub_sec._terms .terms ul li + li {
+    margin-top: 6px;
+  }
+}
+
 /* anibox */
 /* aniBox (2025 ver) */
 .aniBox {

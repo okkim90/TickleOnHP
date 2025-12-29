@@ -1,0 +1,42 @@
+.sub_sec._terms {
+    padding-top: 80px;
+    .terms {
+        font-size: 16px;
+        line-height: 1.6;
+        strong {
+            display: block;
+            font-size: 20px;
+            padding: 50px 0 10px;
+            & + br {
+                display: none;
+            }
+        }
+        p {
+            
+            &:first-of-type {
+                margin-top: 0;
+            }
+        }
+        ul {
+            li + li {
+                margin-top: 10px;
+            }
+            li {
+                padding-left: 1em;
+            }
+        }
+        @include mobile {
+            font-size: 14px;
+            strong {
+                font-size: 18px;
+                padding: 30px 0 6px;
+            }
+            ul {
+                li + li {
+                    margin-top: 6px;
+                } 
+            }
+        }
+    }
+    
+}
