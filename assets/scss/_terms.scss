@@ -1,42 +1,71 @@
 .sub_sec._terms {
     padding-top: 80px;
-    .terms {
-        font-size: 16px;
-        line-height: 1.6;
-        strong {
-            display: block;
-            font-size: 20px;
-            padding: 50px 0 10px;
-            & + br {
-                display: none;
-            }
-        }
-        p {
-            
-            &:first-of-type {
-                margin-top: 0;
-            }
-        }
-        ul {
-            li + li {
-                margin-top: 10px;
-            }
-            li {
-                padding-left: 1em;
-            }
-        }
-        @include mobile {
-            font-size: 14px;
-            strong {
-                font-size: 18px;
-                padding: 30px 0 6px;
+
+    @include mobile {
+        padding-top: 40px;
+    }
+}
+
+
+
+
+
+
+.terms {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+    font-family: "Pretendard",
+        system-ui, -apple-system, BlinkMacSystemFont,
+        "Apple SD Gothic Neo", "Noto Sans KR",
+        "Segoe UI", Roboto,
+        sans-serif;
+    * {
+        font-family: "Pretendard",
+        system-ui, -apple-system, BlinkMacSystemFont,
+        "Apple SD Gothic Neo", "Noto Sans KR",
+        "Segoe UI", Roboto,
+        sans-serif;
+    }
+    strong {
+        display: inline-block;
+        margin: 20px 0 10px;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    p {
+        text-align: left;
+    }
+    ul {
+        padding-left: 3em;
+        li {
+            margin-left: -1em;
+            span {
+                color: unset;
+                margin-left: -1em;
+                font-weight: 400;
+                
             }
             ul {
-                li + li {
-                    margin-top: 6px;
-                } 
+                padding-left: 2em;
+                li {
+                    margin-left: 0;
+                    span {
+                        color: unset;
+                        margin-left: -1.4em;
+                        
+                    }
+                }
             }
         }
     }
-    
+
+    @include mobile {
+        font-size: 16px;
+        strong {
+            font-size: 20px;
+        }
+    }
 }
+

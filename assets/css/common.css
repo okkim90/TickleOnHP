@@ -11175,37 +11175,58 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
 .sub_sec._terms {
   padding-top: 80px;
 }
-.sub_sec._terms .terms {
-  font-size: 16px;
-  line-height: 1.6;
+@media (max-width: 767px) {
+  .sub_sec._terms {
+    padding-top: 40px;
+  }
 }
-.sub_sec._terms .terms strong {
-  display: block;
-  font-size: 20px;
-  padding: 50px 0 10px;
+
+.terms {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: "Pretendard", system-ui, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", Roboto, sans-serif;
 }
-.sub_sec._terms .terms strong + br {
-  display: none;
+.terms * {
+  font-family: "Pretendard", system-ui, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", Roboto, sans-serif;
 }
-.sub_sec._terms .terms p:first-of-type {
-  margin-top: 0;
+.terms strong {
+  display: inline-block;
+  margin: 20px 0 10px;
+  font-weight: bold;
+  font-size: 24px;
 }
-.sub_sec._terms .terms ul li + li {
-  margin-top: 10px;
+.terms p {
+  text-align: left;
 }
-.sub_sec._terms .terms ul li {
-  padding-left: 1em;
+.terms ul {
+  padding-left: 3em;
+}
+.terms ul li {
+  margin-left: -1em;
+}
+.terms ul li span {
+  color: unset;
+  margin-left: -1em;
+  font-weight: 400;
+}
+.terms ul li ul {
+  padding-left: 2em;
+}
+.terms ul li ul li {
+  margin-left: 0;
+}
+.terms ul li ul li span {
+  color: unset;
+  margin-left: -1.4em;
 }
 @media (max-width: 767px) {
-  .sub_sec._terms .terms {
-    font-size: 14px;
+  .terms {
+    font-size: 16px;
   }
-  .sub_sec._terms .terms strong {
-    font-size: 18px;
-    padding: 30px 0 6px;
-  }
-  .sub_sec._terms .terms ul li + li {
-    margin-top: 6px;
+  .terms strong {
+    font-size: 20px;
   }
 }
 
