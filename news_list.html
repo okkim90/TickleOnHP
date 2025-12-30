@@ -33,6 +33,7 @@
                         <a href="" class="header_btn _inquiry">견적문의</a>
                     </div>
                     <ul class="nav_list">
+                        <!--[D] 메뉴 활성화 : nav_item 에 "on" class 추가 -->
                         <li class="nav_item">
                             <a href="" class="nav_link">
                                 <div class="nav_link_txt">
@@ -80,7 +81,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="nav_item">
+                        <li class="nav_item on">
                             <a href="" class="nav_link">
                                 <div class="nav_link_txt">
                                     <span class="nav_tit">뉴스</span>
@@ -108,8 +109,8 @@
             </div>
         </header>
         <main id="container">
-            <section class="sub_visual _news">
-                <h2 class="tit">우리의 발자취, <br class="m_only"> 그리고 내일의 이야기 </h2>
+            <section class="sub_visual _news aniBox">
+                <h2 class="tit aniBox ani_bot">우리의 발자취, <br class="m_only"> 그리고 내일의 이야기 </h2>
             </section>
             <section class="contents _news">
                 <section class="sub_sec ">
@@ -119,7 +120,8 @@
                             <p class="desc">새로운 서비스 소식과 기업 소식을 한눈에 확인하세요. </p>
                         </div>      
                         <ul class="news_tab aniBox ani_bot">
-                            <li><button type="button" class="news_tab_btn _active">전체</button></li>
+                            <!--[D] 탭 활성화 : news_tab_btn 에 "on" class 추가 -->
+                            <li><button type="button" class="news_tab_btn on">전체</button></li>
                             <li><button type="button" class="news_tab_btn">공지사항</button></li>
                             <li><button type="button" class="news_tab_btn">보도자료</button></li>
                             <li><button type="button" class="news_tab_btn">이벤트</button></li>
@@ -190,8 +192,6 @@
                                     <span class="ico_box"></span>
                                 </a> 
                             </div>
-                           
-                            <button type="button" class="paging_all">Show all</button>
                         </div>
 
                         
@@ -215,7 +215,6 @@
                                     <span class="ico_box"></span>
                                 </a> 
                             </div>
-                            <button type="button" class="paging_all">Show all</button>
                         </div>
                     </div>
                 </section>   

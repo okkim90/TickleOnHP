@@ -152,6 +152,16 @@
             }
           }
         }
+        &:hover {
+          .nav_tit {
+            color: $c_key;
+          }
+        }
+        &.on {
+          .nav_tit {
+            color: $c_key;
+          }
+        }
       }
   
 
@@ -349,16 +359,26 @@
         }
   
       
-          &._partners {
+        &._partners {
+          background-color: #3AA9B7;
+          border: none;
+          color: #fff;
+          &:hover {
             background-color: #fff;
-            border: 1px solid #000;
             color: #000;
+            border: 1px solid #000;
           }
-          &._inquiry {
+        }
+        &._inquiry {
+          background-color: #0C59D8;
+          border: none;
+          color: #fff;
+          &:hover {
             background-color: #fff;
-            border: 1px solid #000;
             color: #000;
+            border: 1px solid #000;
           }
+        }
       }
     }
   }
@@ -372,20 +392,28 @@
       --hd-fg: #fff;
       --hd-border: #fff;
       --hd-logo: url(../images/logo.svg);
-      .header_btns {
-        .header_btn {
-          &._partners {
-            background-color: #3AA9B7;
-            border: none;
+      // .header_btns {
+      //   .header_btn {
+      //     &._partners {
+      //       background-color: #3AA9B7;
+      //       border: none;
+      //       color: #fff;
+      //     }
+      //     &._inquiry {
+      //       background-color: #0C59D8;
+      //       border: none;
+      //       color: #fff;
+      //     }
+      //   } 
+      // }
+      .nav_item {
+        &:hover {
+          .nav_tit {
             color: #fff;
           }
-          &._inquiry {
-            background-color: #0C59D8;
-            border: none;
-            color: #fff;
-          }
-        } 
+        }
       }
+      
     }
   
     /* 메인에서 스크롤 후: 서브 헤더로 전환 */
@@ -394,19 +422,26 @@
       --hd-fg: #000;
       --hd-border: #000;
       --hd-logo: url(../images/logo_bg.svg);
-      .header_btns {
-        .header_btn {
-          &._partners {
-            background-color: #fff;
-            border: 1px solid #000;
-            color: #000;
+      // .header_btns {
+      //   .header_btn {
+      //     &._partners {
+      //       background-color: #fff;
+      //       border: 1px solid #000;
+      //       color: #000;
+      //     }
+      //     &._inquiry {
+      //       background-color: #fff;
+      //       border: 1px solid #000;
+      //       color: #000;
+      //     }
+      //   } 
+      // }
+      .nav_item {
+        &:hover {
+          .nav_tit {
+            color: $c_key;
           }
-          &._inquiry {
-            background-color: #fff;
-            border: 1px solid #000;
-            color: #000;
-          }
-        } 
+        }
       }
     }
   }

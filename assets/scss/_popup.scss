@@ -52,6 +52,22 @@
             padding: 20px;
             
         }
+        
+    }
+    &.popupPartner {
+        .popup_container {
+            overflow-y: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .tab_wrap {
+            overflow-y: auto;
+            padding-right: 20px;
+            @include mobile {
+                padding-right: 0;
+            }
+            @include scrollbar-minimal(8px, $c_key2, $c_bg);
+        }
     }
     &_tit {
         margin-bottom: 40px;

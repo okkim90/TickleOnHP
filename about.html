@@ -33,7 +33,8 @@
                         <a href="" class="header_btn _inquiry">견적문의</a>
                     </div>
                     <ul class="nav_list">
-                        <li class="nav_item">
+                        <!--[D] 메뉴 활성화 : nav_item 에 "on" class 추가 -->
+                        <li class="nav_item on">
                             <a href="" class="nav_link">
                                 <div class="nav_link_txt">
                                     <span class="nav_tit">회사소개</span>
@@ -108,8 +109,8 @@
             </div>
         </header>
         <main id="container">
-            <section class="sub_visual _about">
-                <h2 class="tit">사람의 노하우에 기술을 더하는  건물 종합관리 기업</h2>
+            <section class="sub_visual _about aniBox">
+                <h2 class="tit aniBox ani_bot">사람의 노하우에 기술을 더하는  건물 종합관리 기업</h2>
             </section>
             <section class="contents _about">
                 <section class="sub_sec about_sec about_sec1">
@@ -316,6 +317,7 @@
                     <div class="inner">
                         <div class="sub_sec_tit aniBox ani_bot">
                             <h2 class="tit1">연혁</h2> 
+                            <p class="desc">한 발자국씩 쌓아온 티클의 발자취를 확인해보세요.</p>
                         </div>
                         <ul class="history_list">
                             <li class="history_item aniBox ani_bot">
@@ -596,7 +598,7 @@
           popupContainer.appendChild(img);
       
           popup.classList.add('on');
-          document.body.classList.add('scroll-locked');
+          lockScroll() 
         }
       
         function closePopup(p) {
@@ -608,7 +610,7 @@
           if (c) c.innerHTML = '';
       
           if (!document.querySelector('.popup.on')) {
-            document.body.classList.remove('scroll-locked');
+            unlockScroll()
           }
         }
       

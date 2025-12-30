@@ -18,4 +18,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+function lockScroll() {
+    const scrollBarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+  
+    document.body.style.overflow = 'hidden';
+    document.body.style.paddingRight = `${scrollBarWidth}px`;
+  
+    // ✅ header도 같이 보정
+    const header = document.querySelector('.header');
+    if (header) header.style.paddingRight = `${scrollBarWidth}px`;
+}
+  
+function unlockScroll() {
+    document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
+
+    // ✅ header 원복
+    const header = document.querySelector('.header');
+    if (header) header.style.paddingRight = '';
+}
   

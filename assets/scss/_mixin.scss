@@ -195,3 +195,35 @@ $breakpoint-t4: 1100px;
       $saturation: $saturation
     );
 }
+
+
+@mixin scrollbar-minimal($size, $thumb-color, $track-color) {
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: $thumb-color $track-color;
+  
+    /* WebKit */
+    &::-webkit-scrollbar {
+      width: $size;
+      height: $size;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: $track-color;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: $thumb-color;
+      border-radius: 999px;
+      border: 2px solid transparent;   // 얇아 보이게
+      background-clip: padding-box;
+    }
+  
+    &::-webkit-scrollbar-thumb:hover {
+      opacity: 1;
+    }
+  
+    &::-webkit-scrollbar-corner {
+      background: transparent;
+    }
+  }

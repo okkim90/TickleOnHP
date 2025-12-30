@@ -33,6 +33,7 @@
                         <a href="" class="header_btn _inquiry">견적문의</a>
                     </div>
                     <ul class="nav_list">
+                        <!--[D] 메뉴 활성화 : nav_item 에 "on" class 추가 -->
                         <li class="nav_item">
                             <a href="" class="nav_link">
                                 <div class="nav_link_txt">
@@ -255,7 +256,7 @@
                             <div class="tit1 aniBox ani_bot">지원방법</div>
                             <div class="desc_box">
                                 <ul class="list_star aniBox ani_bot">
-                                    <li>영업파트너로 등록이완료되면, <br class="pc_only_t"> 추천하는 기업 정보를 간단히 기재 후 제출</li>
+                                    <li>영업파트너로 등록이완료되면, 추천하는 기업 정보를 간단히 기재 후 제출</li>
                                     <li>이후 절차는 티클이 직접 진행</li>
                                 </ul>
                                 <div class="apply_wrap">
@@ -352,7 +353,7 @@
             </div>
             <div class="footer_copy">ⓒTICKLE. All Rights Reserved.</div>
         </footer>
-        <div class="popup" id="popupPartner">
+        <div class="popup popupPartner" id="popupPartner">
             <div class="popup_wrap">
                 <div class="popup_inner">
                     <button type="button" class="popup_close" aria-label="팝업 닫기"></button>
@@ -418,7 +419,7 @@
                                         </label>
                                     </div>
                                     <div class="popup_btns">
-                                        <button type="submit" class="btn _ty1 _mid _black">견적 문의하기</button>
+                                        <button type="submit" class="btn _ty1 _mid _black">등록 신청하기</button>
                                     </div>
                                 </div>
                                 <div class="tab_cont">
@@ -474,7 +475,7 @@
                                         </div>
                                     </div>
                                     <div class="popup_btns">
-                                        <button type="submit" class="btn _ty1 _mid _black">견적 문의하기</button>
+                                        <button type="submit" class="btn _ty1 _mid _black">기업 추천하기</button>
                                     </div>
                                 </div>
                             </div>
@@ -494,7 +495,7 @@
             if (!popup) return;
         
             popup.classList.add('on');
-            document.body.classList.add('scroll-locked');
+            lockScroll();
         
             // 탭 선택 (있을 때만)
             const tabIndex = Number(btn.dataset.tab);
@@ -518,9 +519,11 @@
             const popup = closeBtn.closest('.popup');
             popup?.classList.remove('on');
 
+            
             if (!document.querySelector('.popup.on')) {
-                document.body.classList.remove('scroll-locked');
+                unlockScroll()
             }
+            
         });
         
         // 팝업 내부 탭 클릭

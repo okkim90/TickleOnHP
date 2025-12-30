@@ -6062,35 +6062,49 @@ body.scroll-locked {
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
+}
+.sub_visual::before {
+  content: "";
+  position: absolute;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.6s ease-out;
+  transform: scale(1.16);
 }
-.sub_visual._contact {
+.sub_visual.gogo::before {
+  transform: scale(1);
+}
+.sub_visual._contact::before {
   background-image: url(../images/sub/sub_visual_contact.png);
 }
-.sub_visual._about {
+.sub_visual._about::before {
   background-image: url(../images/sub/sub_visual_about.png);
 }
-.sub_visual._service {
+.sub_visual._service::before {
   background-image: url(../images/sub/sub_visual_service.png);
 }
-.sub_visual._reference {
+.sub_visual._reference::before {
   background-image: url(../images/sub/sub_visual_reference.png);
 }
-.sub_visual._news {
+.sub_visual._news::before {
   background-image: url(../images/sub/sub_visual_news.png);
 }
 .sub_visual._ss {
   height: 100dvh;
 }
-.sub_visual._ss._building {
+.sub_visual._ss._building::before {
   background-image: url(../images/sub/ss_building_bg.png);
 }
-.sub_visual._ss._stay {
+.sub_visual._ss._stay::before {
   background-image: url(../images/sub/ss_stay_bg.png);
 }
-.sub_visual._ss._account {
+.sub_visual._ss._account::before {
   background-image: url(../images/sub/ss_account_bg.png);
 }
 .sub_visual .tit {
@@ -6099,6 +6113,9 @@ body.scroll-locked {
   color: #fff;
   padding: 0 30px;
   line-height: 1.4;
+}
+.sub_visual .ss_visual_cont {
+  transition-duration: 0.8s;
 }
 .sub_visual .ss_visual_cont .logo img {
   height: 66px;
@@ -6315,6 +6332,12 @@ body.scroll-locked {
   visibility: visible;
   pointer-events: auto;
 }
+.header .nav_item:hover .nav_tit {
+  color: #1F64DA;
+}
+.header .nav_item.on .nav_tit {
+  color: #1F64DA;
+}
 .header .nav .service_panel {
   opacity: 0;
   visibility: hidden;
@@ -6513,14 +6536,24 @@ body.scroll-locked {
   }
 }
 .header_btns .header_btn._partners {
+  background-color: #3AA9B7;
+  border: none;
+  color: #fff;
+}
+.header_btns .header_btn._partners:hover {
   background-color: #fff;
-  border: 1px solid #000;
   color: #000;
+  border: 1px solid #000;
 }
 .header_btns .header_btn._inquiry {
+  background-color: #0C59D8;
+  border: none;
+  color: #fff;
+}
+.header_btns .header_btn._inquiry:hover {
   background-color: #fff;
-  border: 1px solid #000;
   color: #000;
+  border: 1px solid #000;
 }
 
 /* =========================
@@ -6535,14 +6568,7 @@ body.page-home .header {
   --hd-border: #fff;
   --hd-logo: url(../images/logo.svg);
 }
-body.page-home .header .header_btns .header_btn._partners {
-  background-color: #3AA9B7;
-  border: none;
-  color: #fff;
-}
-body.page-home .header .header_btns .header_btn._inquiry {
-  background-color: #0C59D8;
-  border: none;
+body.page-home .header .nav_item:hover .nav_tit {
   color: #fff;
 }
 body.page-home .header.on {
@@ -6551,15 +6577,8 @@ body.page-home .header.on {
   --hd-border: #000;
   --hd-logo: url(../images/logo_bg.svg);
 }
-body.page-home .header.on .header_btns .header_btn._partners {
-  background-color: #fff;
-  border: 1px solid #000;
-  color: #000;
-}
-body.page-home .header.on .header_btns .header_btn._inquiry {
-  background-color: #fff;
-  border: 1px solid #000;
-  color: #000;
+body.page-home .header.on .nav_item:hover .nav_tit {
+  color: #1F64DA;
 }
 
 .footer {
@@ -7340,6 +7359,43 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
   padding: 20px;
 }
 
+.popup.popupPartner .popup_container {
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.popup.popupPartner .tab_wrap {
+  overflow-y: auto;
+  padding-right: 20px;
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #3aa9b7 #F2F2F2;
+  /* WebKit */
+}
+@media (max-width: 767px) {
+  .popup.popupPartner .tab_wrap {
+    padding-right: 0;
+  }
+}
+.popup.popupPartner .tab_wrap::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.popup.popupPartner .tab_wrap::-webkit-scrollbar-track {
+  background-color: #F2F2F2;
+}
+.popup.popupPartner .tab_wrap::-webkit-scrollbar-thumb {
+  background-color: #3aa9b7;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.popup.popupPartner .tab_wrap::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
+}
+.popup.popupPartner .tab_wrap::-webkit-scrollbar-corner {
+  background: transparent;
+}
 .popup_tit {
   margin-bottom: 40px;
 }
@@ -7453,7 +7509,7 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
 @media (max-width: 767px) {
   .tabs .tab_btn._mid {
     height: 40px;
-    padding: 0 20px;
+    padding: 0 10px;
     font-size: 14px;
   }
 }
@@ -7597,11 +7653,25 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
 /* pages */
 .main_visual {
   height: 100dvh;
+  overflow: hidden;
+  position: relative;
+}
+.main_visual::before {
+  content: "";
+  width: 100%;
+  height: 100%;
   background-image: url(../images/main_visual.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scale(1.16);
+  transition: transform 1.6s ease-out;
+}
+.main_visual.gogo::before {
+  transform: scale(1);
 }
 .main_visual_cont {
   height: 100%;
@@ -7620,12 +7690,14 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
   font-size: 70px;
   font-weight: bold;
   line-height: 1;
+  transition-duration: 0.8s;
 }
 .main_visual_txt .txt2 {
   font-size: 26px;
   font-weight: bold;
   line-height: 1;
   margin-top: 20px;
+  transition-duration: 0.8s;
 }
 @media (max-width: 1024px) {
   .main_visual_txt {
@@ -7649,6 +7721,10 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
   bottom: 130px;
   left: 50px;
   color: #fff;
+}
+.main_visual_scroll.aniBox {
+  position: absolute;
+  transition-duration: 0.8s;
 }
 .main_visual_scroll .txt {
   display: block;
@@ -10938,10 +11014,10 @@ body.page-home .header.on .header_btns .header_btn._inquiry {
   padding-bottom: 20px;
   position: relative;
 }
-.news_tab_btn._active {
+.news_tab_btn.on {
   color: #1F64DA;
 }
-.news_tab_btn._active::after {
+.news_tab_btn.on::after {
   content: "";
   position: absolute;
   bottom: 0;

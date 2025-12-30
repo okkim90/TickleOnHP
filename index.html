@@ -33,6 +33,7 @@
                         <a href="" class="header_btn _inquiry">견적문의</a>
                     </div>
                     <ul class="nav_list">
+                        <!--[D] 메뉴 활성화 : nav_item 에 "on" class 추가 -->
                         <li class="nav_item">
                             <a href="" class="nav_link">
                                 <div class="nav_link_txt">
@@ -108,20 +109,20 @@
             </div>
         </header>
         <main id="container">
-            <section class="main_visual">
+            <section class="main_visual aniBox">
                 <div class="main_visual_cont">
                     <div class="main_visual_txt">
-                        <div class="txt1">Making <br class="m_only"> every space <br> work better</div>
-                        <div class="txt2">스마트한 건물관리의 시작, 티클온 </div>
+                        <div class="header-sentinel" aria-hidden="true"></div>
+                        <div class="txt1 aniBox ani_bot">Making <br class="m_only"> every space <br> work better</div>
+                        <div class="txt2  aniBox ani_bot">스마트한 건물관리의 시작, 티클온 </div>
                     </div>
-                    <div class="main_visual_scroll">
+                    <div class="main_visual_scroll  aniBox ani_bot">
                         <img src="./assets/images/main_visual_arrow.svg" alt="">
                         <span class="txt">SHOW MORE</span>
                     </div>
                 </div>
             </section>
-            <section class="contents">
-                <div class="header-sentinel" aria-hidden="true"></div>
+            <section class="contents">  
                 <section class="main_sec main_about">
                     <div class="inner">
                         <div class="main_sec_tit aniBox ani_bot">
@@ -745,40 +746,42 @@
             
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            if (!document.body.classList.contains('page-home')) return;
-          
-            const header = document.querySelector('.header');
-            const contents = document.querySelector('.contents');
-            if (!header || !contents) return;
-          
-            let ticking = false;
-          
-            const update = () => {
-              ticking = false;
-          
-              const headerBottom = header.getBoundingClientRect().bottom;
-              const cRect = contents.getBoundingClientRect();
-          
-              const isInContents =
-                headerBottom >= cRect.top &&
-                headerBottom <= cRect.bottom;
-          
-              header.classList.toggle('on', isInContents);
-            };
-          
-            const onScroll = () => {
-              if (ticking) return;
-              ticking = true;
-              requestAnimationFrame(update);
-            };
-            update();
-
-            window.addEventListener('scroll', onScroll, { passive: true });
-            
-            window.addEventListener('resize', update);
-          
-            if (document.fonts?.ready) document.fonts.ready.then(update);
-          });
+          if (!document.body.classList.contains('page-home')) return;
+        
+          const header = document.querySelector('.header');
+          const sentinel = document.querySelector('.header-sentinel');
+        
+          if (!header || !sentinel) return;
+        
+          let ticking = false;
+        
+          const update = () => {
+            ticking = false;
+        
+            const sRect = sentinel.getBoundingClientRect();
+        
+            // sentinel이 헤더 아래로 지나갔는지
+            const isPassed = sRect.top <= header.offsetHeight;
+        
+            header.classList.toggle('on', isPassed);
+          };
+        
+          const onScroll = () => {
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(update);
+          };
+        
+          update();
+        
+          window.addEventListener('scroll', onScroll, { passive: true });
+          window.addEventListener('resize', update);
+        
+          if (document.fonts?.ready) {
+            document.fonts.ready.then(update);
+          }
+        });
     </script>
+        
 </body>
 </html>
