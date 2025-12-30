@@ -6063,6 +6063,7 @@ body.scroll-locked {
   justify-content: center;
   text-align: center;
   overflow: hidden;
+  position: relative;
 }
 .sub_visual::before {
   content: "";
